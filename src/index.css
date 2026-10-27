@@ -1,9 +1,36 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap');
+
+@font-face {
+  font-family: 'OmegaCT';
+  src: url('./assets/fonts/omega_ct_regular.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Pinyon Script';
+  src: url('./assets/fonts/pinyon_script_regular.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
 :root {
-  font-family: sans-serif;
-  color: #000;
-  background: #fff;
+  --font-body: 'Poppins', sans-serif;
+  --font-heading: 'OmegaCT', serif;
+  --font-accent: 'Pinyon Script', cursive;
+  --color-white: #ffffff;
+  --color-black: #161616;
+  --color-gold: #C79237;
+
+  font-family: var(--font-body);
+  color: var(--color-text);
+  background: var(--color-background);
   font-synthesis: none;
   text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
 * {
@@ -15,4 +42,38 @@ body,
 #root {
   min-height: 100%;
   margin: 0;
+}
+
+body {
+  font-family: var(--font-body);
+  background: var(--color-background);
+  color: var(--color-text);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--font-heading);
+  letter-spacing: 0.02em;
+  margin: 0;
+}
+
+p,
+span,
+a,
+button,
+input,
+textarea,
+select,
+label {
+  font-family: var(--font-body);
+}
+
+.logo,
+.brand-mark,
+.script-text {
+  font-family: var(--font-accent);
 }
