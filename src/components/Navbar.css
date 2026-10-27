@@ -1,3 +1,89 @@
-.site-nav {
+/* src/components/Navbar.css */
+.navbar {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
   width: 100%;
+  padding: 32px 0;
+}
+
+/* Gold circle - fills the navbar row height, stays round */
+.navbar__logo {
+  display: block;
+  align-self: stretch;
+  aspect-ratio: 1 / 1;
+  border-radius: 999px;
+  background-color: #C79237;
+  flex-shrink: 0;
+}
+
+.navbar__links {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 40px;
+}
+
+.navbar__link a,
+.navbar__icon a,
+.navbar__book {
+  text-decoration: none;
+  color: #ffffff;
+}
+
+.navbar__link p,
+.navbar__book p {
+  margin: 0;
+  font-family: 'OmegaCT', serif;
+  font-size: 16px;
+  color: #ffffff;
+  text-transform: uppercase;
+  white-space: nowrap;
+}
+
+.navbar__link a:hover p,
+.navbar__link a.is-active p {
+  color: #C79237;
+}
+
+.navbar__actions {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+}
+
+.navbar__icon,
+.navbar__icon a {
+  display: flex;
+  align-items: center;
+  color: #ffffff;
+}
+
+.navbar__book {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border: 2px solid #ffffff;
+  border-radius: 999px;
+  padding: 24px 32px;
+  transition: background-color 0.2s ease;
+}
+
+.navbar__book:hover {
+  background-color: rgba(255, 255, 255, 0.12);
+}
+
+@media (max-width: 1200px) {
+  .navbar__links {
+    gap: 20px;
+  }
+}
+
+@media (max-width: 1024px) {
+  .navbar__links {
+    display: none;
+  }
 }

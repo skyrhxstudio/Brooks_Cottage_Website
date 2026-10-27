@@ -1,3 +1,4 @@
+// src/pages/HomePage.tsx
 import PageMetadata from '../components/PageMetadata'
 import AboutSection from '../sections/AboutSection'
 import ContactSection from '../sections/ContactSection'
@@ -12,7 +13,6 @@ function HomePage() {
     <>
       <PageMetadata title="Home" path="/" />
       <main id="home-page" className="home-page">
-        <header className="page-header" />
         <HomeHeroSection />
         <AboutSection />
         <RoomsSection />

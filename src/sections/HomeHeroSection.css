@@ -1,3 +1,126 @@
+/* src/sections/HomeHeroSection.css */
 .home-hero {
-  min-width: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 100%;
+  height: 100vh;
+  padding: 0 96px 96px 96px;
+  background-color: #161616;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  overflow: hidden;
+}
+
+.home-hero__content {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 63px;
+  width: 100%;
+  height: auto;
+}
+
+/* CSS gap can't be negative, so the -56px is a margin on the subtitle */
+.home-hero__title-group {
+  display: flex;
+  flex-direction: column;
+}
+
+.home-hero__subtitle {
+  margin-top: -12px;
+}
+
+.home-hero__title p {
+  margin: 0;
+  font-family: 'Pinyon Script', cursive;
+  font-size: 200px;
+  font-weight: 400;
+  line-height: 1;
+  color: #ffffff;
+}
+
+.home-hero__subtitle p {
+  margin: 0;
+  font-family: 'OmegaCT', serif;
+  font-size: 32px;
+  color: #ffffff;
+  text-transform: uppercase;
+}
+
+.home-hero__divider {
+  width: 50%;
+  height: 1px;
+  background-color: rgba(255, 255, 255, 0.56);
+}
+
+.home-hero__bottom {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  gap: 300px;
+  width: 100%;
+}
+
+.home-hero__description p {
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  font-size: 24px;
+  line-height: 1.5;
+  color: #ffffff;
+}
+
+.home-hero__cta {
+  flex-shrink: 0;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #ffffff;
+  border-radius: 999px;
+  padding: 24px 56px;
+  text-decoration: none;
+  transition: opacity 0.2s ease;
+  
+}
+
+.home-hero__cta:hover {
+  opacity: 0.9;
+}
+
+.home-hero__cta p {
+  margin: 0;
+  font-family: 'OmegaCT', serif;
+  font-size: 24px;
+  color: #151515;
+  text-transform: uppercase;
+  white-space: nowrap;
+}
+
+/* Smaller screens */
+@media (max-width: 1440px) {
+  .home-hero__bottom { gap: 120px; }
+  .home-hero__title p { font-size: 160px; }
+  .home-hero__subtitle { margin-top: -40px; }
+}
+
+@media (max-width: 1024px) {
+  .home-hero { padding: 0 48px 64px 48px; }
+  .home-hero__title p { font-size: 120px; }
+  .home-hero__subtitle { margin-top: -28px; }
+  .home-hero__subtitle p { font-size: 24px; }
+  .home-hero__bottom { flex-direction: column; align-items: flex-start; gap: 32px; }
+  .home-hero__description p { font-size: 20px; }
+}
+
+@media (max-width: 640px) {
+  .home-hero { padding: 0 24px 48px 24px; height: auto; min-height: 100vh; }
+  .home-hero__content { gap: 40px; }
+  .home-hero__title p { font-size: 72px; }
+  .home-hero__subtitle { margin-top: -12px; }
+  .home-hero__subtitle p { font-size: 18px; }
+  .home-hero__description p { font-size: 16px; }
+  .home-hero__cta { padding: 20px 32px; }
+  .home-hero__cta p { font-size: 18px; }
 }
