@@ -2,7 +2,7 @@
 .home-hero {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: flex-end;
   width: 100%;
   height: 100vh;
   padding: 0 96px 96px 96px;

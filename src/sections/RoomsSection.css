@@ -1,3 +1,323 @@
-.rooms-section {
+/* src/sections/RoomsSection.css */
+.rooms {
+  --rooms-gap: 24px;
+
+  display: grid;
+  grid-template-columns: repeat(12, minmax(0, 1fr));
+  column-gap: var(--rooms-gap);
+  row-gap: 80px;
+  width: 100%;
+  padding: 200px 0; /* top & bottom only - columns act as side margins */
+  background-color: #ffffff;
+  overflow: hidden;
+}
+
+/* Header: col 2 to col 4 */
+.rooms__header {
+  grid-column: 2 / 5;
+  grid-row: 1;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 24px;
+  width: fit-content;
+}
+
+.rooms__flower {
+  display: flex;
+  flex-shrink: 0;
+}
+
+.rooms__title {
+  margin: 0;
+  font-family: 'OmegaCT', serif;
+  font-size: 64px;
+  line-height: 1.1;
+  color: #151515;
+  white-space: nowrap;
+}
+
+/* Intro: col 5, spanning 6 columns (5 to 10) */
+.rooms__intro {
+  grid-column: 6 / 12;
+  grid-row: 1;
+  align-self: start;
+}
+
+.rooms__intro p {
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  font-size: 24px;
+  line-height: 1.5;
+  color: #7C7C7C;
+}
+
+/* Controls row: col 2 to col 11 */
+.rooms__controls {
+  grid-column: 2 / 12;
+  grid-row: 2;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  gap: 24px;
+}
+
+.rooms__cta {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 24px 56px;
+  border-radius: 999px;
+  background-color: #D7942E;
+  text-decoration: none;
+  transition: opacity 0.2s ease;
+}
+
+.rooms__cta:hover {
+  opacity: 0.9;
+}
+
+.rooms__cta p {
+  margin: 0;
+  font-family: 'OmegaCT', serif;
+  font-size: 24px;
+  color: #ffffff;
+  white-space: nowrap;
+}
+
+.rooms__arrows {
+  display: flex;
+  flex-direction: row;
+  gap: 16px;
+}
+
+.rooms__arrow {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 72px;
+  height: 72px;
+  border: 2px solid #D7942E;
+  border-radius: 999px;
+  background-color: transparent;
+  color: #D7942E;
+  cursor: pointer;
+  transition: background-color 0.2s ease, color 0.2s ease, opacity 0.2s ease;
+}
+
+.rooms__arrow:hover:not(:disabled) {
+  background-color: #D7942E;
+  color: #ffffff;
+}
+
+.rooms__arrow:disabled {
+  opacity: 0.3;
+  cursor: not-allowed;
+}
+
+/* Carousel: col 2 to the right edge of the page (gets cut off) */
+.rooms__carousel {
+  grid-column: 2 / -1;
+  grid-row: 3;
   min-width: 0;
+}
+
+.rooms__track {
+  display: flex;
+  flex-direction: row;
+  gap: var(--rooms-gap);
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  scroll-behavior: smooth;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+
+.rooms__track::-webkit-scrollbar {
+  display: none;
+}
+
+/*
+  Carousel width = 11 columns + 10 gaps.
+  Card width = 7 columns + 6 gaps = (7 x 100% - 4 x gap) / 11
+*/
+.rooms__card {
+  flex: 0 0 calc((700% - 4 * var(--rooms-gap)) / 11);
+  height: 650px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  padding: 48px;
+  background-color: #000000;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  scroll-snap-align: start;
+}
+
+/* Spacer = remaining width so the last card can snap to col 2 */
+.rooms__spacer {
+  flex: 0 0 calc(100% - (700% - 4 * var(--rooms-gap)) / 11 - var(--rooms-gap));
+}
+
+.rooms__card-content {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+  width: 100%;
+}
+
+.rooms__card-info {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 12px;
+  text-align: left;
+}
+
+.rooms__card-title {
+  margin: 0;
+  font-family: 'OmegaCT', serif;
+  font-size: 48px;
+  line-height: 1.1;
+  color: #ffffff;
+}
+
+.rooms__card-text {
+  margin: 0;
+  max-width: 720px;
+  font-family: 'Poppins', sans-serif;
+  font-size: 24px;
+  line-height: 1.5;
+  color: #ffffff;
+}
+
+.rooms__card-actions {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  gap: 24px;
+}
+
+.rooms__card-link {
+  font-family: 'Poppins', sans-serif;
+  font-size: 20px;
+  color: #ffffff;
+  text-decoration: underline;
+  text-decoration-color: #ffffff;
+  text-underline-offset: 6px;
+}
+
+.rooms__card-link:hover {
+  opacity: 0.8;
+}
+
+.rooms__card-book {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 24px 56px;
+  background-color: #ffffff;
+  text-decoration: none;
+  transition: opacity 0.2s ease;
+}
+
+.rooms__card-book:hover {
+  opacity: 0.9;
+}
+
+.rooms__card-book p {
+  margin: 0;
+  font-family: 'OmegaCT', serif;
+  font-size: 24px;
+  color: #161616;
+  white-space: nowrap;
+}
+
+/* Smaller screens */
+@media (max-width: 1440px) {
+  .rooms__title { font-size: 52px; }
+  .rooms__intro p { font-size: 20px; }
+  .rooms__cta p,
+  .rooms__card-book p { font-size: 20px; }
+  .rooms__card { height: 640px; }
+  .rooms__card-title { font-size: 40px; }
+  .rooms__card-text { font-size: 20px; }
+}
+
+@media (max-width: 1024px) {
+  .rooms {
+    padding: 120px 0;
+    row-gap: 40px;
+  }
+
+  .rooms__header,
+  .rooms__intro,
+  .rooms__controls {
+    grid-column: 2 / 12;
+    grid-row: auto;
+  }
+
+  .rooms__carousel {
+    grid-row: auto;
+  }
+
+  /* Card ~ 9 columns wide on tablet */
+  .rooms__card {
+    flex-basis: calc((900% - 2 * var(--rooms-gap)) / 11);
+    height: 560px;
+    padding: 32px;
+  }
+
+  .rooms__spacer {
+    flex-basis: calc(100% - (900% - 2 * var(--rooms-gap)) / 11 - var(--rooms-gap));
+  }
+}
+
+@media (max-width: 640px) {
+  .rooms {
+    --rooms-gap: 16px;
+    padding: 80px 0;
+  }
+
+  .rooms__title { font-size: 36px; }
+  .rooms__flower svg { width: 44px; height: 44px; }
+  .rooms__intro p { font-size: 16px; }
+
+  .rooms__controls {
+    flex-wrap: wrap;
+  }
+
+  .rooms__cta { padding: 20px 32px; }
+  .rooms__cta p { font-size: 16px; }
+
+  .rooms__arrow {
+    width: 56px;
+    height: 56px;
+  }
+
+  .rooms__card {
+    flex-basis: 85%;
+    height: 480px;
+    padding: 24px;
+  }
+
+  .rooms__spacer {
+    flex-basis: calc(15% - var(--rooms-gap));
+  }
+
+  .rooms__card-title { font-size: 28px; }
+  .rooms__card-text { font-size: 16px; }
+
+  .rooms__card-actions {
+    flex-direction: column-reverse;
+    align-items: flex-start;
+    gap: 16px;
+  }
+
+  .rooms__card-link { font-size: 16px; }
+  .rooms__card-book { padding: 18px 32px; }
+  .rooms__card-book p { font-size: 16px; }
 }

@@ -1,32 +1,22 @@
 // src/sections/HomeHeroSection.tsx
 import { Link } from 'react-router'
-import Navbar from '../components/Navbar'
 import './HomeHeroSection.css'
 
-// To add a background photo, uncomment the next line and pass it in below:
-// import heroImage from '../assets/images/hero.jpg'
+import heroImage from '../assets/images/hero_bg.png'
 
 interface HomeHeroSectionProps {
   backgroundImage?: string
 }
 
-function HomeHeroSection({ backgroundImage }: HomeHeroSectionProps) {
+function HomeHeroSection({ backgroundImage = heroImage }: HomeHeroSectionProps) {
   return (
     <section
       id="home"
       className="home-hero"
-      style={
-        backgroundImage
-          ? {
-              backgroundImage: `linear-gradient(rgba(0,0,0,0.45), rgba(0,0,0,0.45)), url(${backgroundImage})`,
-            }
-          : undefined
-      }
+      style={{
+        backgroundImage: `linear-gradient(to bottom, rgba(22,22,22,0.8) 0%, rgba(22,22,22,0) 25%), linear-gradient(to bottom, rgba(22,22,22,0) 0%, rgba(22,22,22,0.8) 70%, rgba(22,22,22,1) 100%), url(${backgroundImage})`,
+      }}
     >
-      {/* Div 1: Navbar */}
-      <Navbar />
-
-      {/* Div 2: Hero content */}
       <div className="home-hero__content">
         <div className="home-hero__title-group">
           <div className="home-hero__title">

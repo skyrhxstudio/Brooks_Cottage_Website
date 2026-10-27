@@ -4,6 +4,7 @@ import AboutSection from '../sections/AboutSection'
 import ContactSection from '../sections/ContactSection'
 import HomeHeroSection from '../sections/HomeHeroSection'
 import LocationSection from '../sections/LocationSection'
+import ReviewsSection from '../sections/ReviewsSection'
 import RoomsSection from '../sections/RoomsSection'
 import ServicesSection from '../sections/ServicesSection'
 import './HomePage.css'
@@ -14,6 +15,7 @@ function HomePage() {
       <PageMetadata title="Home" path="/" />
       <main id="home-page" className="home-page">
         <HomeHeroSection />
+        <ReviewsSection />
         <AboutSection />
         <RoomsSection />
         <ServicesSection />
