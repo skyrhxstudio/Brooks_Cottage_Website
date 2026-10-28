@@ -117,7 +117,7 @@
 @media (max-width: 640px) {
   .home-hero { padding: 0 24px 48px 24px; height: auto; min-height: 100vh; }
   .home-hero__content { gap: 40px; }
-  .home-hero__title p { font-size: 72px; }
+  .home-hero__title p { font-size: 72px; margin-bottom: 24px;}
   .home-hero__subtitle { margin-top: -12px; }
   .home-hero__subtitle p { font-size: 18px; }
   .home-hero__description p { font-size: 16px; }

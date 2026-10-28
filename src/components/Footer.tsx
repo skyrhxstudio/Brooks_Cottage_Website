@@ -91,13 +91,10 @@ function Footer() {
               </Link>
               <p className="site-footer__tagline">LUXURY GUEST HOUSE ACCOMMODATION</p>
               <div className="site-footer__socials">
-                <a href="https://twitter.com" target="_blank" rel="noopener noreferrer" aria-label="Twitter">
-                  <i className="fa-brands fa-x-twitter" aria-hidden="true" />
-                </a>
-                <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+                <a href="https://www.instagram.com/brooks_cottage1/" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
                   <i className="fa-brands fa-instagram" aria-hidden="true" />
                 </a>
-                <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" aria-label="Facebook">
+                <a href="https://www.facebook.com/p/Brooks-Cottage-100065196384318/" target="_blank" rel="noopener noreferrer" aria-label="Facebook">
                   <i className="fa-brands fa-facebook-f" aria-hidden="true" />
                 </a>
               </div>

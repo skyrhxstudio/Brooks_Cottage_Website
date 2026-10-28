@@ -19,35 +19,35 @@ const ROOMS: Room[] = [
   {
     title: 'The Contemporary Room',
     description:
-      'Clean lines, soft neutral tones and a calm, modern feel, with a private entrance and full en-suite bathroom.',
+      'Modern room features bay window, with large bathroom and dressingroom combined. This en-suite bathroom has a his and hers shower with modern bath. Double Bed.',
     image: contemporaryRoomImage,
     detailsPath: '/rooms/the-contemporary-room',
   },
   {
     title: 'The Indonesian Room',
     description:
-      'Warm timbers and handcrafted island-inspired details create a relaxed, exotic retreat in the heart of Pretoria.',
+      'Indonesian styled amoire and furnishings make this room stylish and comfortable. The private patio area is ideal for your early morning coffee. Queen sized bed.',
     image: indonesianRoomImage,
     detailsPath: '/rooms/the-indonesian-room',
   },
   {
     title: 'The Modern Victorian Room',
     description:
-      'Classic Victorian elegance meets modern comfort, beneath the original pressed ceilings of this lovely old home.',
+      'Spacious, modern victorian has a king bed and a single bed, with full victorian bathroom including ball and claw bath. This room is ideal for 3 sharing. Extra length King bed & 3/4 Bed.',
     image: modernVictorianRoomImage,
     detailsPath: '/rooms/the-modern-victorian-room',
   },
   {
     title: 'The Mahogany Room',
     description:
-      'Rich mahogany furnishings and deep, inviting tones for a timeless stay with shower and bath en-suite.',
+      'Very spacious mahogany styled room, with queen bed and full en-suite bathroom. A view of the swimming pool and the tranquil garden creates the relaxing atmosphere that you deserve. Queen sized bed & 3/4 bed.',
     image: mahoganyRoomImage,
     detailsPath: '/rooms/the-mahogany-room',
   },
   {
     title: 'The Eclectic Room',
     description:
-      'A playful, curated mix of colour, texture and character, north-facing and filled with natural light.',
+      'North facing and entry from the swimming pool gives this room all the advantages. Its eclectic decor is easy on the eye. It has a queen bed and full en-suite. Queen sized bed.',
     image: eclecticRoomImage,
     detailsPath: '/rooms/the-eclectic',
   },
