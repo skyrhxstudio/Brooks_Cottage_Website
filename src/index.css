@@ -77,3 +77,38 @@ label {
 .script-text {
   font-family: var(--font-accent);
 }
+
+@media (max-width: 640px) {
+  .navbar__mobile-book {
+    height: 56px !important;
+    min-height: 56px !important;
+    padding: 0 32px !important;
+  }
+
+  .home-hero__cta,
+  .about__cta,
+  .services__cta,
+  .rooms__cta,
+  .gallery__cta,
+  .gallery-preview__button,
+  .location-section__map-button,
+  .location-section__attractions-button,
+  .rooms__card-book {
+    height: 56px !important;
+    min-height: 56px !important;
+    padding: 0 32px !important;
+  }
+
+  .home-hero__cta p,
+  .about__cta p,
+  .services__cta span,
+  .rooms__cta p,
+  .gallery__cta span,
+  .gallery-preview__text,
+  .location-section__map-button-text,
+  .location-section__attractions-button-text,
+  .rooms__card-book p,
+  .navbar__mobile-book {
+      font-size: 16px !important;
+    }
+}

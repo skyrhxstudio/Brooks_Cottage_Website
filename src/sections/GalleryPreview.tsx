@@ -1,3 +1,4 @@
+import { Link } from "react-router";
 import gallerySectionImage from "../assets/images/gallery_section_img.webp";
 import "./GalleryPreview.css";
 
@@ -14,9 +15,9 @@ const GalleryPreview = () => {
         ), url(${gallerySectionImage})`,
       }}
     >
-      <div className="gallery-preview__button">
+      <Link to="/gallery" className="gallery-preview__button">
         <p className="gallery-preview__text">VIEW OUR GALLERY</p>
-      </div>
+      </Link>
     </section>
   );
 };

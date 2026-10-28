@@ -115,7 +115,13 @@
 }
 
 @media (max-width: 640px) {
-  .home-hero { padding: 0 24px 48px 24px; height: auto; min-height: 100vh; }
+  .home-hero {
+    height: 100vh;
+    height: 100dvh;
+    min-height: 100vh;
+    min-height: 100dvh;
+    padding: 0 24px 48px 24px;
+  }
   .home-hero__content { gap: 40px; }
   .home-hero__title p { font-size: 72px; margin-bottom: 24px;}
   .home-hero__subtitle { margin-top: -12px; }

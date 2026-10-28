@@ -1,3 +1,4 @@
+import { Link } from "react-router";
 import "./LocationSection.css";
 
 const MAP_EMBED_URL =
@@ -27,11 +28,11 @@ const LocationSection = () => {
       </div>
 
       <div className="location-section__map-wrapper">
-        <div className="location-section__map-button">
+        <Link to="/location-attractions" className="location-section__map-button">
           <p className="location-section__map-button-text">
             EXPLORE LOCAL ATTRACTIONS
           </p>
-        </div>
+        </Link>
 
         <iframe
           className="location-section__map"
@@ -44,11 +45,16 @@ const LocationSection = () => {
       </div>
 
       <div className="location-section__bottom">
-        <div className="location-section__attractions-button">
+        <a
+          className="location-section__attractions-button"
+          href="https://maps.google.com/?daddr=283+Brooks+Street,+Brooklyn,+Pretoria,+South+Africa"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
           <p className="location-section__attractions-button-text">
             GET DIRECTIONS
           </p>
-        </div>
+        </a>
 
         <p className="location-section__attractions-description">
           From exploring the Pretoria National Botanical Garden to catching a

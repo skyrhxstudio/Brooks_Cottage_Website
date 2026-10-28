@@ -37,7 +37,7 @@
 
 .location-section__title {
   margin: 0;
-  font-family: "Omega CT", sans-serif;
+  font-family: "OmegaCT", serif;
   font-size: 64px;
   line-height: 1.05;
   color: #151515;
@@ -63,15 +63,20 @@
 
 .location-section__map-button {
   align-self: flex-end;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 72px;
   background-color: #c79237;
   border-radius: 999px;
   padding: 24px 56px;
+  text-decoration: none;
 }
 
 .location-section__map-button-text,
 .location-section__attractions-button-text {
   margin: 0;
-  font-family: "Omega CT", sans-serif;
+  font-family: "OmegaCT", serif;
   font-size: 24px;
   color: #ffffff;
 }
@@ -99,12 +104,17 @@
 
 .location-section__attractions-button {
   grid-column: 1 / 3;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 72px;
   background-color: #FFFFFF;
-  border:#c79237 1px solid;
+  border: #c79237 1px solid;
   border-radius: 999px;
   padding: 24px 56px;
   justify-self: start;
   white-space: nowrap;
+  text-decoration: none;
 }
 
 .location-section__attractions-description {

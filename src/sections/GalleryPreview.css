@@ -11,15 +11,20 @@
 }
 
 .gallery-preview__button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 72px;
   background-color: #ffffff;
   border-radius: 999px;
   padding: 24px 56px;
+  text-decoration: none;
 }
 
 .gallery-preview__text {
   margin: 0;
   font-size: 24px;
-  font-family: "Omega CT", sans-serif;
+  font-family: "OmegaCT", serif;
   color: #151515;
   text-transform: uppercase;
 }
