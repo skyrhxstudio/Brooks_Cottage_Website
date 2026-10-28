@@ -171,9 +171,14 @@ function RoomsSection() {
                   <Link to={room.detailsPath} className="rooms__card-link">
                     VIEW MORE DETAILS
                   </Link>
-                  <Link to="/contact" className="rooms__card-book">
+                  <a
+                    href="https://book.nightsbridge.com/31512"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="rooms__card-book"
+                  >
                     <p>BOOK THIS ROOM</p>
-                  </Link>
+                  </a>
                 </div>
               </div>
             </article>

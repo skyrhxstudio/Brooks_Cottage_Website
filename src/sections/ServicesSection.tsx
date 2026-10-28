@@ -1,4 +1,3 @@
-import { Link } from 'react-router'
 import servicesImage1 from '../assets/images/services_section_img_1.webp'
 import servicesImage2 from '../assets/images/services_section_img_2.jpeg'
 import './ServicesSection.css'
@@ -52,9 +51,14 @@ function ServicesSection() {
         </p>
       </div>
 
-      <Link to="/rooms-rates" className="services__cta">
+      <a
+        href="https://book.nightsbridge.com/31512"
+        target="_blank"
+        rel="noopener noreferrer"
+        className="services__cta"
+      >
         <span>MAKE A RESERVATION</span>
-      </Link>
+      </a>
     </section>
   )
 }

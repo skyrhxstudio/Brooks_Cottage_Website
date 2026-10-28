@@ -1,5 +1,4 @@
 // src/sections/AboutSection.tsx
-import { Link } from 'react-router'
 import aboutSectionImage from '../assets/images/about_section_img.webp'
 import './AboutSection.css'
 
@@ -54,9 +53,14 @@ function AboutSection({ image = aboutSectionImage, imageAlt = 'Brooks Cottage' }
           <p>BROOKLYN, PRETORIA, SOUTH AFRICA</p>
         </div>
 
-        <Link to="/rooms-rates" className="about__cta">
+        <a
+          href="https://book.nightsbridge.com/31512"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="about__cta"
+        >
           <p>MAKE A RESERVATION NOW</p>
-        </Link>
+        </a>
       </div>
     </section>
   )

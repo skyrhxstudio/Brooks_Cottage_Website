@@ -1,5 +1,4 @@
 // src/sections/HomeHeroSection.tsx
-import { Link } from 'react-router'
 import './HomeHeroSection.css'
 
 import heroImage from '../assets/images/hero_bg.webp'
@@ -41,9 +40,14 @@ function HomeHeroSection({ backgroundImage = heroImage }: HomeHeroSectionProps) 
               and premier shopping centres.
             </p>
           </div>
-          <Link to="/rooms-rates" className="home-hero__cta">
+          <a
+            href="https://book.nightsbridge.com/31512"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="home-hero__cta"
+          >
             <p>Make a Reservation Now</p>
-          </Link>
+          </a>
         </div>
       </div>
     </section>

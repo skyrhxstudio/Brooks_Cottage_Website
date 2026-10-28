@@ -82,9 +82,14 @@ function Navbar() {
             <i className="fa-brands fa-instagram" aria-hidden="true" />
           </a>
         </div>
-        <Link to="/contact" className="navbar__book">
+        <a
+          href="https://book.nightsbridge.com/31512"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="navbar__book"
+        >
           <p>Book Now</p>
-        </Link>
+        </a>
       </div>
 
       <button
@@ -133,9 +138,15 @@ function Navbar() {
           >
             <i className="fa-brands fa-instagram" aria-hidden="true" />
           </a>
-          <Link to="/contact" className="navbar__mobile-book" onClick={() => setIsMenuOpen(false)}>
+          <a
+            href="https://book.nightsbridge.com/31512"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="navbar__mobile-book"
+            onClick={() => setIsMenuOpen(false)}
+          >
             Book Now
-          </Link>
+          </a>
         </div>
       </div>
     </nav>
