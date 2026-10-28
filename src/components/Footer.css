@@ -288,12 +288,14 @@
   }
 
   .site-footer__column {
-    font-size: 20px;
+    font-size: 16px;
+    line-height: 1.35;
     overflow-wrap: anywhere;
   }
 
   .site-footer__column h2 {
     margin-bottom: 8px;
+    font-size: 16px;
   }
 
   .site-footer__brand-row {
@@ -318,7 +320,7 @@
   }
 
   .site-footer__tagline {
-    font-size: 20px;
+    font-size: 16px;
   }
 
   .site-footer__socials {
@@ -351,7 +353,8 @@
 
   .site-footer__legal {
     padding-top: 32px;
-    font-size: 20px;
+    font-size: 14px;
+    line-height: 1.4;
   }
 }
 
