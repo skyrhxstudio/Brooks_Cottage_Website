@@ -335,15 +335,17 @@
   }
 
   .site-footer__awards {
-    flex-wrap: wrap;
-    justify-content: flex-start;
-    gap: 16px;
+    width: 100%;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    gap: 8px;
   }
 
   .site-footer__award {
-    flex-basis: 136px;
-    width: 136px;
-    height: 136px;
+    flex: 0 1 calc((100% - 16px) / 3);
+    width: calc((100% - 16px) / 3);
+    height: auto;
+    aspect-ratio: 1 / 1;
   }
 
 
