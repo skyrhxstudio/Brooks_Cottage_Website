@@ -45,9 +45,9 @@ const ROOMS: Room[] = [
     detailsPath: '/rooms/the-mahogany-room',
   },
   {
-    title: 'The Eclectic Room',
+    title: 'the eclectic room',
     description:
-      'North facing and entry from the swimming pool gives this room all the advantages. Its eclectic decor is easy on the eye. It has a queen bed and full en-suite. Queen sized bed.',
+      'North-facing, with direct access from the swimming pool, this room has every advantage. It\'s eclectic decor is easy on the eye, and it features a queen bed with a full en-suite bathroom.',
     image: eclecticRoomImage,
     detailsPath: '/rooms/the-eclectic',
   },
@@ -101,6 +101,7 @@ function RoomsSection() {
 
   return (
     <section id="rooms" className="rooms">
+      <span className="rooms__watermark" aria-hidden="true">Rooms</span>
       {/* Header: col 2 to col 4 */}
       <div className="rooms__header">
         <div className="rooms__flower">

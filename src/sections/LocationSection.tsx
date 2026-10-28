@@ -7,6 +7,7 @@ const MAP_EMBED_URL =
 const LocationSection = () => {
   return (
     <section className="location-section">
+      <span className="location-section__watermark" aria-hidden="true">Location</span>
       <div className="location-section__intro">
         <div className="location-section__heading">
           <div className="location-section__flower">

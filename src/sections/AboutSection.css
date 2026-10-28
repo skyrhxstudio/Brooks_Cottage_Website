@@ -1,13 +1,37 @@
 /* src/sections/AboutSection.css */
 .about {
+  position: relative;
+  isolation: isolate;
   display: grid;
   grid-template-columns: repeat(12, minmax(0, 1fr));
   column-gap: 24px;
   row-gap: 80px; /* 80px between header row and image row */
   width: 100%;
+  overflow: hidden;
   padding-top: 200px;
   padding-bottom: 200px;
   background-color: #ffffff;
+}
+
+.about__watermark {
+  position: absolute;
+  z-index: 0;
+  top: 52%;
+  left: 44%;
+  font-family: 'Pinyon Script', cursive;
+  font-size: 700px;
+  line-height: 1;
+  color: rgb(246 246 246);
+  white-space: nowrap;
+  pointer-events: none;
+}
+
+.about__header,
+.about__quote,
+.about__image,
+.about__pills {
+  position: relative;
+  z-index: 1;
 }
 
 /* Div 1 - Header: col 2 to col 5 */
@@ -178,6 +202,12 @@
     row-gap: 48px;
   }
 
+  .about__watermark {
+    top: 57%;
+    left: 30%;
+    font-size: 150px;
+  }
+
   .about__header,
   .about__quote,
   .about__image,
@@ -209,6 +239,11 @@
 
 @media (max-width: 640px) {
   .about { padding: 80px 24px; }
+  .about__watermark {
+    top: 65%;
+    left: 8%;
+    font-size: 500px;
+  }
   .about__title { font-size: 36px; white-space: normal; }
   .about__flower img { width: 64px; height: auto; }
   .about__quote-text { font-size: 16px; }

@@ -6,6 +6,7 @@ import './ServicesSection.css'
 function ServicesSection() {
   return (
     <section id="services" className="home-section services-section">
+      <span className="services__watermark" aria-hidden="true">Amenities</span>
       <div className="services__header">
         <div className="services__flower">
           <img src="/heading_decor.svg" alt="" aria-hidden="true" />
@@ -36,9 +37,9 @@ function ServicesSection() {
         alt="Brooks Cottage interior and guest amenities"
       />
       <img
-        className="services__image services__image--laundry"
+        className="services__image services__image--lounge"
         src={servicesImage2}
-        alt="Dining and hospitality area at Brooks Cottage"
+        alt="Guest dining and lounge area at Brooks Cottage"
       />
 
       <div className="services__details">
@@ -46,9 +47,8 @@ function ServicesSection() {
           Stay entertained and perfectly connected with free fibre Wi-Fi and
           DSTV satellite television, all completely protected from load-shedding
           by our uninterrupted, solar-powered electricity backup system. Best
-          of all, you can take a refreshing dip in our pristine swimming pool or
-          take advantage of our convenient on-site laundry services (charged
-          extra) to keep your wardrobe fresh.
+          of all, you can take a refreshing dip in our pristine swimming pool
+          and enjoy the comfort of our water backup system.
         </p>
       </div>
 

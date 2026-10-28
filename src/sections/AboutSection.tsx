@@ -11,6 +11,7 @@ interface AboutSectionProps {
 function AboutSection({ image = aboutSectionImage, imageAlt = 'Brooks Cottage' }: AboutSectionProps) {
   return (
     <section id="about" className="about">
+      <span className="about__watermark" aria-hidden="true">Welcome</span>
       {/* Div 1: Header - cols 2 to 5 */}
       <div className="about__header">
         <div className="about__flower">

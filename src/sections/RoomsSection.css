@@ -1,5 +1,7 @@
 /* src/sections/RoomsSection.css */
 .rooms {
+  position: relative;
+  isolation: isolate;
   --rooms-gap: 24px;
 
   display: grid;
@@ -9,7 +11,25 @@
   width: 100%;
   padding: 200px 0; /* top & bottom only - columns act as side margins */
   background-color: #ffffff;
-  overflow: hidden;
+  overflow: clip;
+}
+
+.rooms__watermark {
+  position: absolute;
+  z-index: 0;
+  top: 5%;
+  left: -5%;
+  font-family: 'Pinyon Script', cursive;
+  font-size: 700px;
+  line-height: 1;
+  color: rgb(246 246 246);
+  white-space: nowrap;
+  pointer-events: none;
+}
+
+.rooms > :not(.rooms__watermark) {
+  position: relative;
+  z-index: 1;
 }
 
 /* Header: col 2 to col 4 */
@@ -258,6 +278,12 @@
 }
 
 @media (max-width: 1024px) {
+  .rooms__watermark {
+    top: 55%;
+    left: 24%;
+    font-size: 150px;
+  }
+
   .rooms {
     padding: 120px 0;
     row-gap: 40px;
@@ -287,6 +313,12 @@
 }
 
 @media (max-width: 640px) {
+  .rooms__watermark {
+    top: 26%;
+    left: 0%;
+    font-size: 500px;
+  }
+
   .rooms {
     --rooms-gap: 16px;
     padding: 80px 0;

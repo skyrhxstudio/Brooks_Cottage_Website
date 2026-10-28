@@ -1,11 +1,32 @@
 .services-section {
+  position: relative;
+  isolation: isolate;
   display: grid;
   grid-template-columns: repeat(12, minmax(0, 1fr));
   column-gap: 24px;
   row-gap: 80px;
   width: 100%;
+  overflow: clip;
   padding: 200px 0;
   background-color: #ffffff;
+}
+
+.services__watermark {
+position: absolute;
+    z-index: 0;
+    top: 65%;
+    left: 28%;
+    font-family: 'Pinyon Script', cursive;
+    font-size: 700px;
+    line-height: 1;
+    color: rgb(246 246 246);
+    white-space: nowrap;
+    pointer-events: none;
+}
+
+.services-section > :not(.services__watermark) {
+  position: relative;
+  z-index: 1;
 }
 
 .services__header {
@@ -66,7 +87,7 @@
   height: 640px;
 }
 
-.services__image--laundry {
+.services__image--lounge {
   grid-column: 6 / 10;
   grid-row: 2;
   align-self: end;
@@ -126,7 +147,7 @@
     height: 560px;
   }
 
-  .services__image--laundry {
+  .services__image--lounge {
     height: 400px;
   }
 
@@ -136,6 +157,12 @@
 }
 
 @media (max-width: 1024px) {
+  .services__watermark {
+    top: 57%;
+    left: 18%;
+    font-size: 150px;
+  }
+
   .services-section {
     padding: 120px 48px;
     row-gap: 48px;
@@ -154,7 +181,7 @@
     height: 480px;
   }
 
-  .services__image--laundry {
+  .services__image--lounge {
     grid-column: 8 / -1;
     grid-row: auto;
     height: 360px;
@@ -168,6 +195,12 @@
 }
 
 @media (max-width: 640px) {
+  .services__watermark {
+    top: 73%;
+    left: -20%;
+    font-size: 500px;
+  }
+
   .services-section {
     grid-template-columns: 1fr;
     padding: 80px 24px;
@@ -198,7 +231,7 @@
   }
 
   .services__image--pool,
-  .services__image--laundry {
+  .services__image--lounge {
     grid-column: 1;
     height: auto;
     aspect-ratio: 4 / 3;

@@ -49,6 +49,25 @@
   text-transform: uppercase;
 }
 
+.home-hero__backup {
+  display: inline-flex;
+  align-items: center;
+  gap: 16px;
+  width: fit-content;
+  margin-top: 28px;
+  padding: 16px 24px;
+  border-radius: 999px;
+  background: #D7942E;
+  color: #ffffff;
+  font-family: 'OmegaCT', serif !important;
+  font-size: 16px;
+  text-transform: uppercase;
+}
+
+.home-hero__backup i {
+  color: #ffffff;
+}
+
 .home-hero__divider {
   width: 50%;
   height: 1px;
@@ -126,6 +145,7 @@
   .home-hero__title p { font-size: 72px; margin-bottom: 24px;}
   .home-hero__subtitle { margin-top: -12px; }
   .home-hero__subtitle p { font-size: 18px; }
+  .home-hero__backup { margin-top: 20px; padding: 10px 14px; font-size: 13px; }
   .home-hero__description p { font-size: 16px; }
   .home-hero__cta { padding: 20px 32px; }
   .home-hero__cta p { font-size: 18px; }

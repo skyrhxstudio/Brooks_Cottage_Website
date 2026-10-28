@@ -3,7 +3,7 @@ import PageMetadata from '../components/PageMetadata'
 import aboutImage from '../assets/images/about_section_img.webp'
 import galleryImage from '../assets/images/gallery_section_img.webp'
 import servicesPoolImage from '../assets/images/services_section_img_1.webp'
-import servicesLaundryImage from '../assets/images/services_section_img_2.jpeg'
+import guestLoungeImage from '../assets/images/services_section_img_2.jpeg'
 import modernVictorianImage from '../assets/images/rooms/The Modern Victorian Room.png'
 import mahoganyImage from '../assets/images/rooms/The Mahogany Room.png'
 import './GalleryPage.css'
@@ -13,7 +13,7 @@ const GALLERY_IMAGES = [
   { src: modernVictorianImage, alt: 'The Modern Victorian Room', caption: 'Modern Victorian Room' },
   { src: mahoganyImage, alt: 'The Mahogany Room', caption: 'Mahogany Room' },
   { src: servicesPoolImage, alt: 'Pool facilities at Brooks Cottage', caption: 'Pool & Garden' },
-  { src: servicesLaundryImage, alt: 'Laundry facilities at Brooks Cottage', caption: 'Guest Services' },
+  { src: guestLoungeImage, alt: 'Guest lounge at Brooks Cottage', caption: 'Guest Lounge' },
   { src: aboutImage, alt: 'Brooks Cottage accommodation', caption: 'The Cottage' },
 ]
 

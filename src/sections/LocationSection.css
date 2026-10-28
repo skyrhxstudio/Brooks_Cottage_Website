@@ -1,6 +1,9 @@
 .location-section {
+  position: relative;
+  isolation: isolate;
   width: 100%;
   min-height: 100vh;
+  overflow: clip;
   padding-top: 200px;
   padding-bottom: 200px;
   background-color: #ffffff;
@@ -8,6 +11,24 @@
   grid-template-columns: repeat(12, 1fr);
   column-gap: 24px;
   align-content: start;
+}
+
+.location-section__watermark {
+  position: absolute;
+  z-index: 0;
+  top: 12%;
+  left: 32%;
+  font-family: 'Pinyon Script', cursive;
+  font-size: 700px;
+  line-height: 1;
+  color: rgb(246 246 246);
+  white-space: nowrap;
+  pointer-events: none;
+}
+
+.location-section > :not(.location-section__watermark) {
+  position: relative;
+  z-index: 1;
 }
 
 /* 1. Intro block: columns 2–6 */
@@ -148,6 +169,12 @@
 }
 
 @media (max-width: 1024px) {
+  .location-section__watermark {
+    top: 54%;
+    left: 20%;
+    font-size: 150px;
+  }
+
   .location-section {
     grid-template-columns: repeat(12, minmax(0, 1fr));
     padding: 120px 48px;
@@ -178,6 +205,12 @@
 }
 
 @media (max-width: 640px) {
+  .location-section__watermark {
+    top: 62%;
+    left: 6%;
+    font-size: 500px;
+  }
+
   .location-section {
     grid-template-columns: minmax(0, 1fr);
     min-height: 0;
