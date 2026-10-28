@@ -47,9 +47,9 @@ const LocationSection = () => {
       <div className="location-section__bottom">
         <a
           className="location-section__attractions-button"
-          href="https://maps.google.com/?daddr=283+Brooks+Street,+Brooklyn,+Pretoria,+South+Africa"
-          target="_blank"
+          href="https://www.google.com/maps/dir/?api=1&destination=Brooks+Cottage%2C+283+Brooks+Street%2C+Brooklyn%2C+Pretoria%2C+South+Africa"
           rel="noopener noreferrer"
+          aria-label="Get directions to Brooks Cottage"
         >
           <p className="location-section__attractions-button-text">
             GET DIRECTIONS

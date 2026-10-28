@@ -159,7 +159,7 @@ function RoomsSection() {
               key={room.title}
               className="rooms__card"
               style={{
-                backgroundImage: `linear-gradient(to top, rgba(0,0,0,0.75) 0%, rgba(0,0,0,0.2) 55%, rgba(0,0,0,0) 100%), url(${room.image})`,
+                backgroundImage: `linear-gradient(to top, rgba(22,22,22,0.99) 0%, rgba(22,22,22,0.70) 55%, rgba(22,22,22,0.10) 100%), url(${room.image})`,
               }}
               aria-label={`${index + 1} of ${ROOMS.length}: ${room.title}`}
             >

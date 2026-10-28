@@ -115,6 +115,7 @@
   justify-self: start;
   white-space: nowrap;
   text-decoration: none;
+  cursor: pointer;
 }
 
 .location-section__attractions-description {

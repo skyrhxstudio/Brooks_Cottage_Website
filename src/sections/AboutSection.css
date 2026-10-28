@@ -184,6 +184,7 @@
   .about__pills {
     grid-column: 1 / -1;
     grid-row: auto;
+    align-items: start;
   }
 
   .about__image {
