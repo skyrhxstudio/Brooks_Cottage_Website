@@ -17,7 +17,7 @@
 .rooms__watermark {
   position: absolute;
   z-index: 0;
-  top: 5%;
+  top: 11%;
   left: -5%;
   font-family: 'Pinyon Script', cursive;
   font-size: 700px;

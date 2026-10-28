@@ -117,10 +117,7 @@ function RoomsSection() {
       {/* Intro paragraph: col 5, spans 6 columns */}
       <div className="rooms__intro">
         <p>
-          Choose from five tastefully decorated, north-facing rooms, each with
-          its own private entrance and full en-suite bathroom with shower and
-          bath. Every room has its own character, so there is one to suit
-          every guest.
+          Discover five spacious, north-facing rooms, each tastefully decorated to offer a unique blend of comfort and elegance. Enjoy abundant natural light, a private entrance, and a full en-suite bathroom with a shower and bath. Additional comforts include solar-powered electricity, free fibre Wi-Fi, DSTV, secure parking, a swimming pool, and laundry services at an additional charge.
         </p>
       </div>
 
