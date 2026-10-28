@@ -142,59 +142,19 @@ function formatDate(date: string) {
 
 /* ---------- Icons (all sizes on the 8px grid) ---------- */
 
-function FlowerIcon() {
-  return (
-    <svg width="64" height="64" viewBox="0 0 64 64" fill="none" aria-hidden="true">
-      <g fill="#D7942E">
-        <ellipse cx="32" cy="16" rx="8" ry="14" />
-        <ellipse cx="32" cy="48" rx="8" ry="14" />
-        <ellipse cx="16" cy="32" rx="14" ry="8" />
-        <ellipse cx="48" cy="32" rx="14" ry="8" />
-        <ellipse cx="20.7" cy="20.7" rx="8" ry="14" transform="rotate(-45 20.7 20.7)" opacity="0.6" />
-        <ellipse cx="43.3" cy="43.3" rx="8" ry="14" transform="rotate(-45 43.3 43.3)" opacity="0.6" />
-        <ellipse cx="43.3" cy="20.7" rx="8" ry="14" transform="rotate(45 43.3 20.7)" opacity="0.6" />
-        <ellipse cx="20.7" cy="43.3" rx="8" ry="14" transform="rotate(45 20.7 43.3)" opacity="0.6" />
-      </g>
-      <circle cx="32" cy="32" r="7" fill="#161616" />
-    </svg>
-  )
-}
-
 function GoogleLogo() {
-  return (
-    <svg width="32" height="32" viewBox="0 0 48 48" aria-label="Google review" role="img">
-      <path fill="#FFC107" d="M43.6 20.5H42V20H24v8h11.3C33.7 32.7 29.2 36 24 36c-6.6 0-12-5.4-12-12s5.4-12 12-12c3.1 0 5.8 1.2 7.9 3.1l5.7-5.7C34 6.1 29.3 4 24 4 13 4 4 13 4 24s9 20 20 20 20-9 20-20c0-1.3-.1-2.4-.4-3.5Z" />
-      <path fill="#FF3D00" d="m6.3 14.7 6.6 4.8C14.7 15.1 19 12 24 12c3.1 0 5.8 1.2 7.9 3.1l5.7-5.7C34 6.1 29.3 4 24 4 16.3 4 9.700 8.3 6.3 14.7Z" />
-      <path fill="#4CAF50" d="M24 44c5.2 0 9.9-2 13.4-5.2l-6.2-5.2c-2 1.5-4.5 2.4-7.2 2.4-5.2 0-9.6-3.3-11.3-8l-6.5 5C9.5 39.6 16.2 44 24 44Z" />
-      <path fill="#1976D2" d="M43.6 20.5H42V20H24v8h11.3c-.8 2.2-2.2 4.2-4.1 5.6l6.2 5.2C37 39.2 44 34 44 24c0-1.3-.1-2.4-.4-3.5Z" />
-    </svg>
-  )
+  return <i className="fa-brands fa-google reviews__source-icon" aria-label="Google review" role="img" />
 }
 
 function TripadvisorLogo() {
-  return (
-    <svg width="32" height="32" viewBox="0 0 48 48" aria-label="Tripadvisor review" role="img">
-      <circle cx="24" cy="24" r="24" fill="#34E0A1" />
-      <circle cx="16" cy="26" r="7" fill="#fff" />
-      <circle cx="32" cy="26" r="7" fill="#fff" />
-      <circle cx="16" cy="26" r="3.5" fill="#000" />
-      <circle cx="32" cy="26" r="3.5" fill="#000" />
-      <path d="M9 18c4-3.5 9.5-5 15-5s11 1.5 15 5" stroke="#000" strokeWidth="2.5" fill="none" strokeLinecap="round" />
-      <path d="M21 33l3 4 3-4" fill="#000" />
-    </svg>
-  )
+  return <i className="fa-brands fa-tripadvisor reviews__source-icon" aria-label="Tripadvisor review" role="img" />
 }
 
 function Stars({ rating }: { rating: number }) {
   return (
     <div className="reviews__stars" aria-label={`${rating} out of 5 stars`}>
       {Array.from({ length: 5 }).map((_, i) => (
-        <svg key={i} width="24" height="24" viewBox="0 0 24 24" aria-hidden="true">
-          <path
-            d="M12 2.5l2.94 5.96 6.58.96-4.76 4.64 1.12 6.55L12 17.52l-5.88 3.09 1.12-6.55L2.48 9.42l6.58-.96L12 2.5Z"
-            fill={i < rating ? '#D7942E' : 'rgba(255,255,255,0.2)'}
-          />
-        </svg>
+        <i key={i} className={`fa-solid fa-star${i < rating ? ' is-filled' : ''}`} aria-hidden="true" />
       ))}
     </div>
   )
@@ -324,7 +284,7 @@ function ReviewsSection() {
       <div className="reviews__intro">
         <div className="reviews__header">
           <div className="reviews__flower">
-            <FlowerIcon />
+            <img src="/heading_decor_orange.svg" alt="" aria-hidden="true" />
           </div>
           <p className="reviews__title">
             WHAT OUR

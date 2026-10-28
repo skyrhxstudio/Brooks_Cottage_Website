@@ -1,5 +1,8 @@
 import { Link } from 'react-router'
-import heroImage from '../assets/images/hero_bg.png'
+import footerImage from '../assets/images/footer_img.webp'
+import travelAwardImage from '../assets/images/travel_awards.png'
+import bookingAwardImage from '../assets/images/booking_award.png'
+import bestValueAwardImage from '../assets/images/best_value_award.png'
 import './Footer.css'
 
 const ROOM_LINKS = [
@@ -23,7 +26,7 @@ function Footer() {
   return (
     <footer className="site-footer">
       <div className="site-footer__image" aria-hidden="true">
-        <img src={heroImage} alt="" />
+        <img src={footerImage} alt="" />
       </div>
 
       <div className="site-footer__content">
@@ -80,7 +83,7 @@ function Footer() {
         <div className="site-footer__brand-row">
           <div className="site-footer__brand">
             <Link to="/" className="site-footer__monogram" aria-label="Brooks Cottage home">
-              BC
+              <img src="/favicon.svg" alt="Brooks Cottage" />
             </Link>
             <div className="site-footer__brand-details">
               <Link to="/" className="site-footer__wordmark">
@@ -89,33 +92,22 @@ function Footer() {
               <p className="site-footer__tagline">LUXURY GUEST HOUSE ACCOMMODATION</p>
               <div className="site-footer__socials">
                 <a href="https://twitter.com" target="_blank" rel="noopener noreferrer" aria-label="Twitter">
-                  <span aria-hidden="true">t</span>
+                  <i className="fa-brands fa-x-twitter" aria-hidden="true" />
                 </a>
                 <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
-                  <span aria-hidden="true">◎</span>
+                  <i className="fa-brands fa-instagram" aria-hidden="true" />
                 </a>
                 <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" aria-label="Facebook">
-                  <span aria-hidden="true">f</span>
+                  <i className="fa-brands fa-facebook-f" aria-hidden="true" />
                 </a>
               </div>
             </div>
           </div>
 
           <div className="site-footer__awards" aria-label="Guest awards and recognition">
-            <div className="site-footer__award site-footer__award--travel">
-              <span className="site-footer__award-source">KAYAK</span>
-              <strong>Travel<br />Awards</strong>
-            </div>
-            <div className="site-footer__award site-footer__award--booking">
-              <span>Awarded to<br /><strong>Brooks Cottage</strong></span>
-              <strong className="site-footer__rating">9.6</strong>
-              <small>Booking.com<br />Traveller Review Awards</small>
-            </div>
-            <div className="site-footer__award site-footer__award--value">
-              <span aria-hidden="true">❧</span>
-              <strong>Best Value</strong>
-              <small>Accommodation</small>
-            </div>
+            <img className="site-footer__award" src={travelAwardImage} alt="Kayak Travel Awards" />
+            <img className="site-footer__award" src={bookingAwardImage} alt="Booking.com Traveller Review Awards, rated 9.6" />
+            <img className="site-footer__award" src={bestValueAwardImage} alt="Best Value accommodation award" />
           </div>
         </div>
 
@@ -123,7 +115,7 @@ function Footer() {
           <p>© ALL RIGHTS RESERVED, {new Date().getFullYear()}, BROOKS COTTAGE</p>
           <p>
             DESIGNED &amp; DEVELOPED BY{' '}
-            <a href="https://skyrhx.studio" target="_blank" rel="noopener noreferrer">
+            <a href="https://skyrhxstudio.com" target="_blank" rel="noopener noreferrer">
               SKYRHX STUDIO
             </a>
           </p>

@@ -1,3 +1,237 @@
 .location-section {
-  min-width: 0;
+  width: 100%;
+  min-height: 100vh;
+  padding-top: 200px;
+  padding-bottom: 200px;
+  background-color: #ffffff;
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  column-gap: 24px;
+  align-content: start;
+}
+
+/* 1. Intro block: columns 2–6 */
+.location-section__intro {
+  grid-column: 2 / 7;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 80px;
+  height: fit-content;
+}
+
+.location-section__heading {
+  display: flex;
+  align-items: start;
+  gap: 24px;
+}
+
+.location-section__flower {
+  flex-shrink: 0;
+}
+
+.location-section__flower img {
+  width: 91px;
+  height: 39px;
+}
+
+.location-section__title {
+  margin: 0;
+  font-family: "Omega CT", sans-serif;
+  font-size: 64px;
+  line-height: 1.05;
+  color: #151515;
+  text-transform: uppercase;
+}
+
+.location-section__description {
+  margin: 0;
+  font-family: "Poppins", sans-serif;
+  font-size: 24px;
+  line-height: 1.5;
+  color: #7C7C7C;
+}
+
+/* 2 + 3. Map and button: columns 3–10 */
+.location-section__map-wrapper {
+  grid-column: 3 / 11;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 80px;
+}
+
+.location-section__map-button {
+  align-self: flex-end;
+  background-color: #c79237;
+  border-radius: 999px;
+  padding: 24px 56px;
+}
+
+.location-section__map-button-text,
+.location-section__attractions-button-text {
+  margin: 0;
+  font-family: "Omega CT", sans-serif;
+  font-size: 24px;
+  color: #ffffff;
+}
+
+.location-section__attractions-button-text {
+  color: #c79237;
+}
+
+.location-section__map {
+  width: 100%;
+  height: 750px;
+  border: 0;
+  display: block;
+}
+
+/* 4 + 5. Bottom row: columns 2–11 */
+.location-section__bottom {
+  grid-column: 2 / 12;
+  display: grid;
+  grid-template-columns: repeat(10, 1fr);
+  column-gap: 24px;
+  align-items: end;
+  margin-top: 80px;
+}
+
+.location-section__attractions-button {
+  grid-column: 1 / 3;
+  background-color: #FFFFFF;
+  border:#c79237 1px solid;
+  border-radius: 999px;
+  padding: 24px 56px;
+  justify-self: start;
+  white-space: nowrap;
+}
+
+.location-section__attractions-description {
+  grid-column: 6 / 11;
+  margin: 0;
+  font-family: "Poppins", sans-serif;
+  font-size: 24px;
+  line-height: 1.5;
+  color: #7C7C7C;
+}
+
+@media (max-width: 1440px) {
+  .location-section__title {
+    font-size: 52px;
+  }
+
+  .location-section__description,
+  .location-section__attractions-description {
+    font-size: 20px;
+  }
+
+  .location-section__map-button-text,
+  .location-section__attractions-button-text {
+    font-size: 20px;
+  }
+
+  .location-section__map {
+    height: 620px;
+  }
+}
+
+@media (max-width: 1024px) {
+  .location-section {
+    grid-template-columns: repeat(12, minmax(0, 1fr));
+    padding: 120px 48px;
+  }
+
+  .location-section__intro,
+  .location-section__map-wrapper,
+  .location-section__bottom {
+    grid-column: 1 / -1;
+  }
+
+  .location-section__intro {
+    gap: 48px;
+  }
+
+  .location-section__map-wrapper {
+    gap: 48px;
+    margin-top: 80px;
+  }
+
+  .location-section__map {
+    height: 520px;
+  }
+
+  .location-section__bottom {
+    margin-top: 48px;
+  }
+}
+
+@media (max-width: 640px) {
+  .location-section {
+    grid-template-columns: minmax(0, 1fr);
+    min-height: 0;
+    padding: 80px 24px;
+  }
+
+  .location-section__intro {
+    grid-column: 1;
+    gap: 32px;
+  }
+
+  .location-section__heading {
+    align-items: flex-start;
+    gap: 16px;
+  }
+
+  .location-section__flower img {
+    width: 64px;
+    height: auto;
+  }
+
+  .location-section__title {
+    font-size: 36px;
+  }
+
+  .location-section__description,
+  .location-section__attractions-description {
+    font-size: 16px;
+  }
+
+  .location-section__map-wrapper {
+    grid-column: 1;
+    gap: 32px;
+    margin-top: 48px;
+  }
+
+  .location-section__map-button {
+    align-self: flex-start;
+    padding: 20px 32px;
+    max-width: 100%;
+    text-align: center;
+  }
+
+  .location-section__map-button-text,
+  .location-section__attractions-button-text {
+    font-size: 16px;
+  }
+
+  .location-section__map {
+    height: 360px;
+  }
+
+  .location-section__bottom {
+    grid-column: 1;
+    grid-template-columns: minmax(0, 1fr);
+    gap: 32px;
+    margin-top: 48px;
+  }
+
+  .location-section__attractions-button {
+    grid-column: 1;
+    padding: 20px 32px;
+  }
+
+  .location-section__attractions-description {
+    grid-column: 1;
+  }
 }

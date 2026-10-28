@@ -114,12 +114,15 @@
   width: 184px;
   height: 184px;
   border-radius: 50%;
-  background-color: #c79237;
-  color: #ffffff;
-  font-family: 'OmegaCT', serif;
-  font-size: 88px;
-  font-weight: 400;
+  overflow: hidden;
   text-decoration: none;
+}
+
+.site-footer__monogram img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
 .site-footer__brand-details {
@@ -131,7 +134,7 @@
 
 .site-footer__wordmark {
   color: #ffffff;
-  font-family: 'Pinyon Script', cursive;
+  font-family: 'Pinyon Script', cursive !important; 
   font-size: 72px;
   line-height: 1;
   text-decoration: none;
@@ -169,10 +172,8 @@
   opacity: 0.8;
 }
 
-.site-footer__socials span {
-  font-family: Arial, sans-serif;
+.site-footer__socials i {
   font-size: 40px;
-  font-weight: 700;
   line-height: 1;
 }
 
@@ -183,79 +184,14 @@
 }
 
 .site-footer__award {
-  display: flex;
-  flex: 0 0 184px;
-  width: 184px;
-  height: 184px;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  border-radius: 50%;
-  text-align: center;
-  font-family: 'OmegaCT', serif;
-  font-size: 16px;
-  line-height: 1.2;
+ display: block;
+ flex: 0 0 184px;
+ width: 184px;
+ height: 184px;
+ object-fit: contain;
+ border-radius: 9999px;
 }
 
-.site-footer__award--travel {
-  gap: 12px;
-  background-color: #10191c;
-}
-
-.site-footer__award-source {
-  padding: 2px 6px;
-  background-color: #ef6b2d;
-  color: #ffffff;
-  font-family: Arial, sans-serif;
-  font-size: 12px;
-  font-weight: 700;
-  letter-spacing: 3px;
-}
-
-.site-footer__award--travel strong {
-  font-family: Arial, sans-serif;
-  font-size: 28px;
-  line-height: 1;
-}
-
-.site-footer__award--booking {
-  position: relative;
-  align-items: flex-start;
-  gap: 12px;
-  padding: 32px;
-  background-color: #06449b;
-  font-size: 12px;
-  text-align: left;
-}
-
-.site-footer__rating {
-  align-self: flex-end;
-  padding: 4px 8px;
-  border-radius: 4px;
-  background-color: #168ce1;
-  font-size: 24px;
-}
-
-.site-footer__award--booking small {
-  font-size: 10px;
-}
-
-.site-footer__award--value {
-  gap: 4px;
-  background-color: #ffffff;
-  color: #161616;
-}
-
-.site-footer__award--value span {
-  color: #a4aaa4;
-  font-size: 48px;
-  line-height: 0.8;
-}
-
-.site-footer__award--value strong,
-.site-footer__award--value small {
-  font-family: Arial, sans-serif;
-}
 
 .site-footer__legal {
   display: flex;
@@ -394,7 +330,7 @@
     height: 48px;
   }
 
-  .site-footer__socials span {
+  .site-footer__socials i {
     font-size: 28px;
   }
 
@@ -410,13 +346,6 @@
     height: 136px;
   }
 
-  .site-footer__award--booking {
-    padding: 24px;
-  }
-
-  .site-footer__award--travel strong {
-    font-size: 24px;
-  }
 
   .site-footer__legal {
     padding-top: 32px;

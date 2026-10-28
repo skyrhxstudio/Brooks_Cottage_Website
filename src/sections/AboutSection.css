@@ -26,6 +26,11 @@
   flex-shrink: 0;
 }
 
+.about__flower img {
+  width: 91px;
+  height: 39px;
+}
+
 .about__title {
   margin: 0;
   font-family: 'OmegaCT', serif;
@@ -49,6 +54,8 @@
 .about__quote-icon {
   display: flex;
   flex-shrink: 0;
+  color: #D7942E;
+  font-size: 40px;
 }
 
 .about__quote-text {
@@ -97,7 +104,7 @@
   flex-direction: row;
   justify-content: flex-start;
   align-items: center;
-  gap: 10px;
+  gap: 16px;
   padding: 24px 56px;
   border-radius: 999px;
   transform: translateY(-100%);
@@ -112,6 +119,8 @@
 .about__pin {
   display: flex;
   flex-shrink: 0;
+  color: #D7942E;
+  font-size: 24px;
 }
 
 .about__location p {
@@ -200,7 +209,7 @@
 @media (max-width: 640px) {
   .about { padding: 80px 24px; }
   .about__title { font-size: 36px; white-space: normal; }
-  .about__flower svg { width: 44px; height: 44px; }
+  .about__flower img { width: 64px; height: auto; }
   .about__quote-text { font-size: 16px; }
   .about__location p,
   .about__cta p { font-size: 16px; }

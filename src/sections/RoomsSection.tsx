@@ -1,6 +1,11 @@
 // src/sections/RoomsSection.tsx
 import { useCallback, useEffect, useRef, useState } from 'react'
 import { Link } from 'react-router'
+import contemporaryRoomImage from '../assets/images/rooms/The Contemporary Room.png'
+import indonesianRoomImage from '../assets/images/rooms/The Indonesian Room.png'
+import modernVictorianRoomImage from '../assets/images/rooms/The Modern Victorian Room.png'
+import mahoganyRoomImage from '../assets/images/rooms/The Mahogany Room.png'
+import eclecticRoomImage from '../assets/images/rooms/The Eclectic Room.png'
 import './RoomsSection.css'
 
 interface Room {
@@ -15,75 +20,41 @@ const ROOMS: Room[] = [
     title: 'The Contemporary Room',
     description:
       'Clean lines, soft neutral tones and a calm, modern feel, with a private entrance and full en-suite bathroom.',
-    image: 'https://images.unsplash.com/photo-1611892440504-42a792e24d32?auto=format&fit=crop&w=1600&q=80',
+    image: contemporaryRoomImage,
     detailsPath: '/rooms/the-contemporary-room',
   },
   {
     title: 'The Indonesian Room',
     description:
       'Warm timbers and handcrafted island-inspired details create a relaxed, exotic retreat in the heart of Pretoria.',
-    image: 'https://images.unsplash.com/photo-1590490360182-c33d57733427?auto=format&fit=crop&w=1600&q=80',
+    image: indonesianRoomImage,
     detailsPath: '/rooms/the-indonesian-room',
   },
   {
     title: 'The Modern Victorian Room',
     description:
       'Classic Victorian elegance meets modern comfort, beneath the original pressed ceilings of this lovely old home.',
-    image: 'https://images.unsplash.com/photo-1566665797739-1674de7a421a?auto=format&fit=crop&w=1600&q=80',
+    image: modernVictorianRoomImage,
     detailsPath: '/rooms/the-modern-victorian-room',
   },
   {
     title: 'The Mahogany Room',
     description:
       'Rich mahogany furnishings and deep, inviting tones for a timeless stay with shower and bath en-suite.',
-    image: 'https://images.unsplash.com/photo-1582719478250-c89cae4dc85b?auto=format&fit=crop&w=1600&q=80',
+    image: mahoganyRoomImage,
     detailsPath: '/rooms/the-mahogany-room',
   },
   {
     title: 'The Eclectic Room',
     description:
       'A playful, curated mix of colour, texture and character, north-facing and filled with natural light.',
-    image: 'https://images.unsplash.com/photo-1631049307264-da0ec9d70304?auto=format&fit=crop&w=1600&q=80',
+    image: eclecticRoomImage,
     detailsPath: '/rooms/the-eclectic',
   },
 ]
 
-function FlowerIcon() {
-  return (
-    <svg width="64" height="64" viewBox="0 0 64 64" fill="none" aria-hidden="true">
-      <g fill="#D7942E">
-        <ellipse cx="32" cy="16" rx="8" ry="14" />
-        <ellipse cx="32" cy="48" rx="8" ry="14" />
-        <ellipse cx="16" cy="32" rx="14" ry="8" />
-        <ellipse cx="48" cy="32" rx="14" ry="8" />
-        <ellipse cx="20.7" cy="20.7" rx="8" ry="14" transform="rotate(-45 20.7 20.7)" opacity="0.6" />
-        <ellipse cx="43.3" cy="43.3" rx="8" ry="14" transform="rotate(-45 43.3 43.3)" opacity="0.6" />
-        <ellipse cx="43.3" cy="20.7" rx="8" ry="14" transform="rotate(45 43.3 20.7)" opacity="0.6" />
-        <ellipse cx="20.7" cy="43.3" rx="8" ry="14" transform="rotate(45 20.7 43.3)" opacity="0.6" />
-      </g>
-      <circle cx="32" cy="32" r="7" fill="#151515" />
-    </svg>
-  )
-}
-
 function ArrowIcon({ direction }: { direction: 'left' | 'right' }) {
-  return (
-    <svg
-      width="24"
-      height="24"
-      viewBox="0 0 24 24"
-      fill="none"
-      stroke="currentColor"
-      strokeWidth="2"
-      strokeLinecap="round"
-      strokeLinejoin="round"
-      aria-hidden="true"
-      style={{ transform: direction === 'left' ? 'rotate(180deg)' : undefined }}
-    >
-      <path d="M5 12h14" />
-      <path d="m13 6 6 6-6 6" />
-    </svg>
-  )
+  return <i className={`fa-solid fa-arrow-${direction}`} aria-hidden="true" />
 }
 
 function RoomsSection() {
@@ -133,7 +104,7 @@ function RoomsSection() {
       {/* Header: col 2 to col 4 */}
       <div className="rooms__header">
         <div className="rooms__flower">
-          <FlowerIcon />
+          <img src="/heading_decor.svg" alt="" aria-hidden="true" />
         </div>
         <p className="rooms__title">
           ROOMS &amp;

@@ -22,6 +22,11 @@
   flex-shrink: 0;
 }
 
+.services__flower img {
+  width: 91px;
+  height: 39px;
+}
+
 .services__title {
   margin: 0;
   font-family: 'OmegaCT', serif;
@@ -178,9 +183,9 @@
     white-space: normal;
   }
 
-  .services__flower svg {
-    width: 44px;
-    height: 44px;
+  .services__flower img {
+    width: 64px;
+    height: auto;
   }
 
   .services__intro p,

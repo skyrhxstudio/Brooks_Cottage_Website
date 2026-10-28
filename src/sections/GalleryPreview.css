@@ -1,0 +1,25 @@
+.gallery-preview {
+  padding-top: 200px;
+  height: 100vh;
+  padding-bottom: 200px;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+}
+
+.gallery-preview__button {
+  background-color: #ffffff;
+  border-radius: 999px;
+  padding: 24px 56px;
+}
+
+.gallery-preview__text {
+  margin: 0;
+  font-size: 24px;
+  font-family: "Omega CT", sans-serif;
+  color: #151515;
+  text-transform: uppercase;
+}

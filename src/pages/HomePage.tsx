@@ -6,6 +6,7 @@ import HomeHeroSection from '../sections/HomeHeroSection'
 import LocationSection from '../sections/LocationSection'
 import ReviewsSection from '../sections/ReviewsSection'
 import RoomsSection from '../sections/RoomsSection'
+import GalleryPreview from '../sections/GalleryPreview'
 import ServicesSection from '../sections/ServicesSection'
 import './HomePage.css'
 
@@ -18,6 +19,7 @@ function HomePage() {
         <ReviewsSection />
         <AboutSection />
         <RoomsSection />
+        <GalleryPreview />
         <ServicesSection />
         <LocationSection />
         <ContactSection />
