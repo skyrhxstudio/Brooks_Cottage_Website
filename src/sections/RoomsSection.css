@@ -360,7 +360,17 @@
   }
 
   .rooms__card-title { font-size: 28px; }
-  .rooms__card-text { font-size: 16px; }
+  .rooms__card-text {
+    display: -webkit-box;
+    max-width: 100%;
+    overflow: hidden;
+    font-size: 16px;
+    line-clamp: 2;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    white-space: normal;
+    text-overflow: ellipsis;
+  }
 
   .rooms__card-actions {
     flex-direction: column-reverse;
