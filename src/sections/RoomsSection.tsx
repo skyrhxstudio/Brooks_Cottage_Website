@@ -45,7 +45,7 @@ const ROOMS: Room[] = [
     detailsPath: '/rooms/the-mahogany-room',
   },
   {
-    title: 'the eclectic room',
+    title: 'The Eclectic Room',
     description:
       'North-facing, with direct access from the swimming pool, this room has every advantage. It\'s eclectic decor is easy on the eye, and it features a queen bed with a full en-suite bathroom.',
     image: eclecticRoomImage,
