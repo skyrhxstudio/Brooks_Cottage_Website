@@ -1,5 +1,5 @@
 import PageMetadata from '../components/PageMetadata'
-import { useState } from 'react'
+import { useRef, useState } from 'react'
 import './LocationAttractionsPage.css'
 
 interface Attraction {
@@ -95,9 +95,23 @@ const categories: AttractionCategory[] = [
 
 function LocationAttractionsPage() {
   const [activeCategory, setActiveCategory] = useState('All Attractions')
+  const contentRef = useRef<HTMLDivElement>(null)
   const visibleCategories = activeCategory === 'All Attractions'
     ? categories
     : categories.filter((category) => category.name === activeCategory)
+
+  const selectCategory = (category: string) => {
+    setActiveCategory(category)
+    window.requestAnimationFrame(() => {
+      const contentTop = contentRef.current?.getBoundingClientRect().top
+      if (contentTop !== undefined) {
+        window.scrollTo({
+          top: Math.max(0, window.scrollY + contentTop - 118),
+          behavior: 'smooth',
+        })
+      }
+    })
+  }
 
   return (
     <>
@@ -124,7 +138,7 @@ function LocationAttractionsPage() {
                 key={category}
                 type="button"
                 className={activeCategory === category ? 'is-active' : ''}
-                onClick={() => setActiveCategory(category)}
+                onClick={() => selectCategory(category)}
               >
                 {category}
               </button>
@@ -137,7 +151,7 @@ function LocationAttractionsPage() {
           <select
             id="attraction-category"
             value={activeCategory}
-            onChange={(event) => setActiveCategory(event.target.value)}
+            onChange={(event) => selectCategory(event.target.value)}
           >
             {['All Attractions', ...categories.map((category) => category.name)].map((category) => (
               <option key={category} value={category}>{category}</option>
@@ -145,7 +159,7 @@ function LocationAttractionsPage() {
           </select>
         </div>
 
-        <div className="location-attractions-page__content">
+        <div ref={contentRef} className="location-attractions-page__content">
           {visibleCategories.map((category) => (
             <section className="location-attractions-page__category" key={category.name}>
               <h2>{category.name}</h2>
