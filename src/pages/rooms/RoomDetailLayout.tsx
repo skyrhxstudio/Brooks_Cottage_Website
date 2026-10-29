@@ -77,7 +77,7 @@ function RoomDetailLayout({
       <section className="room-detail-page__description">
         <header>
           <img src="/heading_decor.svg" alt="" aria-hidden="true" />
-          <h2>ROOM DESCRIPTION</h2>
+          <h2>DESCRIPTION</h2>
         </header>
         <p>{description}</p>
         {features.length > 0 && (
