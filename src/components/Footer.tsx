@@ -16,7 +16,6 @@ const ROOM_LINKS = [
 const PAGE_LINKS = [
   { label: 'HOME', to: '/' },
   { label: 'ROOMS & RATES', to: '/rooms-rates' },
-  { label: 'SERVICES', to: '/services' },
   { label: 'LOCATION & ATTRACTIONS', to: '/location-attractions' },
   { label: 'CONTACT', to: '/contact' },
   { label: 'GALLERY', to: '/gallery' },

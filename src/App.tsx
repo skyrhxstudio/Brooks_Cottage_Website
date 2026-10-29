@@ -10,7 +10,6 @@ import GalleryPage from './pages/GalleryPage'
 import HomePage from './pages/HomePage'
 import LocationAttractionsPage from './pages/LocationAttractionsPage'
 import RoomsRatesPage from './pages/RoomsRatesPage'
-import ServicesPage from './pages/ServicesPage'
 
 function App() {
   return (
@@ -19,7 +18,6 @@ function App() {
         <Route element={<SiteLayout />}>
           <Route path="/" element={<HomePage />} />
           <Route path="/rooms-rates" element={<RoomsRatesPage />} />
-          <Route path="/services" element={<ServicesPage />} />
           <Route path="/location-attractions" element={<LocationAttractionsPage />} />
           <Route path="/contact" element={<ContactPage />} />
           <Route path="/gallery" element={<GalleryPage />} />

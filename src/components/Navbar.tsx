@@ -11,7 +11,6 @@ interface NavItem {
 const NAV_LINKS: NavItem[] = [
   { label: 'Home', to: '/' },
   { label: 'Rooms & Rates', to: '/rooms-rates' },
-  { label: 'Services', to: '/services' },
   { label: 'Location & Attractions', to: '/location-attractions' },
   { label: 'Contact', to: '/contact' },
   { label: 'Gallery', to: '/gallery' },
@@ -48,8 +47,10 @@ function Navbar() {
     return () => document.removeEventListener('keydown', closeOnEscape)
   }, [isMenuOpen])
 
+  const isHomePage = location.pathname === '/'
+
   return (
-    <nav className={`navbar${isScrolled ? ' navbar--scrolled' : ''}`}>
+    <nav className={`navbar${!isHomePage ? ' navbar--dark' : ''}${isScrolled ? ' navbar--scrolled' : ''}`}>
       {/* Left: gold circle logo */}
       <Link to="/" className="navbar__logo" aria-label="Brooks Cottage - Home">
         <img src="/favicon.svg" alt="Brooks Cottage" />

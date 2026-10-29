@@ -1,68 +1,171 @@
-import { useState } from 'react'
-import PageMetadata from '../components/PageMetadata'
-import aboutImage from '../assets/images/about_section_img.webp'
-import galleryImage from '../assets/images/gallery_section_img.webp'
-import servicesPoolImage from '../assets/images/services_section_img_1.webp'
-import guestLoungeImage from '../assets/images/services_section_img_2.jpeg'
-import modernVictorianImage from '../assets/images/rooms/The Modern Victorian Room.png'
-import mahoganyImage from '../assets/images/rooms/The Mahogany Room.png'
-import './GalleryPage.css'
+import { useCallback, useEffect, useState } from "react";
+import { ChevronLeft, ChevronRight, X } from "lucide-react";
+import "./GalleryPage.css";
 
-const GALLERY_IMAGES = [
-  { src: galleryImage, alt: 'Brooks Cottage gallery', caption: 'Brooks Cottage' },
-  { src: modernVictorianImage, alt: 'The Modern Victorian Room', caption: 'Modern Victorian Room' },
-  { src: mahoganyImage, alt: 'The Mahogany Room', caption: 'Mahogany Room' },
-  { src: servicesPoolImage, alt: 'Pool facilities at Brooks Cottage', caption: 'Pool & Garden' },
-  { src: guestLoungeImage, alt: 'Guest lounge at Brooks Cottage', caption: 'Guest Lounge' },
-  { src: aboutImage, alt: 'Brooks Cottage accommodation', caption: 'The Cottage' },
-]
+const galleryImages = [
+  {
+    id: 1,
+    src: "https://images.unsplash.com/photo-1522708323590-d24dbb6b0267?auto=format&fit=crop&w=1200&q=80",
+    alt: "Cozy guesthouse living area",
+  },
+  {
+    id: 2,
+    src: "https://images.unsplash.com/photo-1560448204-e02f11c3d0e2?auto=format&fit=crop&w=1200&q=80",
+    alt: "Bright modern bedroom",
+  },
+  {
+    id: 3,
+    src: "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=1200&q=80",
+    alt: "Elegant interior space",
+  },
+  {
+    id: 4,
+    src: "https://images.unsplash.com/photo-1615874959474-d609969a20ed?auto=format&fit=crop&w=1200&q=80",
+    alt: "Comfortable bedroom detail",
+  },
+  {
+    id: 5,
+    src: "https://images.unsplash.com/photo-1616486338812-3dadae4b4ace?auto=format&fit=crop&w=1200&q=80",
+    alt: "Stylish lounge area",
+  },
+  {
+    id: 6,
+    src: "https://images.unsplash.com/photo-1616594039964-ae9021a400a0?auto=format&fit=crop&w=1200&q=80",
+    alt: "Warm guesthouse interior",
+  },
+  {
+    id: 7,
+    src: "https://images.unsplash.com/photo-1615873968403-89e068629265?auto=format&fit=crop&w=1200&q=80",
+    alt: "Minimal bedroom design",
+  },
+  {
+    id: 8,
+    src: "https://images.unsplash.com/photo-1598928506311-c55ded91a20c?auto=format&fit=crop&w=1200&q=80",
+    alt: "Relaxing accommodation space",
+  },
+];
 
-function GalleryPage() {
-  const [selectedIndex, setSelectedIndex] = useState<number | null>(null)
+const leftColumnImages = galleryImages.filter((_, index) => index % 2 === 0);
+const rightColumnImages = galleryImages.filter((_, index) => index % 2 === 1);
+
+const GalleryPage = () => {
+  const [activeIndex, setActiveIndex] = useState<number | null>(null);
+
+  const closeLightbox = useCallback(() => setActiveIndex(null), []);
+
+  const showPrevious = useCallback(() => {
+    setActiveIndex((current) =>
+      current === null ? null : (current - 1 + galleryImages.length) % galleryImages.length
+    );
+  }, []);
+
+  const showNext = useCallback(() => {
+    setActiveIndex((current) =>
+      current === null ? null : (current + 1) % galleryImages.length
+    );
+  }, []);
+
+  useEffect(() => {
+    if (activeIndex === null) return;
+
+    const handleKeyDown = (event: KeyboardEvent) => {
+      if (event.key === "Escape") closeLightbox();
+      if (event.key === "ArrowLeft") showPrevious();
+      if (event.key === "ArrowRight") showNext();
+    };
+
+    window.addEventListener("keydown", handleKeyDown);
+    document.body.style.overflow = "hidden";
+
+    return () => {
+      window.removeEventListener("keydown", handleKeyDown);
+      document.body.style.overflow = "";
+    };
+  }, [activeIndex, closeLightbox, showNext, showPrevious]);
+
+  const renderImage = (image: (typeof galleryImages)[number], index: number) => (
+    <button
+      key={image.id}
+      type="button"
+      className="gallery-page__image-button"
+      onClick={() => setActiveIndex(index)}
+    >
+      <img
+        className="gallery-page__image"
+        src={image.src}
+        alt={image.alt}
+        loading="lazy"
+      />
+    </button>
+  );
 
   return (
-    <>
-      <PageMetadata title="Gallery" path="/gallery" />
-      <main id="gallery-page" className="gallery-page">
-        <header className="gallery__header">
-          <div className="gallery__flower"><img src="/heading_decor.svg" alt="" aria-hidden="true" /></div>
-          <h1 className="gallery__title">GALLERY</h1>
-        </header>
-
-        <div className="gallery__intro">
-          <p>Discover the character of Brooks Cottage, from individually decorated rooms to peaceful garden spaces.</p>
+    <main className="gallery-page">
+      <div className="gallery-page__grid">
+        <div className="gallery-page__column">
+          {leftColumnImages.map((image, index) =>
+            renderImage(image, index * 2)
+          )}
         </div>
 
-        <div className="gallery__grid">
-          {GALLERY_IMAGES.map((image, index) => (
-            <button
-              className={`gallery__item gallery__item--${index + 1}`}
-              type="button"
-              key={image.src}
-              onClick={() => setSelectedIndex(index)}
-              aria-label={`View ${image.caption}`}
-            >
-              <img src={image.src} alt={image.alt} loading="lazy" />
-              <span>{image.caption}</span>
-            </button>
-          ))}
+        <div className="gallery-page__column">
+          {rightColumnImages.map((image, index) =>
+            renderImage(image, index * 2 + 1)
+          )}
         </div>
+      </div>
 
-        {selectedIndex !== null && (
-          <div
-            className="gallery__lightbox"
-            role="dialog"
-            aria-modal="true"
-            aria-label={GALLERY_IMAGES[selectedIndex].caption}
-            onClick={() => setSelectedIndex(null)}
+      {activeIndex !== null && (
+        <div
+          className="gallery-page__lightbox"
+          role="dialog"
+          aria-modal="true"
+          aria-label="Gallery image viewer"
+          onClick={closeLightbox}
+        >
+          <button
+            type="button"
+            className="gallery-page__control gallery-page__control--close"
+            onClick={closeLightbox}
+            aria-label="Close gallery"
           >
-            <button className="gallery__lightbox-close" type="button" onClick={() => setSelectedIndex(null)} aria-label="Close gallery image">×</button>
-            <img src={GALLERY_IMAGES[selectedIndex].src} alt={GALLERY_IMAGES[selectedIndex].alt} onClick={(event) => event.stopPropagation()} />
-          </div>
-        )}
-      </main>
-    </>
-  )
-}
+            <X aria-hidden="true" />
+          </button>
 
-export default GalleryPage
+          <button
+            type="button"
+            className="gallery-page__control gallery-page__control--previous"
+            onClick={(event) => {
+              event.stopPropagation();
+              showPrevious();
+            }}
+            aria-label="Previous image"
+          >
+            <ChevronLeft aria-hidden="true" />
+          </button>
+
+          <img
+            className="gallery-page__lightbox-image"
+            src={galleryImages[activeIndex].src}
+            alt={galleryImages[activeIndex].alt}
+            onClick={(event) => event.stopPropagation()}
+          />
+
+          <button
+            type="button"
+            className="gallery-page__control gallery-page__control--next"
+            onClick={(event) => {
+              event.stopPropagation();
+              showNext();
+            }}
+            aria-label="Next image"
+          >
+            <ChevronRight aria-hidden="true" />
+          </button>
+        </div>
+      )}
+    </main>
+  );
+};
+
+export default GalleryPage;
