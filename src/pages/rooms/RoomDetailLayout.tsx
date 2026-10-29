@@ -74,26 +74,10 @@ function RoomDetailLayout({
         </button>
       </div>
 
-      <section className="room-detail-page__booking">
-        <div>
-          <p className="room-detail-page__label">Book your room today</p>
-          <h2>{title}</h2>
-        </div>
-        <div className="room-detail-page__booking-actions">
-          <a href="https://book.nightsbridge.com/31512" target="_blank" rel="noopener noreferrer">
-            BOOK ONLINE
-          </a>
-          <a href="tel:+27824483902">+27 82 448 3902</a>
-          <a href="mailto:chrisandnorma@brookscottage.co.za?subject=Room%20Booking%20Request">
-            EMAIL US
-          </a>
-        </div>
-      </section>
-
       <section className="room-detail-page__description">
         <header>
           <img src="/heading_decor.svg" alt="" aria-hidden="true" />
-          <h2>Description</h2>
+          <h2>ROOM DESCRIPTION</h2>
         </header>
         <p>{description}</p>
         {features.length > 0 && (
@@ -120,7 +104,7 @@ function RoomDetailLayout({
       <section className="room-detail-page__similar">
         <header>
           <img src="/heading_decor.svg" alt="" aria-hidden="true" />
-          <h2>You might also like</h2>
+          <h2>YOU MIGHT ALSO LIKE</h2>
         </header>
         <div>
           {similarRooms.map(([roomTitle, path]) => (
