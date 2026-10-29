@@ -1,52 +1,35 @@
 import { useCallback, useEffect, useState } from "react";
 import { ChevronLeft, ChevronRight, X } from "lucide-react";
+import heroImage from "../assets/images/hero_bg.png";
+import aboutImage from "../assets/images/about_section_img.webp";
+import serviceImage1 from "../assets/images/services_section_img_1.webp";
+import serviceImage2 from "../assets/images/services_section_img_2.jpeg";
+import galleryImage from "../assets/images/gallery_section_img.webp";
+import footerImage from "../assets/images/footer_img.png";
+import contemporaryRoom from "../assets/images/rooms/The Contemporary Room.png";
+import eclecticRoom from "../assets/images/rooms/The Eclectic Room.png";
+import indonesianRoom from "../assets/images/rooms/The Indonesian Room.png";
+import mahoganyRoom from "../assets/images/rooms/The Mahogany Room.png";
+import modernVictorianRoom from "../assets/images/rooms/The Modern Victorian Room.png";
 import "./GalleryPage.css";
 
 const galleryImages = [
-  {
-    id: 1,
-    src: "https://images.unsplash.com/photo-1522708323590-d24dbb6b0267?auto=format&fit=crop&w=1200&q=80",
-    alt: "Cozy guesthouse living area",
-  },
-  {
-    id: 2,
-    src: "https://images.unsplash.com/photo-1560448204-e02f11c3d0e2?auto=format&fit=crop&w=1200&q=80",
-    alt: "Bright modern bedroom",
-  },
-  {
-    id: 3,
-    src: "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=1200&q=80",
-    alt: "Elegant interior space",
-  },
-  {
-    id: 4,
-    src: "https://images.unsplash.com/photo-1615874959474-d609969a20ed?auto=format&fit=crop&w=1200&q=80",
-    alt: "Comfortable bedroom detail",
-  },
-  {
-    id: 5,
-    src: "https://images.unsplash.com/photo-1616486338812-3dadae4b4ace?auto=format&fit=crop&w=1200&q=80",
-    alt: "Stylish lounge area",
-  },
-  {
-    id: 6,
-    src: "https://images.unsplash.com/photo-1616594039964-ae9021a400a0?auto=format&fit=crop&w=1200&q=80",
-    alt: "Warm guesthouse interior",
-  },
-  {
-    id: 7,
-    src: "https://images.unsplash.com/photo-1615873968403-89e068629265?auto=format&fit=crop&w=1200&q=80",
-    alt: "Minimal bedroom design",
-  },
-  {
-    id: 8,
-    src: "https://images.unsplash.com/photo-1598928506311-c55ded91a20c?auto=format&fit=crop&w=1200&q=80",
-    alt: "Relaxing accommodation space",
-  },
+  { id: 1, src: heroImage, alt: "Brooks Cottage exterior and garden" },
+  { id: 2, src: aboutImage, alt: "Brooks Cottage guest accommodation" },
+  { id: 3, src: serviceImage1, alt: "Guest house facilities" },
+  { id: 4, src: serviceImage2, alt: "Brooks Cottage service area" },
+  { id: 5, src: galleryImage, alt: "Brooks Cottage gallery view" },
+  { id: 6, src: footerImage, alt: "Brooks Cottage property" },
+  { id: 7, src: contemporaryRoom, alt: "The Contemporary Room" },
+  { id: 8, src: eclecticRoom, alt: "The Eclectic Room" },
+  { id: 9, src: indonesianRoom, alt: "The Indonesian Room" },
+  { id: 10, src: mahoganyRoom, alt: "The Mahogany Room" },
+  { id: 11, src: modernVictorianRoom, alt: "The Modern Victorian Room" },
+  // Add future imports near the existing imports, then add an entry here:
+  // { id: 12, src: newRoomImage, alt: "New room description" },
+  // { id: 13, src: newPropertyImage, alt: "New property image description" },
+  // { id: 14, src: newGardenImage, alt: "New garden image description" },
 ];
-
-const leftColumnImages = galleryImages.filter((_, index) => index % 2 === 0);
-const rightColumnImages = galleryImages.filter((_, index) => index % 2 === 1);
 
 const GalleryPage = () => {
   const [activeIndex, setActiveIndex] = useState<number | null>(null);
@@ -102,17 +85,7 @@ const GalleryPage = () => {
   return (
     <main className="gallery-page">
       <div className="gallery-page__grid">
-        <div className="gallery-page__column">
-          {leftColumnImages.map((image, index) =>
-            renderImage(image, index * 2)
-          )}
-        </div>
-
-        <div className="gallery-page__column">
-          {rightColumnImages.map((image, index) =>
-            renderImage(image, index * 2 + 1)
-          )}
-        </div>
+        {galleryImages.map((image, index) => renderImage(image, index))}
       </div>
 
       {activeIndex !== null && (

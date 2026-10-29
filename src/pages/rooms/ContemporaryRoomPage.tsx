@@ -1,13 +1,26 @@
 import PageMetadata from '../../components/PageMetadata'
-import './ContemporaryRoomPage.css'
+import RoomDetailLayout from './RoomDetailLayout'
+import roomImage from '../../assets/images/rooms/The Contemporary Room.png'
 
 function ContemporaryRoomPage() {
   return (
     <>
       <PageMetadata title="The Contemporary Room" path="/rooms/the-contemporary-room" />
-      <main id="the-contemporary-room-page" className="room-page contemporary-room-page">
-        <header className="page-header" />
-      </main>
+      <RoomDetailLayout
+        pageId="the-contemporary-room-page"
+        title="The Contemporary Room"
+        description="Modern room features bay window, with large bathroom and dressing room combined. This en-suite bathroom has a his and hers shower with modern bath."
+        singleRate="R950"
+        sharingRate="R575 pp"
+        additionalRate="Two people sharing: R1,150 total."
+        breakfastNote="Breakfast is charged at R160 per person."
+        features={['Bay window', 'Large bathroom and dressing room', 'His and hers shower', 'Modern bath']}
+        images={[
+          roomImage,
+          roomImage,
+          roomImage,
+        ]}
+      />
     </>
   )
 }

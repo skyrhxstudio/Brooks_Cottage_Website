@@ -25,7 +25,7 @@ function App() {
           <Route path="/rooms/the-indonesian-room" element={<IndonesianRoomPage />} />
           <Route path="/rooms/the-modern-victorian-room" element={<ModernVictorianRoomPage />} />
           <Route path="/rooms/the-mahogany-room" element={<MahoganyRoomPage />} />
-          <Route path="/rooms/the-eclectic" element={<EclecticRoomPage />} />
+          <Route path="/rooms/the-eclectic-room" element={<EclecticRoomPage />} />
         </Route>
       </Routes>
     </BrowserRouter>

@@ -35,7 +35,7 @@
 .location-attractions-page__header {
   grid-column: 2 / 12;
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   gap: 24px;
 }
 

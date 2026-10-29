@@ -1,3 +1,275 @@
 .rooms-rates-page {
+  position: relative;
+  isolation: isolate;
   flex: 1;
+  overflow-x: clip;
+  display: grid;
+  grid-template-columns: repeat(12, minmax(0, 1fr));
+  column-gap: 24px;
+  row-gap: 80px;
+  padding: 120px 0 160px;
+  background: #ffffff;
+}
+
+.rooms-rates-page__watermark {
+  position: absolute;
+  z-index: 0;
+  top: 0;
+  left: -4%;
+  color: #f6f6f6;
+  font-family: 'Pinyon Script', cursive;
+  font-size: 480px;
+  line-height: 1;
+  pointer-events: none;
+}
+
+.rooms-rates-page__header,
+.rooms-rates-page__intro,
+.rooms-rates-page__list,
+.rooms-rates-page__rates {
+  position: relative;
+  z-index: 1;
+}
+
+.rooms-rates-page__header {
+  grid-column: 2 / 5;
+  display: flex;
+  align-items: flex-start;
+  gap: 24px;
+}
+
+.rooms-rates-page__header img,
+.rooms-rates-page__rates-header img {
+  width: 72px;
+}
+
+.rooms-rates-page__header h1 {
+  font-size: 64px;
+  line-height: 1.02;
+}
+
+.rooms-rates-page__intro {
+  grid-column: 6 / 12;
+  margin: 0;
+  color: #7c7c7c;
+  font-size: 24px;
+  line-height: 1.5;
+}
+
+.rooms-rates-page__list {
+  grid-column: 1 / -1;
+  display: flex;
+  flex-direction: column;
+  gap: 80px;
+}
+
+.rooms-rates-page__room {
+  display: grid;
+  grid-template-columns: repeat(12, minmax(0, 1fr));
+  column-gap: 24px;
+}
+
+.rooms-rates-page__wide-image {
+  grid-column: 2 / 12;
+  width: 100%;
+  aspect-ratio: 16 / 7;
+  display: block;
+  object-fit: cover;
+}
+
+.rooms-rates-page__room-info {
+  grid-column: 2 / 12;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: start;
+  gap: 48px;
+  margin-top: -4px;
+  padding: 48px;
+  background: #161616;
+  color: #ffffff;
+}
+.rooms-rates-page__room-info h2 {
+  font-size: 40px;
+  line-height: 1.1;
+  text-transform: uppercase;
+}
+
+.rooms-rates-page__room-info > p {
+  margin: 0;
+  color: #ffffff;
+  font-size: 24px;
+  line-height: 1.5;
+}
+
+.rooms-rates-page__actions {
+  grid-column: 2;
+  display: flex;
+  justify-content: flex-end;
+  gap: 16px;
+}
+
+.rooms-rates-page__actions a {
+  min-height: 56px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 24px 56px;
+  border: 1px solid #C79237;
+  border-radius: 999px;
+  color: #ffffff;
+  font-family: 'OmegaCT', serif;
+  text-decoration: none;
+  font-size: 24px;
+}
+
+.rooms-rates-page__actions a:last-child {
+  border-color: #ffffff;
+  background: #ffffff;
+  color: #161616;
+}
+
+.rooms-rates-page__rates {
+  grid-column: 2 / 12;
+}
+
+.rooms-rates-page__rates-header {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+  margin-bottom: 48px;
+}
+
+.rooms-rates-page__rates-header h2 {
+  font-size: 56px;
+}
+
+.rooms-rates-page__rate-grid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 24px;
+}
+
+.rooms-rates-page__rate-grid article {
+  min-height: 280px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  padding: 32px;
+  border-top: 2px solid #161616;
+  background: #f7f7f7;
+}
+
+.rooms-rates-page__rate-label,
+.rooms-rates-page__rate-name,
+.rooms-rates-page__rate-grid span {
+  margin: 0;
+}
+
+.rooms-rates-page__rate-label {
+  margin-bottom: auto;
+  color: #C79237;
+  font-size: 16px;
+  text-transform: uppercase;
+}
+
+.rooms-rates-page__rate-name {
+  font-family: 'OmegaCT', serif;
+  font-size: 24px;
+}
+
+.rooms-rates-page__rate-grid strong {
+  margin: 8px 0;
+  font-family: 'OmegaCT', serif;
+  font-size: 48px;
+}
+
+.rooms-rates-page__rate-grid span {
+  color: #7c7c7c;
+  font-size: 16px;
+}
+
+@media (max-width: 1024px) {
+  .rooms-rates-page {
+    padding-inline: 48px;
+  }
+  .rooms-rates-page__header,
+  .rooms-rates-page__intro,
+  .rooms-rates-page__rates {
+    grid-column: 1 / -1;
+  }
+  .rooms-rates-page__room-info {
+    grid-template-columns: 1fr;
+  }
+  .rooms-rates-page__actions {
+    grid-column: 1;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+  }
+}
+
+@media (max-width: 640px) {
+  .rooms-rates-page {
+    grid-template-columns: minmax(0, 1fr);
+    row-gap: 48px;
+    padding: 80px 24px 96px;
+  }
+  .rooms-rates-page__watermark {
+    top: 0;
+    left: -3%;
+    font-size: 300px;
+  }
+  .rooms-rates-page__header {
+    align-items: flex-start;
+    gap: 16px;
+  }
+  .rooms-rates-page__header img,
+  .rooms-rates-page__rates-header img {
+    width: 64px;
+  }
+  .rooms-rates-page__header h1,
+  .rooms-rates-page__rates-header h2 {
+    font-size: 36px;
+  }
+  .rooms-rates-page__intro {
+    font-size: 16px;
+    line-height: 1.75;
+  }
+  .rooms-rates-page__list {
+    gap: 72px;
+  }
+  .rooms-rates-page__room {
+    grid-template-columns: minmax(0, 1fr);
+  }
+  .rooms-rates-page__wide-image {
+    grid-column: 1;
+    aspect-ratio: 16 / 10;
+  }
+  .rooms-rates-page__room-info {
+    grid-column: 1;
+    padding: 24px;
+  }
+  .rooms-rates-page__room-info h2 {
+    font-size: 24px;
+  }
+  .rooms-rates-page__room-info > p {
+    font-size: 16px;
+  }
+  .rooms-rates-page__actions {
+    flex-direction: column;
+  }
+  .rooms-rates-page__actions a {
+    width: 100%;
+    min-height: 56px;
+    padding: 16px 24px;
+    font-size: 16px;
+  }
+  .rooms-rates-page__rate-name {
+    font-size: 24px;
+  }
+  .rooms-rates-page__rate-grid strong {
+    font-size: 40px;
+  }
+  .rooms-rates-page__rate-grid {
+    grid-template-columns: 1fr;
+  }
 }

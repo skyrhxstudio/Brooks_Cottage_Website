@@ -49,7 +49,7 @@ const ROOMS: Room[] = [
     description:
       'North-facing, with direct access from the swimming pool, this room has every advantage. It\'s eclectic decor is easy on the eye, and it features a queen bed with a full en-suite bathroom.',
     image: eclecticRoomImage,
-    detailsPath: '/rooms/the-eclectic',
+    detailsPath: '/rooms/the-eclectic-room',
   },
 ]
 
