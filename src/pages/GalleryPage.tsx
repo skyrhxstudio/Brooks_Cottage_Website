@@ -4,8 +4,6 @@ import heroImage from "../assets/images/hero_bg.webp";
 import aboutImage from "../assets/images/about_section_img.webp";
 import serviceImage1 from "../assets/images/services_section_img_1.webp";
 import serviceImage2 from "../assets/images/services_section_img_2.webp";
-import galleryImage from "../assets/images/gallery_section_img.webp";
-import footerImage from "../assets/images/footer_img.webp";
 import contemporaryRoom from "../assets/images/rooms/The Contemporary Room.webp";
 import eclecticRoom from "../assets/images/rooms/The Eclectic Room.webp";
 import indonesianRoom from "../assets/images/rooms/The Indonesian Room.webp";
@@ -18,8 +16,6 @@ const galleryImages = [
   { id: 2, src: aboutImage, alt: "Brooks Cottage guest accommodation" },
   { id: 3, src: serviceImage1, alt: "Guest house facilities" },
   { id: 4, src: serviceImage2, alt: "Brooks Cottage service area" },
-  { id: 5, src: galleryImage, alt: "Brooks Cottage gallery view" },
-  { id: 6, src: footerImage, alt: "Brooks Cottage property" },
   { id: 7, src: contemporaryRoom, alt: "The Contemporary Room" },
   { id: 8, src: eclecticRoom, alt: "The Eclectic Room" },
   { id: 9, src: indonesianRoom, alt: "The Indonesian Room" },

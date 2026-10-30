@@ -111,7 +111,7 @@
 .room-detail-page__description header,
 .room-detail-page__similar header {
   display: flex;
-  align-items: center;
+  align-items: start;
   gap: 24px;
   margin-bottom: 32px;
 }
