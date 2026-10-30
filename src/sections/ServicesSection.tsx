@@ -1,5 +1,5 @@
 import servicesImage1 from '../assets/images/services_section_img_1.webp'
-import servicesImage2 from '../assets/images/services_section_img_2.jpeg'
+import servicesImage2 from '../assets/images/services_section_img_2.webp'
 import './ServicesSection.css'
 
 function ServicesSection() {

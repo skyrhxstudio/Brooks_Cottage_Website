@@ -1,7 +1,7 @@
 // src/sections/HomeHeroSection.tsx
 import './HomeHeroSection.css'
 
-import heroImage from '../assets/images/hero_bg.png'
+import heroImage from '../assets/images/hero_bg.webp'
 
 interface HomeHeroSectionProps {
   backgroundImage?: string

@@ -1,6 +1,9 @@
 import PageMetadata from '../../components/PageMetadata'
 import RoomDetailLayout from './RoomDetailLayout'
 import roomImage from '../../assets/images/rooms/The Contemporary Room.png'
+import windowImage from '../../assets/images/rooms/contemporary-room-img (2).webp'
+import bathroomImage from '../../assets/images/rooms/contemporary-room-img (1).webp'
+import detailImage from '../../assets/images/rooms/contemporary-room-img.webp'
 
 function ContemporaryRoomPage() {
   return (
@@ -17,8 +20,9 @@ function ContemporaryRoomPage() {
         features={['Bay window', 'Large bathroom and dressing room', 'His and hers shower', 'Modern bath']}
         images={[
           roomImage,
-          roomImage,
-          roomImage,
+          windowImage,
+          bathroomImage,
+          detailImage,
         ]}
       />
     </>

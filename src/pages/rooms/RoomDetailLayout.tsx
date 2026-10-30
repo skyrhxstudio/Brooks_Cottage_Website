@@ -1,6 +1,6 @@
 import { Link } from 'react-router'
 import { ChevronLeft, ChevronRight } from 'lucide-react'
-import { useState } from 'react'
+import { useState, type TouchEvent } from 'react'
 import './RoomDetailLayout.css'
 
 interface RoomDetailLayoutProps {
@@ -36,6 +36,7 @@ function RoomDetailLayout({
 }: RoomDetailLayoutProps) {
   const similarRooms = allRoomLinks.filter((room) => room[0] !== title)
   const [activeImage, setActiveImage] = useState(0)
+  const [touchStart, setTouchStart] = useState<number | null>(null)
 
   const showPreviousImage = () => {
     setActiveImage((current) => (current - 1 + images.length) % images.length)
@@ -43,6 +44,21 @@ function RoomDetailLayout({
 
   const showNextImage = () => {
     setActiveImage((current) => (current + 1) % images.length)
+  }
+
+  const handleTouchStart = (event: TouchEvent<HTMLDivElement>) => {
+    setTouchStart(event.touches[0].clientX)
+  }
+
+  const handleTouchEnd = (event: TouchEvent<HTMLDivElement>) => {
+    if (touchStart === null) return
+
+    const distance = touchStart - event.changedTouches[0].clientX
+    if (Math.abs(distance) > 50) {
+      if (distance > 0) showNextImage()
+      else showPreviousImage()
+    }
+    setTouchStart(null)
   }
 
   return (
@@ -54,7 +70,11 @@ function RoomDetailLayout({
         <h1>{title}</h1>
       </header>
 
-      <div className="room-detail-page__carousel">
+      <div
+        className="room-detail-page__carousel"
+        onTouchStart={handleTouchStart}
+        onTouchEnd={handleTouchEnd}
+      >
         <img src={images[activeImage]} alt={`${title} interior view ${activeImage + 1}`} />
         <button
           type="button"

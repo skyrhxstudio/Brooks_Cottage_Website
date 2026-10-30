@@ -1,11 +1,11 @@
 import { useCallback, useEffect, useState } from "react";
 import { ChevronLeft, ChevronRight, X } from "lucide-react";
-import heroImage from "../assets/images/hero_bg.png";
+import heroImage from "../assets/images/hero_bg.webp";
 import aboutImage from "../assets/images/about_section_img.webp";
 import serviceImage1 from "../assets/images/services_section_img_1.webp";
-import serviceImage2 from "../assets/images/services_section_img_2.jpeg";
+import serviceImage2 from "../assets/images/services_section_img_2.webp";
 import galleryImage from "../assets/images/gallery_section_img.webp";
-import footerImage from "../assets/images/footer_img.png";
+import footerImage from "../assets/images/footer_img.webp";
 import contemporaryRoom from "../assets/images/rooms/The Contemporary Room.png";
 import eclecticRoom from "../assets/images/rooms/The Eclectic Room.png";
 import indonesianRoom from "../assets/images/rooms/The Indonesian Room.png";
