@@ -1,0 +1,18 @@
+{
+  "specVersion": "1.0",
+  "host": {
+    "displayName": "Brooks Cottage",
+    "documentationUrl": "https://www.brookscottage.com/"
+  },
+  "entries": [
+    {
+      "identifier": "urn:air:brookscottage.com:website:home",
+      "displayName": "Brooks Cottage Home",
+      "type": "text/html",
+      "url": "https://www.brookscottage.com/",
+      "description": "Luxury guest house accommodation in Brooklyn, Pretoria, South Africa.",
+      "representativeQueries": ["Book accommodation at Brooks Cottage", "Luxury guest houses in Pretoria"],
+      "version": "1.0"
+    }
+  ]
+}
