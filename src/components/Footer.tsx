@@ -112,7 +112,7 @@ function Footer() {
           <p>
             DESIGNED &amp; DEVELOPED, WITH ❤︎, BY{' '}
             <a href="https://skyrhxstudio.com" target="_blank" rel="noopener noreferrer">
-              SKYRHX STUDIO
+              SKYRHX | A Creative Studio
             </a>
           </p>
         </div>

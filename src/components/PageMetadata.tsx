@@ -39,6 +39,17 @@ function PageMetadata({
     updateMetaTag('meta[name="twitter:title"]', { name: 'twitter:title' }, fullTitle)
     updateMetaTag('meta[name="twitter:description"]', { name: 'twitter:description' }, description)
     updateMetaTag('meta[name="twitter:image"]', { name: 'twitter:image' }, imageUrl)
+    updateMetaTag('meta[name="author"]', { name: 'author' }, 'SKYRHX | A Creative Studio')
+    updateMetaTag('meta[name="designer"]', { name: 'designer' }, 'SKYRHX | A Creative Studio')
+    updateMetaTag('meta[name="generator"]', { name: 'generator' }, 'SKYRHX | A Creative Studio')
+
+    let authorLink = document.head.querySelector<HTMLLinkElement>('link[rel="author"]')
+    if (!authorLink) {
+      authorLink = document.createElement('link')
+      authorLink.rel = 'author'
+      document.head.append(authorLink)
+    }
+    authorLink.href = 'https://skyrhxstudio.com'
 
     let canonical = document.head.querySelector<HTMLLinkElement>('link[rel="canonical"]')
     if (!canonical) {
