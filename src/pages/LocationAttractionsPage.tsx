@@ -1,11 +1,21 @@
 import PageMetadata from '../components/PageMetadata'
 import { useRef, useState } from 'react'
+import crawdaddysImage from '../assets/images/crawdaddys.webp'
+import universityOfPretoriaImage from '../assets/images/university-of-pta.webp'
+import brooklynMallImage from '../assets/images/brooklyn-mall (1).webp'
+import sammyMarksImage from '../assets/images/sammy-marks.webp'
+import unionBuildingsImage from '../assets/images/union-buildings.webp'
+import loftusImage from '../assets/images/loftus.webp'
+import botanicalGardenImage from '../assets/images/botanical-garden.webp'
+import antonSmitImage from '../assets/images/anton-smit.webp'
+import jacarandaImage from '../assets/images/jacaranda.webp'
 import './LocationAttractionsPage.css'
 
 interface Attraction {
   name: string
   description?: string
   address?: string
+  image?: string
 }
 
 interface AttractionCategory {
@@ -21,6 +31,7 @@ const categories: AttractionCategory[] = [
         name: 'Crawdaddy’s',
         description: 'A gourmet restaurant and a wine lover’s dream. Try the cognac-flambéed steak with garlic and herb butter, alongside many other sophisticated dishes.',
         address: '570 Fehrsen Street, Brooklyn, Tel: +27 12 346 4642',
+        image: crawdaddysImage,
       },
       {
         name: 'The Village',
@@ -50,6 +61,7 @@ const categories: AttractionCategory[] = [
       {
         name: 'University of Pretoria',
         description: 'The University of Pretoria is South Africa’s leading research university and one of the largest in the country. It has six campuses and several other locations, including Pretoria Academic Hospital, while central administration is based at the Hatfield Campus. It offers more than 1,800 programmes across nine faculties, its business school, 140 departments and 85 centres, institutes and bureaus.',
+        image: universityOfPretoriaImage,
       },
       {
         name: 'Tshwane University of Technology',
@@ -64,14 +76,14 @@ const categories: AttractionCategory[] = [
   {
     name: 'Shopping',
     items: [
-      { name: 'Brooklyn Mall', description: 'Brooklyn Mall is situated in the heart of Pretoria’s eastern suburbs and is the dynamic hub of this diplomatic area. With more than 170 stores, it offers a comprehensive shopping choice. Spacious and elegant, the mall provides relaxed shopping, an enticing range of merchandise, entertainment, restaurants and speciality stores.', address: 'Brooklyn, Pretoria' },
+      { name: 'Brooklyn Mall', description: 'Brooklyn Mall is situated in the heart of Pretoria’s eastern suburbs and is the dynamic hub of this diplomatic area. With more than 170 stores, it offers a comprehensive shopping choice. Spacious and elegant, the mall provides relaxed shopping, an enticing range of merchandise, entertainment, restaurants and speciality stores.', address: 'Brooklyn, Pretoria', image: brooklynMallImage },
       { name: 'Menlyn Park Shopping Centre', description: 'Menlyn Park Shopping Centre is situated in the east of Pretoria and is conveniently close to the N1 highway. More than 300 stores, 37 restaurants and a wide variety of entertainment are available under one roof.', address: 'Menlyn, Pretoria East' },
     ],
   },
   {
     name: 'Museums',
     items: [
-      { name: 'Sammy Marks Museum', description: 'Return to a bygone era with a visit to the Victorian mansion dating back to 1884, and enjoy its historic garden for a day out with a difference.', address: 'Old Bronkhorstspruit Road, Pretoria' },
+      { name: 'Sammy Marks Museum', description: 'Return to a bygone era with a visit to the Victorian mansion dating back to 1884, and enjoy its historic garden for a day out with a difference.', address: 'Old Bronkhorstspruit Road, Pretoria', image: sammyMarksImage },
       { name: 'Smuts House Museum', description: 'Home to General Jan Smuts for over 40 years, Doornkloof in Irene is a unique museum revealing much about his life and the spirit of this great statesman.', address: 'Jan Smuts Avenue, Irene' },
       { name: 'South African Air Force Museum', description: 'View historic aircraft and trace the development of South African military aviation, with exhibits including a Mirage F1 and Angolan MiG-21.', address: 'Zwartkop Air Force Base, Route 101, Valhalla' },
       { name: 'National Museum of Natural History', description: 'Formerly the Transvaal Museum of Natural History, the collection was founded in 1892. Today it is housed in a magnificent sandstone building with exhibits of hominid fossils from the Cradle of Humankind, Karoo fossils of amphibians, fish, reptiles and plants, and more.', address: '432 Paul Kruger Street, Pretoria' },
@@ -83,7 +95,7 @@ const categories: AttractionCategory[] = [
     name: 'Monuments',
     items: [
       { name: 'Freedom Park', description: 'A national and international landmark celebrating South Africa’s struggle for liberation and humanity’s shared story of freedom.', address: 'Corner Koch Street and 7th Avenue, Pretoria' },
-      { name: 'Union Buildings', description: 'South Africa’s parliament buildings, designed in 1913 by Sir Herbert Baker. Enjoy a panoramic view of the city from this magnificent crescent-shaped red sandstone edifice.', address: 'Government Road, Pretoria' },
+      { name: 'Union Buildings', description: 'South Africa’s parliament buildings, designed in 1913 by Sir Herbert Baker. Enjoy a panoramic view of the city from this magnificent crescent-shaped red sandstone edifice.', address: 'Government Road, Pretoria', image: unionBuildingsImage },
       { name: 'Voortrekker Monument', description: 'A unique monument commemorating the pioneer history of Southern Africa and the history of the Afrikaner people.', address: 'Eeufees Road, Groenkloof' },
     ],
   },
@@ -91,7 +103,7 @@ const categories: AttractionCategory[] = [
     name: 'Sports',
     items: [
       { name: 'University of Pretoria High Performance Centre', description: 'Brooks Cottage is only a 15-minute walk from the University of Pretoria High Performance Centre.', address: 'University of Pretoria, Pretoria' },
-      { name: 'Loftus Versfeld', description: 'The hallowed home of Pretoria’s favourite rugby team, the Blue Bulls, and host to some of the most exciting teams and players.', },
+      { name: 'Loftus Versfeld', description: 'The hallowed home of Pretoria’s favourite rugby team, the Blue Bulls, and host to some of the most exciting teams and players.', image: loftusImage },
     ],
   },
   {
@@ -102,19 +114,20 @@ const categories: AttractionCategory[] = [
         name: 'Pretoria National Botanical Garden',
         description: 'Home to about half of South Africa’s tree species and almost 200 bird species, the Pretoria National Botanical Garden is a must-see for anyone visiting Brooks Cottage. Hours: Daily from 08:00 to 18:00. Phone: +27 (0)12 843 5194.',
         address: '2 Cussonia Avenue, Brummeria, Pretoria',
+        image: botanicalGardenImage,
       },
     ],
   },
   {
     name: 'Art',
     items: [
-      { name: 'Anton Smit Sculpture Park', description: 'Pretoria is home to world-renowned artists and art galleries. Anton Smit’s sculpture park just outside Pretoria is a must-see for art lovers.', address: '44 Black Eagle Lane, Bronkhorstspruit Dam, Bronkhorstspruit, 1020 | Tel: 013 590 9074' },
+      { name: 'Anton Smit Sculpture Park', description: 'Pretoria is home to world-renowned artists and art galleries. Anton Smit’s sculpture park just outside Pretoria is a must-see for art lovers.', address: '44 Black Eagle Lane, Bronkhorstspruit Dam, Bronkhorstspruit, 1020 | Tel: 013 590 9074', image: antonSmitImage },
     ],
   },
   {
     name: 'Seasonal Attractions',
     items: [
-      { name: 'Jacaranda Trees in Bloom', description: 'Stroll around our neighbourhood in spring and enjoy the spectacular jacaranda trees in full bloom. There is a reason Pretoria is called the Jacaranda City — these bright purple trees are simply gorgeous and visible right outside the front door.' },
+      { name: 'Jacaranda Trees in Bloom', description: 'Stroll around our neighbourhood in spring and enjoy the spectacular jacaranda trees in full bloom. There is a reason Pretoria is called the Jacaranda City — these bright purple trees are simply gorgeous and visible right outside the front door.', image: jacarandaImage },
     ],
   },
 ]
@@ -194,16 +207,30 @@ function LocationAttractionsPage() {
             <section className="location-attractions-page__category" key={category.name}>
               <h2>{category.name}</h2>
               <div className="location-attractions-page__list">
-                {category.items.map((item) => (
-                  <article className="location-attractions-page__item" key={item.name}>
-                    <h3>{item.name}</h3>
-                    {item.description && <p>{item.description}</p>}
-                    {item.address && (
-                      <address>
-                        <i className="fa-solid fa-location-dot" aria-hidden="true" />
-                        {item.address}
-                      </address>
+                {category.items.map((item, index) => (
+                  <article
+                    className={`location-attractions-page__item${item.image ? ' location-attractions-page__item--featured' : ''}`}
+                    key={item.name}
+                  >
+                    {item.image && (
+                      <img
+                        className={`location-attractions-page__item-image${index % 2 === 1 ? ' location-attractions-page__item-image--right' : ''}`}
+                        src={item.image}
+                        alt={item.name}
+                        loading="lazy"
+                        referrerPolicy="no-referrer"
+                      />
                     )}
+                    <div className="location-attractions-page__item-content">
+                      <h3>{item.name}</h3>
+                      {item.description && <p>{item.description}</p>}
+                      {item.address && (
+                        <address>
+                          <i className="fa-solid fa-location-dot" aria-hidden="true" />
+                          {item.address}
+                        </address>
+                      )}
+                    </div>
                   </article>
                 ))}
               </div>

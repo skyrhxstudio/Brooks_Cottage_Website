@@ -63,9 +63,9 @@ body {
   color: var(--color-text);
 }
 
-body main p {
+/* body main p {
   font-size: var(--font-size-body-desktop);
-}
+} */
 
 h1,
 h2,
