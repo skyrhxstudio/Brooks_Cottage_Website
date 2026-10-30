@@ -1,6 +1,6 @@
 import PageMetadata from '../../components/PageMetadata'
 import RoomDetailLayout from './RoomDetailLayout'
-import roomImage from '../../assets/images/rooms/The Contemporary Room.png'
+import roomImage from '../../assets/images/rooms/The Contemporary Room.webp'
 import windowImage from '../../assets/images/rooms/contemporary-room-img (2).webp'
 import bathroomImage from '../../assets/images/rooms/contemporary-room-img (1).webp'
 import detailImage from '../../assets/images/rooms/contemporary-room-img.webp'

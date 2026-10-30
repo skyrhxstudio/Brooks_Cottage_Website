@@ -1,11 +1,11 @@
 // src/sections/RoomsSection.tsx
 import { useCallback, useEffect, useRef, useState } from 'react'
 import { Link } from 'react-router'
-import contemporaryRoomImage from '../assets/images/rooms/The Contemporary Room.png'
-import indonesianRoomImage from '../assets/images/rooms/The Indonesian Room.png'
-import modernVictorianRoomImage from '../assets/images/rooms/The Modern Victorian Room.png'
-import mahoganyRoomImage from '../assets/images/rooms/The Mahogany Room.png'
-import eclecticRoomImage from '../assets/images/rooms/The Eclectic Room.png'
+import contemporaryRoomImage from '../assets/images/rooms/The Contemporary Room.webp'
+import indonesianRoomImage from '../assets/images/rooms/The Indonesian Room.webp'
+import modernVictorianRoomImage from '../assets/images/rooms/The Modern Victorian Room.webp'
+import mahoganyRoomImage from '../assets/images/rooms/The Mahogany Room.webp'
+import eclecticRoomImage from '../assets/images/rooms/The Eclectic Room.webp'
 import './RoomsSection.css'
 
 interface Room {

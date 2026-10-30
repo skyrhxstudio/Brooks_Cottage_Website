@@ -1,10 +1,10 @@
 import PageMetadata from '../components/PageMetadata'
 import { Link } from 'react-router'
-import contemporaryRoom from '../assets/images/rooms/The Contemporary Room.png'
-import indonesianRoom from '../assets/images/rooms/The Indonesian Room.png'
-import modernVictorianRoom from '../assets/images/rooms/The Modern Victorian Room.png'
-import mahoganyRoom from '../assets/images/rooms/The Mahogany Room.png'
-import eclecticRoom from '../assets/images/rooms/The Eclectic Room.png'
+import contemporaryRoom from '../assets/images/rooms/The Contemporary Room.webp'
+import indonesianRoom from '../assets/images/rooms/The Indonesian Room.webp'
+import modernVictorianRoom from '../assets/images/rooms/The Modern Victorian Room.webp'
+import mahoganyRoom from '../assets/images/rooms/The Mahogany Room.webp'
+import eclecticRoom from '../assets/images/rooms/The Eclectic Room.webp'
 import './RoomsRatesPage.css'
 
 const rooms = [

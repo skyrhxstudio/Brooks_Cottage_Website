@@ -1,6 +1,6 @@
 import PageMetadata from '../../components/PageMetadata'
 import RoomDetailLayout from './RoomDetailLayout'
-import roomImage from '../../assets/images/rooms/The Eclectic Room.png'
+import roomImage from '../../assets/images/rooms/The Eclectic Room.webp'
 
 function EclecticRoomPage() {
   return (

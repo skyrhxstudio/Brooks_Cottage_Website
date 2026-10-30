@@ -6,11 +6,11 @@ import serviceImage1 from "../assets/images/services_section_img_1.webp";
 import serviceImage2 from "../assets/images/services_section_img_2.webp";
 import galleryImage from "../assets/images/gallery_section_img.webp";
 import footerImage from "../assets/images/footer_img.webp";
-import contemporaryRoom from "../assets/images/rooms/The Contemporary Room.png";
-import eclecticRoom from "../assets/images/rooms/The Eclectic Room.png";
-import indonesianRoom from "../assets/images/rooms/The Indonesian Room.png";
-import mahoganyRoom from "../assets/images/rooms/The Mahogany Room.png";
-import modernVictorianRoom from "../assets/images/rooms/The Modern Victorian Room.png";
+import contemporaryRoom from "../assets/images/rooms/The Contemporary Room.webp";
+import eclecticRoom from "../assets/images/rooms/The Eclectic Room.webp";
+import indonesianRoom from "../assets/images/rooms/The Indonesian Room.webp";
+import mahoganyRoom from "../assets/images/rooms/The Mahogany Room.webp";
+import modernVictorianRoom from "../assets/images/rooms/The Modern Victorian Room.webp";
 import "./GalleryPage.css";
 
 const galleryImages = [

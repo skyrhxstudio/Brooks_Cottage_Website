@@ -1,6 +1,6 @@
 import PageMetadata from '../../components/PageMetadata'
 import RoomDetailLayout from './RoomDetailLayout'
-import roomImage from '../../assets/images/rooms/The Indonesian Room.png'
+import roomImage from '../../assets/images/rooms/The Indonesian Room.webp'
 
 function IndonesianRoomPage() {
   return (

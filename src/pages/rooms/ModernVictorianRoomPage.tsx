@@ -1,6 +1,6 @@
 import PageMetadata from '../../components/PageMetadata'
 import RoomDetailLayout from './RoomDetailLayout'
-import roomImage from '../../assets/images/rooms/The Modern Victorian Room.png'
+import roomImage from '../../assets/images/rooms/The Modern Victorian Room.webp'
 
 function ModernVictorianRoomPage() {
   return (
