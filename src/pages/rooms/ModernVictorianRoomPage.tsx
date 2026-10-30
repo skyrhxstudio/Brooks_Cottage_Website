@@ -8,6 +8,7 @@ function ModernVictorianRoomPage() {
       <PageMetadata
         title="The Modern Victorian Room"
         path="/rooms/the-modern-victorian-room"
+        description="Stay in the spacious Modern Victorian Room at Brooks Cottage, with king and single beds and a Victorian-style bathroom."
       />
       <RoomDetailLayout
         pageId="the-modern-victorian-room-page"

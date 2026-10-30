@@ -141,7 +141,11 @@ function LocationAttractionsPage() {
 
   return (
     <>
-      <PageMetadata title="Location & Attractions" path="/location-attractions" />
+      <PageMetadata
+        title="Location & Attractions"
+        path="/location-attractions"
+        description="Explore Brooks Cottage in Brooklyn, Pretoria, and discover nearby embassies, shopping, restaurants, universities, and attractions."
+      />
       <main id="location-attractions-page" className="location-attractions-page">
         <span className="location-attractions-page__watermark" aria-hidden="true">
           Local

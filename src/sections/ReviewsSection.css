@@ -40,7 +40,7 @@
 .reviews__title {
   margin: 0;
   font-family: 'OmegaCT', serif;
-  font-size: 64px;
+  font-size: 63px;
   line-height: 72px;
   color: #ffffff;
   white-space: nowrap;
@@ -220,7 +220,7 @@
   .reviews {
     flex-direction: column;
     align-items: flex-start;
-    gap: 64px;
+    gap: 63px;
   }
 
   .reviews__intro {
@@ -276,7 +276,7 @@
   }
 
   .reviews__flower img {
-    width: 64px;
+    width: 63px;
     height: auto;
   }
 

@@ -5,7 +5,11 @@ import roomImage from '../../assets/images/rooms/The Mahogany Room.webp'
 function MahoganyRoomPage() {
   return (
     <>
-      <PageMetadata title="The Mahogany Room" path="/rooms/the-mahogany-room" />
+      <PageMetadata
+        title="The Mahogany Room"
+        path="/rooms/the-mahogany-room"
+        description="Book the spacious Mahogany Room at Brooks Cottage, with a queen bed, garden and pool views, and full en-suite bathroom."
+      />
       <RoomDetailLayout
         pageId="the-mahogany-room-page"
         title="The Mahogany Room"

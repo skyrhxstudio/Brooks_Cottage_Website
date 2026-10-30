@@ -20,9 +20,22 @@
   --font-body: 'Poppins', sans-serif;
   --font-heading: 'OmegaCT', serif;
   --font-accent: 'Pinyon Script', cursive;
+  --font-size-body-desktop: 24px;
+  --font-size-body-mobile: 16px;
+  --space-1: 8px;
+  --space-2: 16px;
+  --space-3: 24px;
+  --space-4: 32px;
+  --space-5: 40px;
+  --space-6: 48px;
+  --space-8: 63px;
+  --space-12: 96px;
   --color-white: #ffffff;
   --color-black: #161616;
   --color-gold: #C79237;
+  --color-text: var(--color-black);
+  --color-text-muted: #7c7c7c;
+  --color-background: var(--color-white);
 
   font-family: var(--font-body);
   color: var(--color-text);
@@ -48,6 +61,10 @@ body {
   font-family: var(--font-body);
   background: var(--color-background);
   color: var(--color-text);
+}
+
+body main p {
+  font-size: var(--font-size-body-desktop);
 }
 
 h1,
@@ -79,6 +96,9 @@ label {
 }
 
 @media (max-width: 640px) {
+  body main p {
+    font-size: var(--font-size-body-mobile);
+  }
   .navbar__mobile-book {
     height: 56px !important;
     min-height: 56px !important;

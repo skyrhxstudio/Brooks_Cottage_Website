@@ -84,8 +84,8 @@
 }
 
 .gallery-page__control svg {
-  width: 22px;
-  height: 22px;
+  width: 24px;
+  height: 24px;
   stroke-width: 2;
 }
 
@@ -126,10 +126,10 @@
   }
 
   .gallery-page__control--previous {
-    left: 12px;
+    left: 16px;
   }
 
   .gallery-page__control--next {
-    right: 12px;
+    right: 16px;
   }
 }

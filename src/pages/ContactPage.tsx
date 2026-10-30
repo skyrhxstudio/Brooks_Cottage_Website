@@ -4,7 +4,11 @@ import './ContactPage.css'
 function ContactPage() {
   return (
     <>
-      <PageMetadata title="Contact" path="/contact" />
+      <PageMetadata
+        title="Contact"
+        path="/contact"
+        description="Contact Brooks Cottage, view our Brooklyn Pretoria address, or book your stay by phone, email, or Nightsbridge."
+      />
       <main id="contact-page" className="contact-page">
         <span className="contact-page__watermark" aria-hidden="true">
           Contact

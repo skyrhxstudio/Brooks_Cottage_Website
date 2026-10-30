@@ -5,7 +5,11 @@ import roomImage from '../../assets/images/rooms/The Eclectic Room.webp'
 function EclecticRoomPage() {
   return (
     <>
-      <PageMetadata title="The Eclectic Room" path="/rooms/the-eclectic-room" />
+      <PageMetadata
+        title="The Eclectic Room"
+        path="/rooms/the-eclectic-room"
+        description="Book the Eclectic Room at Brooks Cottage, featuring pool-side access, a queen bed, and a full en-suite bathroom."
+      />
       <RoomDetailLayout
         pageId="the-eclectic-room-page"
         title="The Eclectic Room"

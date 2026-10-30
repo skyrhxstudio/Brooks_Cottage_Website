@@ -8,7 +8,11 @@ import detailImage from '../../assets/images/rooms/contemporary-room-img.webp'
 function ContemporaryRoomPage() {
   return (
     <>
-      <PageMetadata title="The Contemporary Room" path="/rooms/the-contemporary-room" />
+      <PageMetadata
+        title="The Contemporary Room"
+        path="/rooms/the-contemporary-room"
+        description="Book the Contemporary Room at Brooks Cottage, with a bay window, dressing room, his-and-hers shower, and modern bath."
+      />
       <RoomDetailLayout
         pageId="the-contemporary-room-page"
         title="The Contemporary Room"

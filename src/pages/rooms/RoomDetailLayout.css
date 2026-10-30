@@ -44,7 +44,7 @@
 }
 
 .room-detail-page__header h1 {
-  font-size: 64px;
+  font-size: 63px;
   line-height: 1.02;
   text-transform: uppercase;
 }
@@ -83,8 +83,8 @@
 }
 
 .room-detail-page__carousel-control svg {
-  width: 22px;
-  height: 22px;
+  width: 24px;
+  height: 24px;
 }
 
 .room-detail-page__carousel-control--previous {
@@ -233,7 +233,7 @@
   .room-detail-page__header img,
   .room-detail-page__description header img,
   .room-detail-page__similar header img {
-    width: 64px;
+    width: 63px;
   }
   .room-detail-page__header h1,
   .room-detail-page__description header h2,
@@ -248,10 +248,10 @@
     height: 48px;
   }
   .room-detail-page__carousel-control--previous {
-    left: 12px;
+    left: 16px;
   }
   .room-detail-page__carousel-control--next {
-    right: 12px;
+    right: 16px;
   }
   .room-detail-page__booking {
     padding: 24px;

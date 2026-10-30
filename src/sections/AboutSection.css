@@ -58,7 +58,7 @@
 .about__title {
   margin: 0;
   font-family: 'OmegaCT', serif;
-  font-size: 64px;
+  font-size: 63px;
   line-height: 1.1;
   color: #151515;
   white-space: nowrap;
@@ -245,7 +245,7 @@
     font-size: 500px;
   }
   .about__title { font-size: 36px; white-space: normal; }
-  .about__flower img { width: 64px; height: auto; }
+  .about__flower img { width: 63px; height: auto; }
   .about__quote-text { font-size: 16px; }
   .about__location p,
   .about__cta p { font-size: 16px; }

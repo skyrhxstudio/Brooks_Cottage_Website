@@ -1,8 +1,8 @@
 import { Link } from 'react-router'
 import footerImage from '../assets/images/footer_img.webp'
-import travelAwardImage from '../assets/images/travel_awards.png'
-import bookingAwardImage from '../assets/images/booking_award.png'
-import bestValueAwardImage from '../assets/images/best_value_award.png'
+import travelAwardImage from '../assets/images/travel_awards.webp'
+import bookingAwardImage from '../assets/images/booking_award.webp'
+import bestValueAwardImage from '../assets/images/best_value_award.webp'
 import './Footer.css'
 
 const ROOM_LINKS = [
@@ -110,7 +110,7 @@ function Footer() {
         <div className="site-footer__legal">
           <p>© ALL RIGHTS RESERVED, {new Date().getFullYear()}, BROOKS COTTAGE</p>
           <p>
-            DESIGNED &amp; DEVELOPED BY{' '}
+            DESIGNED &amp; DEVELOPED, WITH ❤︎, BY{' '}
             <a href="https://skyrhxstudio.com" target="_blank" rel="noopener noreferrer">
               SKYRHX STUDIO
             </a>

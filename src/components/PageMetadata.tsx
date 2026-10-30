@@ -3,6 +3,8 @@ import { useEffect } from 'react'
 type PageMetadataProps = {
   title: string
   path: string
+  description?: string
+  image?: string
 }
 
 function updateMetaTag(selector: string, attributes: Record<string, string>, content: string) {
@@ -17,14 +19,26 @@ function updateMetaTag(selector: string, attributes: Record<string, string>, con
   element.content = content
 }
 
-function PageMetadata({ title, path }: PageMetadataProps) {
+function PageMetadata({
+  title,
+  path,
+  description = 'Boutique accommodation at Brooks Cottage in Pretoria, South Africa.',
+  image = '/hero_bg.webp',
+}: PageMetadataProps) {
   useEffect(() => {
     const fullTitle = `${title} | Brooks Cottage`
     const canonicalUrl = new URL(path, window.location.origin).toString()
+    const imageUrl = new URL(image, window.location.origin).toString()
 
     document.title = fullTitle
-    updateMetaTag('meta[name="description"]', { name: 'description' }, fullTitle)
     updateMetaTag('meta[property="og:title"]', { property: 'og:title' }, fullTitle)
+    updateMetaTag('meta[name="description"]', { name: 'description' }, description)
+    updateMetaTag('meta[property="og:description"]', { property: 'og:description' }, description)
+    updateMetaTag('meta[property="og:url"]', { property: 'og:url' }, canonicalUrl)
+    updateMetaTag('meta[property="og:image"]', { property: 'og:image' }, imageUrl)
+    updateMetaTag('meta[name="twitter:title"]', { name: 'twitter:title' }, fullTitle)
+    updateMetaTag('meta[name="twitter:description"]', { name: 'twitter:description' }, description)
+    updateMetaTag('meta[name="twitter:image"]', { name: 'twitter:image' }, imageUrl)
 
     let canonical = document.head.querySelector<HTMLLinkElement>('link[rel="canonical"]')
     if (!canonical) {
@@ -33,7 +47,7 @@ function PageMetadata({ title, path }: PageMetadataProps) {
       document.head.append(canonical)
     }
     canonical.href = canonicalUrl
-  }, [path, title])
+  }, [description, image, path, title])
 
   return null
 }

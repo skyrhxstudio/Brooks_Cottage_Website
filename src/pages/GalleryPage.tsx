@@ -1,5 +1,6 @@
 import { useCallback, useEffect, useState } from "react";
 import { ChevronLeft, ChevronRight, X } from "lucide-react";
+import PageMetadata from "../components/PageMetadata";
 import heroImage from "../assets/images/hero_bg.webp";
 import aboutImage from "../assets/images/about_section_img.webp";
 import serviceImage1 from "../assets/images/services_section_img_1.webp";
@@ -79,6 +80,12 @@ const GalleryPage = () => {
   );
 
   return (
+    <>
+      <PageMetadata
+        title="Gallery"
+        path="/gallery"
+        description="Explore the rooms, gardens, facilities, and interior spaces at Brooks Cottage."
+      />
     <main className="gallery-page">
       <div className="gallery-page__grid">
         {galleryImages.map((image, index) => renderImage(image, index))}
@@ -134,6 +141,7 @@ const GalleryPage = () => {
         </div>
       )}
     </main>
+    </>
   );
 };
 

@@ -43,7 +43,11 @@ const rooms = [
 function RoomsRatesPage() {
   return (
     <>
-      <PageMetadata title="Rooms & Rates" path="/rooms-rates" />
+      <PageMetadata
+        title="Rooms & Rates"
+        path="/rooms-rates"
+        description="View Brooks Cottage room rates and compare five tastefully decorated en-suite rooms in Pretoria."
+      />
       <main id="rooms-rates-page" className="rooms-rates-page">
         <span className="rooms-rates-page__watermark" aria-hidden="true">Rooms</span>
 

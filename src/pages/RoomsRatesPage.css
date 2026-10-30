@@ -44,7 +44,7 @@
 }
 
 .rooms-rates-page__header h1 {
-  font-size: 64px;
+  font-size: 63px;
   line-height: 1.02;
 }
 
@@ -224,7 +224,7 @@
   }
   .rooms-rates-page__header img,
   .rooms-rates-page__rates-header img {
-    width: 64px;
+    width: 63px;
   }
   .rooms-rates-page__header h1,
   .rooms-rates-page__rates-header h2 {

@@ -5,7 +5,11 @@ import roomImage from '../../assets/images/rooms/The Indonesian Room.webp'
 function IndonesianRoomPage() {
   return (
     <>
-      <PageMetadata title="The Indonesian Room" path="/rooms/the-indonesian-room" />
+      <PageMetadata
+        title="The Indonesian Room"
+        path="/rooms/the-indonesian-room"
+        description="Stay in the Indonesian Room at Brooks Cottage, with distinctive furnishings, a private patio, and full en-suite bathroom."
+      />
       <RoomDetailLayout
         pageId="the-indonesian-room-page"
         title="The Indonesian Room"

@@ -46,7 +46,7 @@
 }
 
 .location-attractions-page__header h1 {
-  font-size: 64px;
+  font-size: 63px;
   line-height: 1.02;
 }
 
@@ -54,7 +54,7 @@
   grid-column: 2 / 5;
   align-self: start;
   position: sticky;
-  top: 156px;
+  top: 160px;
   max-height: calc(100vh - 118px - 24px);
   overflow-y: auto;
   padding-right: 24px;
@@ -98,7 +98,7 @@
   grid-column: 5 / 12;
   display: flex;
   flex-direction: column;
-  gap: 64px;
+  gap: 63px;
 }
 
 .location-attractions-page__category {
@@ -206,7 +206,7 @@
   }
 
   .location-attractions-page__header img {
-    width: 64px;
+    width: 63px;
   }
 
   .location-attractions-page__header h1 {
