@@ -152,7 +152,7 @@ function TripadvisorLogo() {
 
 function Stars({ rating }: { rating: number }) {
   return (
-    <div className="reviews__stars" aria-label={`${rating} out of 5 stars`}>
+    <div className="reviews__stars" role="img" aria-label={`${rating} out of 5 stars`}>
       {Array.from({ length: 5 }).map((_, i) => (
         <i key={i} className={`fa-solid fa-star${i < rating ? ' is-filled' : ''}`} aria-hidden="true" />
       ))}
@@ -302,6 +302,7 @@ function ReviewsSection() {
         onMouseLeave={() => setPaused(false)}
         onFocus={() => setPaused(true)}
         onBlur={() => setPaused(false)}
+        role="region"
         aria-roledescription="carousel"
         aria-label="Guest reviews"
       >

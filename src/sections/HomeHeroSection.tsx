@@ -24,7 +24,7 @@ function HomeHeroSection({ backgroundImage = heroImage }: HomeHeroSectionProps) 
           <div className="home-hero__subtitle">
             <p>Luxury Guest House Accommodation</p>
           </div>
-          <div className="home-hero__backup" aria-label="Backup utilities">
+          <div className="home-hero__backup" role="group" aria-label="Backup utilities">
             <i className="fa-solid fa-bolt" aria-hidden="true" />
             <span>Solar &amp; Water Backup</span>
           </div>

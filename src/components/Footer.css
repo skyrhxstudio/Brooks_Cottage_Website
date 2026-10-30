@@ -15,7 +15,7 @@
 .site-footer__image::after {
   position: absolute;
   inset: 0;
-  content: '';
+  content: "";
   background: linear-gradient(
     to bottom,
     rgba(22, 22, 22, 0) 0%,
@@ -50,7 +50,7 @@
   align-items: flex-start;
   gap: 8px;
   min-width: 0;
-  font-family: 'OmegaCT', serif;
+  font-family: "OmegaCT", serif;
   font-size: 20px;
   line-height: 1.3;
   font-style: normal;
@@ -59,7 +59,7 @@
 
 .site-footer__column h2 {
   margin: 0 0 16px;
-  font-family: 'OmegaCT', serif;
+  font-family: "OmegaCT", serif;
   font-size: 20px;
   font-weight: 400;
   line-height: 1.3;
@@ -134,7 +134,7 @@
 
 .site-footer__wordmark {
   color: #ffffff;
-  font-family: 'Pinyon Script', cursive !important; 
+  font-family: "Pinyon Script", cursive !important;
   font-size: 72px;
   line-height: 1;
   text-decoration: none;
@@ -143,7 +143,7 @@
 
 .site-footer__tagline {
   margin: 0;
-  font-family: 'OmegaCT', serif;
+  font-family: "OmegaCT", serif;
   font-size: 20px;
   line-height: 1.3;
   color: rgba(255, 255, 255, 0.85);
@@ -184,14 +184,13 @@
 }
 
 .site-footer__award {
- display: block;
- flex: 0 0 184px;
- width: 184px;
- height: 184px;
- object-fit: contain;
- border-radius: 9999px;
+  display: block;
+  flex: 0 0 184px;
+  width: 184px;
+  height: 184px;
+  object-fit: contain;
+  border-radius: 9999px;
 }
-
 
 .site-footer__legal {
   display: flex;
@@ -199,7 +198,7 @@
   align-items: center;
   gap: 24px;
   padding-top: 40px;
-  font-family: 'OmegaCT', serif;
+  font-family: "OmegaCT", serif;
   font-size: 16px;
   line-height: 1;
   color: rgba(255, 255, 255, 0.85);
@@ -363,7 +362,6 @@
     aspect-ratio: 1 / 1;
   }
 
-
   .site-footer__legal {
     padding-top: 32px;
     font-size: 14px;
@@ -372,5 +370,5 @@
 }
 
 .site-footer :is(h1, h2, h3, p, a, address, span, strong, small) {
-  font-family: 'OmegaCT', serif;
+  font-family: "OmegaCT", serif;
 }

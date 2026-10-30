@@ -110,7 +110,7 @@ function ContactPage() {
               BOOK NOW
               <i className="fa-solid fa-arrow-up-right-from-square" aria-hidden="true" />
             </a>
-            <div className="contact-page__socials" aria-label="Brooks Cottage social media">
+            <div className="contact-page__socials" role="group" aria-label="Brooks Cottage social media">
               <a
                 href="https://www.facebook.com/p/Brooks-Cottage-100065196384318/"
                 target="_blank"

@@ -1,25 +1,28 @@
-import { Link } from 'react-router'
-import footerImage from '../assets/images/footer_img.webp'
-import travelAwardImage from '../assets/images/travel_awards.webp'
-import bookingAwardImage from '../assets/images/booking_award.webp'
-import bestValueAwardImage from '../assets/images/best_value_award.webp'
-import './Footer.css'
+import { Link } from "react-router";
+import footerImage from "../assets/images/footer_img.webp";
+import travelAwardImage from "../assets/images/travel_awards.webp";
+import bookingAwardImage from "../assets/images/booking_award.webp";
+import bestValueAwardImage from "../assets/images/best_value_award.webp";
+import "./Footer.css";
 
 const ROOM_LINKS = [
-  { label: 'THE CONTEMPORARY ROOM', to: '/rooms/the-contemporary-room' },
-  { label: 'THE INDONESIAN ROOM', to: '/rooms/the-indonesian-room' },
-  { label: 'THE MODERN VICTORIAN ROOM', to: '/rooms/the-modern-victorian-room' },
-  { label: 'THE MAHOGANY ROOM', to: '/rooms/the-mahogany-room' },
-  { label: 'THE ECLECTIC ROOM', to: '/rooms/the-eclectic' },
-]
+  { label: "THE CONTEMPORARY ROOM", to: "/rooms/the-contemporary-room" },
+  { label: "THE INDONESIAN ROOM", to: "/rooms/the-indonesian-room" },
+  {
+    label: "THE MODERN VICTORIAN ROOM",
+    to: "/rooms/the-modern-victorian-room",
+  },
+  { label: "THE MAHOGANY ROOM", to: "/rooms/the-mahogany-room" },
+  { label: "THE ECLECTIC ROOM", to: "/rooms/the-eclectic-room" },
+];
 
 const PAGE_LINKS = [
-  { label: 'HOME', to: '/' },
-  { label: 'ROOMS & RATES', to: '/rooms-rates' },
-  { label: 'LOCATION & ATTRACTIONS', to: '/location-attractions' },
-  { label: 'CONTACT', to: '/contact' },
-  { label: 'GALLERY', to: '/gallery' },
-]
+  { label: "HOME", to: "/" },
+  { label: "ROOMS & RATES", to: "/rooms-rates" },
+  { label: "LOCATION & ATTRACTIONS", to: "/location-attractions" },
+  { label: "CONTACT", to: "/contact" },
+  { label: "GALLERY", to: "/gallery" },
+];
 
 function Footer() {
   return (
@@ -81,44 +84,81 @@ function Footer() {
 
         <div className="site-footer__brand-row">
           <div className="site-footer__brand">
-            <Link to="/" className="site-footer__monogram" aria-label="Brooks Cottage home">
+            <Link
+              to="/"
+              className="site-footer__monogram"
+              aria-label="Brooks Cottage home"
+            >
               <img src="/favicon.svg" alt="Brooks Cottage" />
             </Link>
             <div className="site-footer__brand-details">
               <Link to="/" className="site-footer__wordmark">
                 Brooks Cottage
               </Link>
-              <p className="site-footer__tagline">LUXURY GUEST HOUSE ACCOMMODATION</p>
+              <p className="site-footer__tagline">
+                LUXURY GUEST HOUSE ACCOMMODATION
+              </p>
               <div className="site-footer__socials">
-                <a href="https://www.instagram.com/brooks_cottage1/" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+                <a
+                  href="https://www.instagram.com/brooks_cottage1/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label="Instagram"
+                >
                   <i className="fa-brands fa-instagram" aria-hidden="true" />
                 </a>
-                <a href="https://www.facebook.com/p/Brooks-Cottage-100065196384318/" target="_blank" rel="noopener noreferrer" aria-label="Facebook">
+                <a
+                  href="https://www.facebook.com/p/Brooks-Cottage-100065196384318/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label="Facebook"
+                >
                   <i className="fa-brands fa-facebook-f" aria-hidden="true" />
                 </a>
               </div>
             </div>
           </div>
 
-          <div className="site-footer__awards" aria-label="Guest awards and recognition">
-            <img className="site-footer__award" src={travelAwardImage} alt="Kayak Travel Awards" />
-            <img className="site-footer__award" src={bookingAwardImage} alt="Booking.com Traveller Review Awards, rated 9.6" />
-            <img className="site-footer__award" src={bestValueAwardImage} alt="Best Value accommodation award" />
+          <div
+            className="site-footer__awards"
+            aria-label="Guest awards and recognition"
+          >
+            <img
+              className="site-footer__award"
+              src={travelAwardImage}
+              alt="Kayak Travel Awards"
+            />
+            <img
+              className="site-footer__award"
+              src={bookingAwardImage}
+              alt="Booking.com Traveller Review Awards, rated 9.6"
+            />
+            <img
+              className="site-footer__award"
+              src={bestValueAwardImage}
+              alt="Best Value accommodation award"
+            />
           </div>
         </div>
 
         <div className="site-footer__legal">
-          <p>© ALL RIGHTS RESERVED, {new Date().getFullYear()}, BROOKS COTTAGE</p>
           <p>
-            DESIGNED &amp; DEVELOPED, WITH ❤︎, BY{' '}
-            <a href="https://skyrhxstudio.com" target="_blank" rel="noopener noreferrer">
+            © ALL RIGHTS RESERVED, {new Date().getFullYear()}, BROOKS COTTAGE
+          </p>
+          <p>
+            DESIGNED &amp; DEVELOPED, WITH ❤︎, BY{" "}
+            <a
+              href="https://skyrhxstudio.com"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               SKYRHX | A Creative Studio
             </a>
           </p>
         </div>
       </div>
     </footer>
-  )
+  );
 }
 
-export default Footer
+export default Footer;
