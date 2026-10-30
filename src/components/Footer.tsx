@@ -1,8 +1,8 @@
 import { Link } from "react-router";
 import footerImage from "../assets/images/footer_img.webp";
-import travelAwardImage from "../assets/images/travel_awards.webp";
-import bookingAwardImage from "../assets/images/booking_award.webp";
-import bestValueAwardImage from "../assets/images/best_value_award.webp";
+import travelAwardImage from "../assets/images/travel_awards.png";
+import bookingAwardImage from "../assets/images/booking_award.png";
+import bestValueAwardImage from "../assets/images/best_value_award.png";
 import "./Footer.css";
 
 const ROOM_LINKS = [
