@@ -98,7 +98,6 @@ function ContactPage() {
           </div>
 
           <aside className="contact-page__booking">
-            <h2>READY TO STAY?</h2>
             <p>
               Book your stay at Brooks Cottage directly through Nightsbridge.
             </p>

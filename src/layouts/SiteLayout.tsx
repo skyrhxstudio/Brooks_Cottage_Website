@@ -1,5 +1,7 @@
 import { Outlet, useLocation } from 'react-router'
-import { useEffect, useState } from 'react'
+import { useEffect, useRef, useState } from 'react'
+import Lenis from 'lenis'
+import 'lenis/dist/lenis.css'
 import Footer from '../components/Footer'
 import Navbar from '../components/Navbar'
 import './SiteLayout.css'
@@ -8,10 +10,36 @@ function SiteLayout() {
   const { pathname } = useLocation()
   const isHomePage = pathname === '/'
   const [showBackToTop, setShowBackToTop] = useState(false)
+  const lenisRef = useRef<Lenis | null>(null)
 
   useEffect(() => {
     window.scrollTo({ top: 0, left: 0, behavior: 'auto' })
   }, [pathname])
+
+  useEffect(() => {
+    if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) return
+
+    const lenis = new Lenis({
+      duration: 1.1,
+      smoothWheel: true,
+      wheelMultiplier: 1,
+      touchMultiplier: 1,
+    })
+    lenisRef.current = lenis
+
+    let animationFrame = 0
+    const update = (time: number) => {
+      lenis.raf(time)
+      animationFrame = requestAnimationFrame(update)
+    }
+    animationFrame = requestAnimationFrame(update)
+
+    return () => {
+      cancelAnimationFrame(animationFrame)
+      lenis.destroy()
+      lenisRef.current = null
+    }
+  }, [])
 
   useEffect(() => {
     const updateBackToTop = () => setShowBackToTop(window.scrollY > 600)
@@ -22,6 +50,10 @@ function SiteLayout() {
   }, [])
 
   const scrollToTop = () => {
+    if (lenisRef.current) {
+      lenisRef.current.scrollTo(0, { duration: 1 })
+      return
+    }
     window.scrollTo({ top: 0, left: 0, behavior: 'smooth' })
   }
 
