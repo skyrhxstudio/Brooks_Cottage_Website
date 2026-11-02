@@ -19,7 +19,7 @@ function IndonesianRoomPage() {
           'Private patio area',
           'Full en-suite bathroom',
           'Queen bed',
-          'Children aged 0–3 stay for free when sharing a bed with their parents',
+          'Children aged 0–3 stay for free if they share a bed with their parents',
         ]}
         images={[
           roomImage,

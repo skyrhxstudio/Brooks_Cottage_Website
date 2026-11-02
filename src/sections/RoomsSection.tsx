@@ -19,7 +19,7 @@ const ROOMS: Room[] = [
   {
     title: 'The Contemporary Room',
     description:
-      'Modern room features bay window, with large bathroom and dressing room combined. This en-suite bathroom has a his and hers shower with modern bath. Double bed.',
+      'Modern room features bay window, with large bathroom and dressing room combined. This en-suite bathroom has a his and hers shower with modern bath. Queen bed.',
     image: contemporaryRoomImage,
     detailsPath: '/rooms/the-contemporary-room',
   },
