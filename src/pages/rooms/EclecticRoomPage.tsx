@@ -13,7 +13,7 @@ function EclecticRoomPage() {
       <RoomDetailLayout
         pageId="the-eclectic-room-page"
         title="The Eclectic Room"
-        description="Direct access from the swimming pool gives this room every advantage. Its eclectic decor is easy on the eye. It has a queen bed and full en-suite bathroom."
+        description="Direct access from the swimming pool gives this room every advantage. It's eclectic decor is easy on the eye. It has a queen bed and full en-suite bathroom."
         features={['Pool-side entrance', 'Queen size bed', 'Full en-suite bathroom', 'Tea and coffee station']}
         images={[
           roomImage,

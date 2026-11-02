@@ -29,13 +29,13 @@ const rooms = [
   {
     name: 'THE MAHOGANY ROOM',
     wideImage: mahoganyRoom,
-    description: 'Very spacious mahogany styled room, with queen bed and full en-suite bathroom. A view of the swimming pool and the tranquil garden creates the relaxing atmosphere that you deserve.',
+    description: 'Very spacious mahogany styled room, with a queen bed and 3/4 bed, and a full en-suite bathroom. A view of the swimming pool and the tranquil garden creates the relaxing atmosphere that you deserve.',
     path: '/rooms/the-mahogany-room',
   },
   {
     name: 'THE ECLECTIC ROOM',
     wideImage: eclecticRoom,
-    description: 'Direct access from the swimming pool gives this room every advantage. Its eclectic decor is easy on the eye. It has a queen bed and full en-suite bathroom.',
+    description: 'Direct access from the swimming pool gives this room every advantage. It\'s eclectic decor is easy on the eye. It has a queen bed and full en-suite bathroom.',
     path: '/rooms/the-eclectic-room',
   },
 ]
