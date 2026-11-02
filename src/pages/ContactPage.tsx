@@ -63,10 +63,10 @@ function ContactPage() {
             <div>
               <h2>CALL US</h2>
               <a href="tel:+27824483902" className="contact-page__text-link">
-                +27 82 448 3902
+                Tel: +27 82 448 3902
               </a>
               <a href="tel:+27832337340" className="contact-page__text-link">
-                +27 83 233 7340
+                Cell: +27 82 448 3902
               </a>
             </div>
           </article>

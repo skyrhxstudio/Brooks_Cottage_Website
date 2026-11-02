@@ -13,12 +13,14 @@ function IndonesianRoomPage() {
       <RoomDetailLayout
         pageId="the-indonesian-room-page"
         title="The Indonesian Room"
-        description="Indonesian styled armoire and furnishings make this room stylish and comfortable. The private patio area is ideal for your early morning coffee."
-        singleRate="R950"
-        sharingRate="R550 pp"
-        additionalRate="Two people sharing: R1,100 total."
-        breakfastNote="Breakfast is excluded; breakfast costs R160 per person."
-        features={['Indonesian styled furnishings and armoire', 'Private patio area', 'Full en-suite bathroom']}
+        description="Indonesian styled armoire and furnishings make this room stylish and comfortable. The private patio area is ideal for your early morning coffee. Queen bed."
+        features={[
+          'Indonesian styled furnishings and armoire',
+          'Private patio area',
+          'Full en-suite bathroom',
+          'Queen bed',
+          'Children aged 0–3 stay for free when sharing a bed with their parents',
+        ]}
         images={[
           roomImage,
           roomImage,

@@ -6,8 +6,8 @@ import './RoomDetailLayout.css'
 interface RoomDetailLayoutProps {
   title: string
   description: string
-  singleRate: string
-  sharingRate: string
+  singleRate?: string
+  sharingRate?: string
   additionalRate?: string
   breakfastNote?: string
   features?: string[]
@@ -29,7 +29,7 @@ function RoomDetailLayout({
   singleRate,
   sharingRate,
   additionalRate,
-  breakfastNote = 'Breakfast costs R160 per person.',
+  breakfastNote,
   features = [],
   images,
   pageId,
@@ -107,19 +107,38 @@ function RoomDetailLayout({
         )}
       </section>
 
-      <aside className="room-detail-page__rates">
-        <p className="room-detail-page__label">Rates (SADC)</p>
-        <div>
-          <span>Single</span>
-          <strong>{singleRate}</strong>
-        </div>
-        <div>
-          <span>Double sharing</span>
-          <strong>{sharingRate}</strong>
-        </div>
-        {additionalRate && <p>{additionalRate}</p>}
-        <small>{breakfastNote}</small>
-      </aside>
+      {(singleRate || sharingRate || additionalRate || breakfastNote) && (
+        <aside className="room-detail-page__rates">
+          <p className="room-detail-page__label">Rates (SADC)</p>
+          {singleRate && (
+            <div>
+              <span>Single</span>
+              <strong>{singleRate}</strong>
+            </div>
+          )}
+          {sharingRate && (
+            <div>
+              <span>Double sharing</span>
+              <strong>{sharingRate}</strong>
+            </div>
+          )}
+          {additionalRate && <p>{additionalRate}</p>}
+          {breakfastNote && <small>{breakfastNote}</small>}
+        </aside>
+      )}
+      {!singleRate && !sharingRate && !additionalRate && !breakfastNote && (
+        <aside className="room-detail-page__rates room-detail-page__rates--nightsbridge">
+          <h2>View rates &amp; availability</h2>
+          <p>Rates vary by date and number of guests. View the current room rates and check availability directly on Nightsbridge.</p>
+          <a
+            href="https://book.nightsbridge.com/31512"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            VIEW RATES
+          </a>
+        </aside>
+      )}
 
       <section className="room-detail-page__similar">
         <header>

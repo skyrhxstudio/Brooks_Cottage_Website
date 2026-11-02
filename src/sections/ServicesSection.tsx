@@ -26,7 +26,8 @@ function ServicesSection() {
         <p>
           Inside your beautifully air-conditioned space, you will find
           everything you need for a seamless stay, including a dedicated tea
-          and coffee station, a fridge, a microwave, and a hair dryer.
+          and coffee station, a fridge, a microwave, a hair dryer, and basic
+          crockery and cutlery.
         </p>
       </div>
 

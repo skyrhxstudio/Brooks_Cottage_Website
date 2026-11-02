@@ -31,11 +31,12 @@ function AboutSection({ image = aboutSectionImage, imageAlt = 'Brooks Cottage' }
         <p className="about__quote-text">
           This lovely old home, with its Oregon floors and beautiful pressed
           ceilings, offers you a choice of five tastefully decorated
-          north-facing rooms each with their own private entrance and full
+          rooms each with their own private entrance and full
           en-suite bathrooms – shower and bath.
           <br />
           Conveniently located close to most foreign embassies, University of
-          Pretoria, Hillcrest and Brooklyn Shopping Centres.
+          Pretoria, Hillcrest, Brooklyn Mall, and other attractions. It is a
+          stone&apos;s throw from Africa&apos;s embassies and diplomatic precincts.
         </p>
       </div>
 

@@ -23,7 +23,7 @@ const rooms = [
   {
     name: 'THE MODERN VICTORIAN ROOM',
     wideImage: modernVictorianRoom,
-    description: 'Spacious, Modern Victorian has a king bed and a single bed, with full Victorian bathroom including ball and claw bath. This room is ideal for 3 sharing.',
+    description: 'Spacious Modern Victorian room has an extra-length king bed and 3/4 bed, with a full Victorian bathroom including a ball-and-claw bath. This room is ideal for three sharing.',
     path: '/rooms/the-modern-victorian-room',
   },
   {
@@ -35,7 +35,7 @@ const rooms = [
   {
     name: 'THE ECLECTIC ROOM',
     wideImage: eclecticRoom,
-    description: 'North facing and entry from the swimming pool gives this room all the advantages. Its eclectic decor is easy on the eye. It has a queen bed and full en-suite.',
+    description: 'Direct access from the swimming pool gives this room every advantage. Its eclectic decor is easy on the eye. It has a queen bed and full en-suite bathroom.',
     path: '/rooms/the-eclectic-room',
   },
 ]
@@ -59,7 +59,7 @@ function RoomsRatesPage() {
         </header>
 
         <p className="rooms-rates-page__intro">
-          Five tastefully decorated spacious bedrooms in various styles. Rooms that epitomise exceptional taste, north facing, with plenty of natural sunlight. Each room has a private entrance and all have full en-suite bathrooms (shower and bath). Creature comforts include uninterrupted electricity (solar), free fibre Wi-Fi, DSTV satellite television, laundry (charged), secure parking, private entrances, swimming pool, tea and coffee stations, air conditioner, hair dryer, microwave and fridge.
+          Five tastefully decorated spacious bedrooms in various styles. Each room has a private entrance and a full en-suite bathroom (shower and bath). Creature comforts include uninterrupted electricity (solar), free fibre Wi-Fi, DSTV satellite television, secure parking, private entrances, swimming pool, tea and coffee stations, air conditioner, hair dryer, microwave, fridge, and basic crockery and cutlery.
         </p>
 
         <div className="rooms-rates-page__list">
@@ -86,38 +86,6 @@ function RoomsRatesPage() {
           ))}
         </div>
 
-        <section className="rooms-rates-page__rates">
-          <header className="rooms-rates-page__rates-header">
-            <img src="/heading_decor.svg" alt="" aria-hidden="true" />
-            <h2>ROOM RATES</h2>
-          </header>
-          <div className="rooms-rates-page__rate-grid">
-            <article>
-              <p className="rooms-rates-page__rate-label">SADC rates</p>
-              <p className="rooms-rates-page__rate-name">Single</p>
-              <strong>From R950</strong>
-              <span>per night, excluding breakfast</span>
-            </article>
-            <article>
-              <p className="rooms-rates-page__rate-label">SADC rates</p>
-              <p className="rooms-rates-page__rate-name">Double sharing</p>
-              <strong>From R575</strong>
-              <span>per person sharing, excluding breakfast</span>
-            </article>
-            <article>
-              <p className="rooms-rates-page__rate-label">Including breakfast</p>
-              <p className="rooms-rates-page__rate-name">Single</p>
-              <strong>From R1,110</strong>
-              <span>per night</span>
-            </article>
-            <article>
-              <p className="rooms-rates-page__rate-label">Including breakfast</p>
-              <p className="rooms-rates-page__rate-name">Double sharing</p>
-              <strong>From R735</strong>
-              <span>per person sharing</span>
-            </article>
-          </div>
-        </section>
       </main>
     </>
   )

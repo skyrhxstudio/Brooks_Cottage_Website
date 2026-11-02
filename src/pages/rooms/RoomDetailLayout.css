@@ -6,7 +6,7 @@
   overflow-x: clip;
   display: grid;
   grid-template-columns: repeat(12, minmax(0, 1fr));
-  column-gap: 24px;
+  column-gap: 48px;
   row-gap: 48px;
   padding: 120px 0 160px;
   background: #ffffff;
@@ -45,8 +45,9 @@
 
 .room-detail-page__header h1 {
   font-size: 63px;
-  line-height: 1.02;
+  line-height: 1;
   text-transform: uppercase;
+  word-break: break-word;
 }
 
 .room-detail-page__carousel {
@@ -141,6 +142,44 @@
   padding: 32px;
   border-top: 2px solid #161616;
   background: #f7f7f7;
+  height: fit-content;
+}
+
+.room-detail-page__rates--nightsbridge h2 {
+  margin: 16px 0;
+  font-size: 24px;
+  line-height: 1;
+  text-transform: uppercase;
+}
+
+.room-detail-page__rates--nightsbridge > p:not(.room-detail-page__label) {
+  margin: 0;
+  color: #7c7c7c;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+.room-detail-page__rates--nightsbridge > a {
+  min-height: 56px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 24px;
+  padding: 24px 56px;
+  border-radius: 999px;
+  border: 0;
+  background-color: #D7942E;
+  color: #ffffff;
+  font-family: 'OmegaCT', serif;
+  font-size: 24px;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+  transition: opacity 0.2s ease;
+}
+
+.room-detail-page__rates--nightsbridge > a:hover {
+  opacity: 0.9;
 }
 
 .room-detail-page__rates > div {
@@ -158,13 +197,6 @@
   font-size: 32px;
 }
 
-.room-detail-page__rates > p:not(.room-detail-page__label),
-.room-detail-page__rates small {
-  display: block;
-  margin-top: 16px;
-  color: #7c7c7c;
-}
-
 .room-detail-page__similar {
   grid-column: 2 / 12;
 }
@@ -172,7 +204,7 @@
 .room-detail-page__similar > div {
   display: grid;
   grid-template-columns: repeat(4, minmax(0, 1fr));
-  gap: 24px;
+  gap: 16px;
 }
 
 .room-detail-page__similar a {
@@ -230,6 +262,10 @@
   .room-detail-page__header {
     gap: 16px;
   }
+  .room-detail-page__rates--nightsbridge > a {
+    padding: 0px 32px;
+    font-size: 16px;
+  }
   .room-detail-page__header img,
   .room-detail-page__description header img,
   .room-detail-page__similar header img {
@@ -279,6 +315,7 @@
   .room-detail-page__description ul {
     font-size: 16px;
   }
+  
   .room-detail-page__rates strong {
     font-size: 24px;
   }

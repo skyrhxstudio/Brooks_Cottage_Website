@@ -16,7 +16,7 @@ function HomePage() {
       <PageMetadata
         title="Luxury Guest House in Pretoria"
         path="/"
-        description="Stay at Brooks Cottage, an elegant guest house in Brooklyn, Pretoria, offering five en-suite rooms, secure parking, Wi-Fi, and breakfast."
+        description="Stay at Brooks Cottage, an elegant guest house in Brooklyn, Pretoria, offering five en-suite rooms, secure parking, and Wi-Fi."
       />
       <main id="home-page" className="home-page">
         <HomeHeroSection />

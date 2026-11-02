@@ -19,7 +19,7 @@ const ROOMS: Room[] = [
   {
     title: 'The Contemporary Room',
     description:
-      'Modern room features bay window, with large bathroom and dressingroom combined. This en-suite bathroom has a his and hers shower with modern bath. Double Bed.',
+      'Modern room features bay window, with large bathroom and dressing room combined. This en-suite bathroom has a his and hers shower with modern bath. Double bed.',
     image: contemporaryRoomImage,
     detailsPath: '/rooms/the-contemporary-room',
   },
@@ -33,7 +33,7 @@ const ROOMS: Room[] = [
   {
     title: 'The Modern Victorian Room',
     description:
-      'Spacious, modern victorian has a king bed and a single bed, with full victorian bathroom including ball and claw bath. This room is ideal for 3 sharing. Extra length King bed & 3/4 Bed.',
+      'Spacious Modern Victorian room has an extra-length king bed and 3/4 bed, with a full Victorian bathroom including a ball-and-claw bath. This room is ideal for three sharing.',
     image: modernVictorianRoomImage,
     detailsPath: '/rooms/the-modern-victorian-room',
   },
@@ -47,7 +47,7 @@ const ROOMS: Room[] = [
   {
     title: 'The Eclectic Room',
     description:
-      'North-facing, with direct access from the swimming pool, this room has every advantage. It\'s eclectic decor is easy on the eye, and it features a queen bed with a full en-suite bathroom.',
+      'With direct access from the swimming pool, this room has every advantage. Its eclectic decor is easy on the eye, and it features a queen bed with a full en-suite bathroom.',
     image: eclecticRoomImage,
     detailsPath: '/rooms/the-eclectic-room',
   },
@@ -117,7 +117,7 @@ function RoomsSection() {
       {/* Intro paragraph: col 5, spans 6 columns */}
       <div className="rooms__intro">
         <p>
-          Discover five spacious, north-facing rooms, each tastefully decorated to offer a unique blend of comfort and elegance. Enjoy abundant natural light, a private entrance, and a full en-suite bathroom with a shower and bath. Additional comforts include solar-powered electricity, free fibre Wi-Fi, DSTV, secure parking, a swimming pool, and laundry services at an additional charge.
+          Discover five spacious rooms, each tastefully decorated to offer a unique blend of comfort and elegance. Enjoy abundant natural light, a private entrance, and a full en-suite bathroom with a shower and bath. Additional comforts include solar-powered electricity, free fibre Wi-Fi, DSTV, secure parking, a swimming pool, and basic crockery and cutlery.
         </p>
       </div>
 
