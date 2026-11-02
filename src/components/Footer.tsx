@@ -57,7 +57,7 @@ function Footer() {
           <div className="site-footer__column">
             <h2>CONTACT:</h2>
             <a href="tel:+27824483902">Tel: +27 82 448 3902</a>
-            <a href="tel:+27832337340">Cell: +27 82 448 3902</a>
+            <a href="tel:+27824483902">Cell: +27 82 448 3902</a>
             <a href="mailto:chrisandnorma@brookscottage.co.za">
               CHRISANDNORMA@BROOKSCOTTAGE.CO.ZA
             </a>
