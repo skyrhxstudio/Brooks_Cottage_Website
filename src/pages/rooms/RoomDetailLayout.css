@@ -6,8 +6,8 @@
   overflow-x: clip;
   display: grid;
   grid-template-columns: repeat(12, minmax(0, 1fr));
-  column-gap: 48px;
-  row-gap: 48px;
+  column-gap: 80px;
+  row-gap: 80px;
   padding: 120px 0 160px;
   background: #ffffff;
 }
