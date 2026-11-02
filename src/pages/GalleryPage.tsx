@@ -2,11 +2,9 @@ import { useCallback, useEffect, useState } from "react";
 import { ChevronLeft, ChevronRight, X } from "lucide-react";
 import PageMetadata from "../components/PageMetadata";
 import heroImage from "../assets/images/hero_bg.webp";
-import aboutImage from "../assets/images/about_section_img.webp";
 import serviceImage1 from "../assets/images/services_section_img_1.webp";
 import serviceImage2 from "../assets/images/services_section_img_2.webp";
 import cookieImage from "../assets/images/cookie-img.webp";
-import dinnerImage from "../assets/images/dinner.webp";
 import fountainImage from "../assets/images/fountain.webp";
 import outsideImage1 from "../assets/images/outside (1).webp";
 import outsideImage2 from "../assets/images/outside (2).webp";
@@ -26,11 +24,9 @@ import "./GalleryPage.css";
 
 const galleryImages = [
   { id: 1, src: heroImage, alt: "Brooks Cottage exterior and garden" },
-  { id: 2, src: aboutImage, alt: "Brooks Cottage guest accommodation" },
   { id: 3, src: serviceImage1, alt: "Guest house facilities" },
   { id: 4, src: serviceImage2, alt: "Brooks Cottage service area" },
   { id: 5, src: cookieImage, alt: "Cookie welcome treat" },
-  { id: 6, src: dinnerImage, alt: "Dinner at Brooks Cottage" },
   { id: 7, src: fountainImage, alt: "Fountain at Brooks Cottage" },
   { id: 8, src: outsideImage1, alt: "Brooks Cottage exterior view" },
   { id: 9, src: outsideImage2, alt: "Brooks Cottage garden view" },
