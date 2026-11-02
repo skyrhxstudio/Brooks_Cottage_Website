@@ -6,10 +6,8 @@
 }
 
 .gallery-page__grid {
-  display: grid;
-  grid-template-columns: repeat(2, minmax(0, 1fr));
-  gap: 24px;
-  align-items: start;
+  column-count: 2;
+  column-gap: 24px;
 }
 
 .gallery-page__image-button {
@@ -20,6 +18,8 @@
   display: block;
   width: 100%;
   overflow: hidden;
+  break-inside: avoid;
+  margin: 0 0 24px;
 }
 
 .gallery-page__image-button:focus-visible {
@@ -120,7 +120,7 @@
 
 @media (max-width: 900px) {
   .gallery-page__grid {
-    grid-template-columns: 1fr;
+    column-count: 1;
   }
 
   .gallery-page__control--previous {

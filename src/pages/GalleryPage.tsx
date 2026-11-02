@@ -12,6 +12,8 @@ import outsideImage3 from "../assets/images/outside (3).webp";
 import outsideImage4 from "../assets/images/outside (4).webp";
 import outsideImage5 from "../assets/images/outside (5).webp";
 import sugarImage from "../assets/images/sugar-img.webp";
+import loungeImage1 from "../assets/images/lounge_1.jpeg";
+import loungeImage2 from "../assets/images/lounge_2.jpeg";
 import contemporaryRoom from "../assets/images/rooms/The Contemporary Room.webp";
 import contemporaryRoomDetail from "../assets/images/rooms/contemporary-room-img.webp";
 import contemporaryRoomBathroom from "../assets/images/rooms/contemp_bathroom_1.jpeg";
@@ -37,6 +39,8 @@ const galleryImages = [
   { id: 11, src: outsideImage4, alt: "Brooks Cottage outdoor area" },
   { id: 12, src: outsideImage5, alt: "Brooks Cottage outside view" },
   { id: 13, src: sugarImage, alt: "Sugar at Brooks Cottage" },
+  { id: 25, src: loungeImage1, alt: "Brooks Cottage lounge" },
+  { id: 26, src: loungeImage2, alt: "Brooks Cottage lounge view" },
   { id: 14, src: contemporaryRoom, alt: "The Contemporary Room" },
   { id: 15, src: contemporaryRoomDetail, alt: "The Contemporary Room detail" },
   { id: 16, src: contemporaryRoomBathroom, alt: "The Contemporary Room bathroom" },
