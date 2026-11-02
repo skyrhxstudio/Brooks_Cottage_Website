@@ -14,10 +14,13 @@ import outsideImage5 from "../assets/images/outside (5).webp";
 import sugarImage from "../assets/images/sugar-img.webp";
 import contemporaryRoom from "../assets/images/rooms/The Contemporary Room.webp";
 import contemporaryRoomDetail from "../assets/images/rooms/contemporary-room-img.webp";
-import contemporaryRoomBathroom from "../assets/images/rooms/contemporary-room-img (1).webp";
+import contemporaryRoomBathroom from "../assets/images/rooms/contemp_bathroom_1.jpeg";
+import contemporaryRoomBathroomTwo from "../assets/images/rooms/contemp_bathroom_2.jpeg";
+import contemporaryRoomCoffeeTable from "../assets/images/rooms/contemp_coffee.jpeg";
 import contemporaryRoomWindow from "../assets/images/rooms/contemporary-room-img (2).webp";
 import eclecticRoom from "../assets/images/rooms/The Eclectic Room.webp";
 import indonesianRoom from "../assets/images/rooms/The Indonesian Room.webp";
+import indonesianRoomBathroom from "../assets/images/rooms/indonesian_bathroom.jpeg";
 import mahoganyRoom from "../assets/images/rooms/The Mahogany Room.webp";
 import modernVictorianRoom from "../assets/images/rooms/The Modern Victorian Room.webp";
 import "./GalleryPage.css";
@@ -37,11 +40,14 @@ const galleryImages = [
   { id: 14, src: contemporaryRoom, alt: "The Contemporary Room" },
   { id: 15, src: contemporaryRoomDetail, alt: "The Contemporary Room detail" },
   { id: 16, src: contemporaryRoomBathroom, alt: "The Contemporary Room bathroom" },
-  { id: 17, src: contemporaryRoomWindow, alt: "The Contemporary Room window" },
-  { id: 18, src: eclecticRoom, alt: "The Eclectic Room" },
-  { id: 19, src: indonesianRoom, alt: "The Indonesian Room" },
-  { id: 20, src: mahoganyRoom, alt: "The Mahogany Room" },
-  { id: 21, src: modernVictorianRoom, alt: "The Modern Victorian Room" },
+  { id: 17, src: contemporaryRoomBathroomTwo, alt: "The Contemporary Room bathroom view" },
+  { id: 18, src: contemporaryRoomCoffeeTable, alt: "The Contemporary Room coffee table" },
+  { id: 19, src: contemporaryRoomWindow, alt: "The Contemporary Room window" },
+  { id: 20, src: eclecticRoom, alt: "The Eclectic Room" },
+  { id: 21, src: indonesianRoom, alt: "The Indonesian Room" },
+  { id: 22, src: indonesianRoomBathroom, alt: "The Indonesian Room bathroom" },
+  { id: 23, src: mahoganyRoom, alt: "The Mahogany Room" },
+  { id: 24, src: modernVictorianRoom, alt: "The Modern Victorian Room" },
 ];
 
 const GalleryPage = () => {

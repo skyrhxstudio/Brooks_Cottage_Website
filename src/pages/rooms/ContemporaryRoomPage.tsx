@@ -2,7 +2,9 @@ import PageMetadata from '../../components/PageMetadata'
 import RoomDetailLayout from './RoomDetailLayout'
 import roomImage from '../../assets/images/rooms/The Contemporary Room.webp'
 import windowImage from '../../assets/images/rooms/contemporary-room-img (2).webp'
-import bathroomImage from '../../assets/images/rooms/contemporary-room-img (1).webp'
+import bathroomImage from '../../assets/images/rooms/contemp_bathroom_1.jpeg'
+import bathroomImageTwo from '../../assets/images/rooms/contemp_bathroom_2.jpeg'
+import coffeeTableImage from '../../assets/images/rooms/contemp_coffee.jpeg'
 import detailImage from '../../assets/images/rooms/contemporary-room-img.webp'
 
 function ContemporaryRoomPage() {
@@ -21,7 +23,9 @@ function ContemporaryRoomPage() {
         images={[
           roomImage,
           windowImage,
+          coffeeTableImage,
           bathroomImage,
+          bathroomImageTwo,
           detailImage,
         ]}
       />

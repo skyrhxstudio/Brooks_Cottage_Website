@@ -65,8 +65,8 @@ function ContactPage() {
               <a href="tel:+27824483902" className="contact-page__text-link">
                 Tel: +27 82 448 3902
               </a>
-              <a href="tel:+27832337340" className="contact-page__text-link">
-                Cell: +27 82 448 3902
+              <a href="tel:+27824483902" className="contact-page__text-link">
+                Cell: 082 448 3902
               </a>
             </div>
           </article>

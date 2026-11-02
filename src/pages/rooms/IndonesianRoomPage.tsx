@@ -1,6 +1,7 @@
 import PageMetadata from '../../components/PageMetadata'
 import RoomDetailLayout from './RoomDetailLayout'
 import roomImage from '../../assets/images/rooms/The Indonesian Room.webp'
+import bathroomImage from '../../assets/images/rooms/indonesian_bathroom.jpeg'
 
 function IndonesianRoomPage() {
   return (
@@ -23,8 +24,7 @@ function IndonesianRoomPage() {
         ]}
         images={[
           roomImage,
-          roomImage,
-          roomImage,
+          bathroomImage,
         ]}
       />
     </>

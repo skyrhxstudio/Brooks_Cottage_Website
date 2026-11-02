@@ -56,12 +56,14 @@
 }
 
 .room-detail-page__carousel img {
-  width: 100%;
-  height: 100%;
+  width: auto;
+  max-width: 100%;
+  height: auto;
+  max-height: 700px;
   display: block;
-  object-fit: cover;
-  background: #ededed;
-  aspect-ratio: 16 / 7;
+  margin-inline: auto;
+  object-fit: contain;
+  background: transparent;
 }
 
 .room-detail-page__carousel-control {
@@ -275,9 +277,6 @@
   .room-detail-page__description header h2,
   .room-detail-page__similar header h2 {
     font-size: 36px;
-  }
-  .room-detail-page__carousel img {
-    aspect-ratio: 16 / 10;
   }
   .room-detail-page__carousel-control {
     width: 48px;
