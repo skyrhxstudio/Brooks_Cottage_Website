@@ -19,7 +19,7 @@ function ContemporaryRoomPage() {
         pageId="the-contemporary-room-page"
         title="The Contemporary Room"
         description="Modern room features bay window, with large bathroom and dressing room combined. This en-suite bathroom has a his and hers shower with modern bath."
-        features={['Bay window', 'Large bathroom and dressing room', 'His and hers shower', 'Modern bath']}
+        features={['Bay window', 'Large bathroom and dressing room', 'His and hers shower', 'Modern bath', 'Ceiling fan']}
         images={[
           roomImage,
           windowImage,

@@ -35,8 +35,8 @@ function AboutSection({ image = aboutSectionImage, imageAlt = 'Brooks Cottage' }
           en-suite bathrooms – shower and bath.
           <br />
           Conveniently located close to most foreign embassies, University of
-          Pretoria, Hillcrest, Brooklyn Mall, and other attractions. It is a
-          stone&apos;s throw from Africa&apos;s embassies and diplomatic precincts.
+          Pretoria, Hillcrest Shopping Centre, Brooklyn Mall, and other attractions. It is a
+          stone&apos;s throw from embassies and diplomatic precincts.
         </p>
       </div>
 
