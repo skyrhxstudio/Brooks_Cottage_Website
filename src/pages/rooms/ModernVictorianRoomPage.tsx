@@ -1,6 +1,8 @@
 import PageMetadata from '../../components/PageMetadata'
 import RoomDetailLayout from './RoomDetailLayout'
 import roomImage from '../../assets/images/rooms/The Modern Victorian Room.webp'
+import modernVictorianRoomImageSix from '../../assets/images/rooms/modern-victorian-room-img-6.jpg'
+import modernVictorianRoomImageSeven from '../../assets/images/rooms/modern-victorian-room-img-7.jpg'
 
 function ModernVictorianRoomPage() {
   return (
@@ -17,8 +19,8 @@ function ModernVictorianRoomPage() {
         features={['Garden view', 'Coffee station with microwave, crockery and cutlery', 'XL king bed and 3/4 bed', 'En-suite bathroom with bath and separate shower', 'Work station with high speed Wi-Fi', 'Ceiling fan']}
         images={[
           roomImage,
-          roomImage,
-          roomImage,
+          modernVictorianRoomImageSix,
+          modernVictorianRoomImageSeven,
         ]}
       />
     </>

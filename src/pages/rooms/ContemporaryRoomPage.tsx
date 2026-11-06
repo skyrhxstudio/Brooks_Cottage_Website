@@ -6,6 +6,8 @@ import bathroomImage from '../../assets/images/rooms/contemp_bathroom_1.jpeg'
 import bathroomImageTwo from '../../assets/images/rooms/contemp_bathroom_2.jpeg'
 import coffeeTableImage from '../../assets/images/rooms/contemp_coffee.jpeg'
 import detailImage from '../../assets/images/rooms/contemporary-room-img.webp'
+import contemRoomOne from '../../assets/images/rooms/contem_room_1.jpg'
+import contemRoomTwo from '../../assets/images/rooms/contem_room_2.jpg'
 
 function ContemporaryRoomPage() {
   return (
@@ -22,6 +24,8 @@ function ContemporaryRoomPage() {
         features={['Bay window', 'Large bathroom and dressing room', 'His and hers shower', 'Modern bath', 'Ceiling fan']}
         images={[
           roomImage,
+          contemRoomOne,
+          contemRoomTwo,
           windowImage,
           coffeeTableImage,
           bathroomImage,

@@ -1,7 +1,8 @@
 import PageMetadata from '../../components/PageMetadata'
 import RoomDetailLayout from './RoomDetailLayout'
-import roomImage from '../../assets/images/rooms/The Indonesian Room.webp'
 import bathroomImage from '../../assets/images/rooms/indonesian_bathroom.jpeg'
+import roomImageFive from '../../assets/images/rooms/indonesian-room-img-5.webp'
+import outsideBathImage from '../../assets/images/rooms/outside_bath.webp'
 
 function IndonesianRoomPage() {
   return (
@@ -26,7 +27,8 @@ function IndonesianRoomPage() {
           'Children aged 0–3 stay for free if they share a bed with their parents',
         ]}
         images={[
-          roomImage,
+          roomImageFive,
+          outsideBathImage,
           bathroomImage,
         ]}
       />

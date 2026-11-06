@@ -95,6 +95,7 @@
 .about__image {
   grid-column: 1 / 7;
   grid-row: 2;
+  position: relative;
   min-height: 720px;
   background-color: #000000;
   overflow: hidden;
@@ -120,10 +121,12 @@
   z-index: 1;
 }
 
-/* Div 5 - Location pill (white fading to transparent) */
+/* Div 5 - Location button */
 .about__location {
-  flex: 1 0 auto;
-  align-self: flex-start;
+  position: absolute;
+  right: 24px;
+  bottom: 24px;
+  z-index: 2;
   display: flex;
   flex-direction: row;
   justify-content: flex-start;
@@ -131,19 +134,17 @@
   gap: 16px;
   padding: 24px 56px;
   border-radius: 999px;
-  transform: translateY(-100%);
-  background: linear-gradient(
-    90deg,
-    rgba(255, 255, 255, 1) 0%,
-    rgba(255, 255, 255, 1) 50%,
-    rgba(255, 255, 255, 0) 60%
-  );
+  background: #D7942E;
+  color: #fff;
+  text-decoration: none;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
 }
 
 .about__pin {
   display: flex;
   flex-shrink: 0;
-  color: #D7942E;
+  color: #fff;
   font-size: 24px;
 }
 
@@ -151,7 +152,7 @@
   margin: 0;
   font-family: 'OmegaCT', serif;
   font-size: 24px;
-  color: #D7942E;
+  color: #fff;
   white-space: nowrap;
 }
 
@@ -231,9 +232,7 @@
   .about__location {
     align-self: auto;
     flex: 0 0 auto;
-    padding: 0;
     transform: none;
-    background: none;
   }
 }
 
@@ -249,5 +248,12 @@
   .about__quote-text { font-size: 16px; }
   .about__location p,
   .about__cta p { font-size: 16px; }
+  .about__location {
+    right: 16px;
+    bottom: 16px;
+    max-width: calc(100% - 32px);
+    padding: 16px 20px;
+  }
+  .about__location p { white-space: normal; }
   .about__cta { padding: 20px 32px; }
 }

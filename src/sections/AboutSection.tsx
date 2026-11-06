@@ -34,26 +34,31 @@ function AboutSection({ image = aboutSectionImage, imageAlt = 'Brooks Cottage' }
           rooms each with their own private entrance and full
           en-suite bathrooms – shower and bath.
           <br />
-          Conveniently located close to most foreign embassies, University of
-          Pretoria, Hillcrest Shopping Centre, Brooklyn Mall, and other attractions. It is a
-          stone&apos;s throw from embassies and diplomatic precincts.
+          Conveniently located close to embassies, University of Pretoria,
+          Hillcrest Shopping Centre, Brooklyn Mall, and other attractions.
+          It is a stone&apos;s throw from embassies and diplomatic precincts.
         </p>
       </div>
 
       {/* Div 3: Image - cols 1 to 6 */}
       <div className="about__image">
         <img src={image} alt={imageAlt} />
-      </div>
-
-      {/* Div 5 + Div 4: Location pill and Reservation pill */}
-      <div className="about__pills">
-        <div className="about__location">
+        <a
+          href="https://www.google.com/maps/search/?api=1&query=Brooks%20Cottage%2C%20283%20Brooks%20Street%2C%20Brooklyn%2C%20Pretoria%2C%20South%20Africa"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="about__location"
+          aria-label="Get directions to Brooks Cottage in Google Maps"
+        >
           <div className="about__pin">
             <i className="fa-solid fa-location-dot" aria-hidden="true" />
           </div>
           <p>BROOKLYN, PRETORIA, SOUTH AFRICA</p>
-        </div>
+        </a>
+      </div>
 
+      {/* Div 4: Reservation pill */}
+      <div className="about__pills">
         <a
           href="https://book.nightsbridge.com/31512"
           target="_blank"

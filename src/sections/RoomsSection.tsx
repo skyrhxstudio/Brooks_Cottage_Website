@@ -2,7 +2,7 @@
 import { useCallback, useEffect, useRef, useState } from 'react'
 import { Link } from 'react-router'
 import contemporaryRoomImage from '../assets/images/rooms/The Contemporary Room.webp'
-import indonesianRoomImage from '../assets/images/rooms/The Indonesian Room.webp'
+import indonesianRoomImage from '../assets/images/rooms/indonesian-room-img-5.webp'
 import modernVictorianRoomImage from '../assets/images/rooms/The Modern Victorian Room.webp'
 import mahoganyRoomImage from '../assets/images/rooms/The Mahogany Room.webp'
 import eclecticRoomImage from '../assets/images/rooms/The Eclectic Room.webp'

@@ -1,6 +1,9 @@
 import PageMetadata from '../../components/PageMetadata'
 import RoomDetailLayout from './RoomDetailLayout'
 import roomImage from '../../assets/images/rooms/The Eclectic Room.webp'
+import electricRoomImage from '../../assets/images/rooms/electric_room.jpg'
+import electricRoomImageTwo from '../../assets/images/rooms/electric_room_2.jpg'
+import electricRoomImageThree from '../../assets/images/rooms/electric_room_3.jpg'
 
 function EclecticRoomPage() {
   return (
@@ -17,8 +20,9 @@ function EclecticRoomPage() {
         features={['Pool-side entrance', 'Queen size bed', 'Full en-suite bathroom', 'Tea and coffee station', 'Ceiling fan']}
         images={[
           roomImage,
-          roomImage,
-          roomImage,
+          electricRoomImage,
+          electricRoomImageTwo,
+          electricRoomImageThree,
         ]}
       />
     </>

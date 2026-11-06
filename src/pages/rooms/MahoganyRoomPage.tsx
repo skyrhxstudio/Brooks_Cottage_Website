@@ -1,6 +1,14 @@
 import PageMetadata from '../../components/PageMetadata'
 import RoomDetailLayout from './RoomDetailLayout'
 import roomImage from '../../assets/images/rooms/The Mahogany Room.webp'
+import mahoganyRoomImage from '../../assets/images/rooms/mahogany_room.jpg'
+import mahoganyRoomImageTwo from '../../assets/images/rooms/mahogany_room_2.jpg'
+import mahoganyRoomImageThree from '../../assets/images/rooms/mahogany_room_3.jpg'
+import mahoganyRoomImageFour from '../../assets/images/rooms/mahogany_room_4.jpg'
+import mahoganyRoomImageFive from '../../assets/images/rooms/mahogany_room_5.jpg'
+import mahoganyRoomImageSix from '../../assets/images/rooms/mahogany_room_6.jpg'
+import mahoganyRoomImageSeven from '../../assets/images/rooms/mahogany_room_7.jpg'
+import mahoganyRoomImageEight from '../../assets/images/rooms/mahogany_room_8.jpg'
 
 function MahoganyRoomPage() {
   return (
@@ -17,8 +25,14 @@ function MahoganyRoomPage() {
         features={['Queen bed', '3/4 bed', 'Private entrance', 'Dining/work station area', 'Coffee station and microwave', 'Comfortable couch', 'Ceiling fan']}
         images={[
           roomImage,
-          roomImage,
-          roomImage,
+          mahoganyRoomImage,
+          mahoganyRoomImageTwo,
+          mahoganyRoomImageThree,
+          mahoganyRoomImageFour,
+          mahoganyRoomImageFive,
+          mahoganyRoomImageSix,
+          mahoganyRoomImageSeven,
+          mahoganyRoomImageEight,
         ]}
       />
     </>

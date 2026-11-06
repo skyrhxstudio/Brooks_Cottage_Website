@@ -1,7 +1,7 @@
 import PageMetadata from '../components/PageMetadata'
 import { Link } from 'react-router'
 import contemporaryRoom from '../assets/images/rooms/The Contemporary Room.webp'
-import indonesianRoom from '../assets/images/rooms/The Indonesian Room.webp'
+import indonesianRoom from '../assets/images/rooms/indonesian-room-img-5.webp'
 import modernVictorianRoom from '../assets/images/rooms/The Modern Victorian Room.webp'
 import mahoganyRoom from '../assets/images/rooms/The Mahogany Room.webp'
 import eclecticRoom from '../assets/images/rooms/The Eclectic Room.webp'
