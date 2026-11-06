@@ -3,6 +3,9 @@ import RoomDetailLayout from './RoomDetailLayout'
 import roomImage from '../../assets/images/rooms/The Modern Victorian Room.webp'
 import modernVictorianRoomImageSix from '../../assets/images/rooms/modern-victorian-room-img-6.jpg'
 import modernVictorianRoomImageSeven from '../../assets/images/rooms/modern-victorian-room-img-7.jpg'
+import modernVictorianBathroomImage from '../../assets/images/rooms/modern_vic_bathroom.jpg'
+import modernVictorianBathroomImageTwo from '../../assets/images/rooms/modern_vic_bathroom_2.jpg'
+import modernVictorianKettleImage from '../../assets/images/rooms/modern_vic_kettle.jpg'
 
 function ModernVictorianRoomPage() {
   return (
@@ -21,6 +24,9 @@ function ModernVictorianRoomPage() {
           roomImage,
           modernVictorianRoomImageSix,
           modernVictorianRoomImageSeven,
+          modernVictorianBathroomImage,
+          modernVictorianBathroomImageTwo,
+          modernVictorianKettleImage,
         ]}
       />
     </>

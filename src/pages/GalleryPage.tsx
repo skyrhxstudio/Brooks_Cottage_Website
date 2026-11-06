@@ -36,11 +36,11 @@ import mahoganyRoomImageTwo from "../assets/images/rooms/mahogany_room_2.jpg";
 import mahoganyRoomImageThree from "../assets/images/rooms/mahogany_room_3.jpg";
 import mahoganyRoomImageFour from "../assets/images/rooms/mahogany_room_4.jpg";
 import mahoganyRoomImageFive from "../assets/images/rooms/mahogany_room_5.jpg";
-import mahoganyRoomImageSix from "../assets/images/rooms/mahogany_room_6.jpg";
-import mahoganyRoomImageSeven from "../assets/images/rooms/mahogany_room_7.jpg";
-import mahoganyRoomImageEight from "../assets/images/rooms/mahogany_room_8.jpg";
 import modernVictorianRoomImageSix from "../assets/images/rooms/modern-victorian-room-img-6.jpg";
 import modernVictorianRoomImageSeven from "../assets/images/rooms/modern-victorian-room-img-7.jpg";
+import modernVictorianBathroomImage from "../assets/images/rooms/modern_vic_bathroom.jpg";
+import modernVictorianBathroomImageTwo from "../assets/images/rooms/modern_vic_bathroom_2.jpg";
+import modernVictorianKettleImage from "../assets/images/rooms/modern_vic_kettle.jpg";
 import "./GalleryPage.css";
 
 const galleryImages = [
@@ -78,12 +78,12 @@ const galleryImages = [
   { id: 34, src: mahoganyRoomImageThree, alt: "The Mahogany Room bathroom" },
   { id: 35, src: mahoganyRoomImageFour, alt: "The Mahogany Room bathroom vanity" },
   { id: 36, src: mahoganyRoomImageFive, alt: "The Mahogany Room outdoor view" },
-  { id: 41, src: mahoganyRoomImageSix, alt: "The Mahogany Room bathroom mirror" },
-  { id: 42, src: mahoganyRoomImageSeven, alt: "The Mahogany Room dressing area" },
-  { id: 43, src: mahoganyRoomImageEight, alt: "The Mahogany Room bathroom detail" },
   { id: 24, src: modernVictorianRoom, alt: "The Modern Victorian Room" },
   { id: 37, src: modernVictorianRoomImageSix, alt: "The Modern Victorian Room interior" },
   { id: 38, src: modernVictorianRoomImageSeven, alt: "The Modern Victorian Room exterior" },
+  { id: 47, src: modernVictorianBathroomImage, alt: "The Modern Victorian Room bathroom" },
+  { id: 48, src: modernVictorianBathroomImageTwo, alt: "The Modern Victorian Room bathroom vanity" },
+  { id: 49, src: modernVictorianKettleImage, alt: "The Modern Victorian Room coffee station" },
 ];
 
 const GalleryPage = () => {

@@ -6,9 +6,6 @@ import mahoganyRoomImageTwo from '../../assets/images/rooms/mahogany_room_2.jpg'
 import mahoganyRoomImageThree from '../../assets/images/rooms/mahogany_room_3.jpg'
 import mahoganyRoomImageFour from '../../assets/images/rooms/mahogany_room_4.jpg'
 import mahoganyRoomImageFive from '../../assets/images/rooms/mahogany_room_5.jpg'
-import mahoganyRoomImageSix from '../../assets/images/rooms/mahogany_room_6.jpg'
-import mahoganyRoomImageSeven from '../../assets/images/rooms/mahogany_room_7.jpg'
-import mahoganyRoomImageEight from '../../assets/images/rooms/mahogany_room_8.jpg'
 
 function MahoganyRoomPage() {
   return (
@@ -30,9 +27,6 @@ function MahoganyRoomPage() {
           mahoganyRoomImageThree,
           mahoganyRoomImageFour,
           mahoganyRoomImageFive,
-          mahoganyRoomImageSix,
-          mahoganyRoomImageSeven,
-          mahoganyRoomImageEight,
         ]}
       />
     </>
