@@ -53,7 +53,7 @@ function AboutSection({ image = aboutSectionImage, imageAlt = 'Brooks Cottage' }
           <div className="about__pin">
             <i className="fa-solid fa-location-dot" aria-hidden="true" />
           </div>
-          <p>BROOKLYN, PRETORIA, SOUTH AFRICA</p>
+          <p>BROOKLYN, PRETORIA, SA</p>
         </a>
       </div>
 
