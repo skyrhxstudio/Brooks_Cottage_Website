@@ -1,6 +1,7 @@
 ---
 deployment:
   tasks:
-    - export DEPLOYPATH=/home/brooksco/staging/brooks-cottage/
-    - /bin/mkdir -p $DEPLOYPATH
-    - /bin/cp -R dist/. $DEPLOYPATH
+    - /bin/mkdir -p /home/brooksco/backups
+    - /bin/bash -c 'if [ ! -d /home/brooksco/backups/brooks-cottage-original ]; then /bin/mkdir -p /home/brooksco/backups/brooks-cottage-original; /bin/cp -a /home/brooksco/public_html/. /home/brooksco/backups/brooks-cottage-original/; fi'
+    - /bin/find /home/brooksco/public_html -mindepth 1 -maxdepth 1 -exec /bin/rm -rf {} +
+    - /bin/cp -a dist/. /home/brooksco/public_html/
