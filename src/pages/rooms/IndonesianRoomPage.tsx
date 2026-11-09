@@ -23,6 +23,7 @@ function IndonesianRoomPage() {
           'Indoor shower',
           'Outdoor tub and shower',
           'Ceiling fan',
+          'Air conditioner',
           'Queen bed',
           'Children aged 0–3 stay for free if they share a bed with their parents',
         ]}

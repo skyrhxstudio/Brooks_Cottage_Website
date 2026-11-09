@@ -2,6 +2,9 @@
 import './HomeHeroSection.css'
 
 import heroImage from '../assets/images/hero_bg.webp'
+import travelAwardImage from '../assets/images/travel_awards.png'
+import bookingAwardImage from '../assets/images/booking_award.png'
+import bestValueAwardImage from '../assets/images/best_value_award.png'
 
 interface HomeHeroSectionProps {
   backgroundImage?: string
@@ -24,9 +27,35 @@ function HomeHeroSection({ backgroundImage = heroImage }: HomeHeroSectionProps) 
           <div className="home-hero__subtitle">
             <p>Luxury Guest House Accommodation</p>
           </div>
-          <div className="home-hero__backup" role="group" aria-label="Backup utilities">
-            <i className="fa-solid fa-bolt" aria-hidden="true" />
-            <span>Solar &amp; Water Backup</span>
+          <div className="home-hero__badges">
+            <div
+              className="home-hero__backup"
+              role="group"
+              aria-label="Backup utilities"
+            >
+              <i className="fa-solid fa-bolt" aria-hidden="true" />
+              <span>Solar &amp; Water Backup</span>
+            </div>
+            <div
+              className="home-hero__awards"
+              aria-label="Guest awards and recognition"
+            >
+              <img
+                className="home-hero__award"
+                src={travelAwardImage}
+                alt="Kayak Travel Awards"
+              />
+              <img
+                className="home-hero__award"
+                src={bookingAwardImage}
+                alt="Booking.com Traveller Review Awards, rated 9.6"
+              />
+              <img
+                className="home-hero__award"
+                src={bestValueAwardImage}
+                alt="Best Value accommodation award"
+              />
+            </div>
           </div>
         </div>
 

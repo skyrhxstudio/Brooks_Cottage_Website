@@ -19,7 +19,7 @@ function MahoganyRoomPage() {
         pageId="the-mahogany-room-page"
         title="The Mahogany Room"
         description="Very spacious mahogany styled room, with a queen bed and 3/4 bed, and a full en-suite bathroom. A view of the swimming pool and the tranquil garden creates the relaxing atmosphere that you deserve."
-        features={['Queen bed', '3/4 bed', 'Private entrance', 'Dining/work station area', 'Coffee station and microwave', 'Comfortable couch', 'Ceiling fan']}
+        features={['Queen bed', '3/4 bed', 'Private entrance', 'Dining/work station area', 'Coffee station and microwave', 'Comfortable couch', 'Ceiling fan', 'Air conditioner']}
         images={[
           roomImage,
           mahoganyRoomImage,
