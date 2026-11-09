@@ -1,4 +1,6 @@
 ---
 deployment:
   tasks:
-    - /bin/bash -c 'set -e; REPO="/home/brooksco/repositories/Brooks_Cottage_Website"; WEB="/home/brooksco/public_html"; cd "$REPO"; command -v npm >/dev/null 2>&1 || { echo "ERROR: npm is not available on the server. Website was not changed."; exit 1; }; npm ci --no-audit --no-fund; npm run build; test -f dist/index.html || { echo "ERROR: dist/index.html was not created. Website was not changed."; exit 1; }; BACKUP="/home/brooksco/backups/brooks-cottage-$(date +%Y%m%d-%H%M%S)"; /bin/mkdir -p "$BACKUP"; /bin/cp -a "$WEB/." "$BACKUP/" 2>/dev/null || true; /bin/find "$WEB" -mindepth 1 -maxdepth 1 -exec /bin/rm -rf {} +; /bin/cp -a dist/. "$WEB/"; printf "%s\n" "RewriteEngine On" "RewriteBase /" "RewriteRule ^index\\.html$ - [L]" "RewriteCond %{REQUEST_FILENAME} !-f" "RewriteCond %{REQUEST_FILENAME} !-d" "RewriteRule . /index.html [L]" > "$WEB/.htaccess"; echo "React website deployed successfully."'
+    - export DEPLOYPATH=/home/brooksco/public_html/
+    - /bin/mkdir -p $DEPLOYPATH
+    - /bin/cp -R dist/. $DEPLOYPATH
