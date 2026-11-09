@@ -1,4 +1,6 @@
 ---
 deployment:
   tasks:
-    - /bin/bash -c 'set -e; export DEPLOYPATH="/home/brooksco/staging/brooks-cottage"; mkdir -p "$DEPLOYPATH"; npm install; npm run build; find "$DEPLOYPATH" -mindepth 1 -delete; cp -a dist/. "$DEPLOYPATH/"'
+    - export DEPLOYPATH=/home/brooksco/staging/brooks-cottage/
+    - /bin/mkdir -p $DEPLOYPATH
+    - /bin/cp -R dist/. $DEPLOYPATH
