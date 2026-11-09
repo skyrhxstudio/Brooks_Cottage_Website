@@ -1,0 +1,22 @@
+---
+# Brooks Cottage — cPanel Git Version Control deployment
+#
+# Runs on the cPanel server when you deploy (push to the cPanel repo, or click
+# "Deploy HEAD Commit"). It installs dependencies, builds the Vite app, and copies
+# the built site from dist/ into public_html — replacing the current website.
+#
+# REQUIREMENT: Node.js + npm must be available to the cPanel deployment shell.
+#   - Most cPanel hosts that include Node.js support this.
+#   - If "npm: command not found", create a Node.js app in cPanel
+#     (Software > Setup Node.js App) so node/npm are on PATH, then redeploy.
+#   - Or build locally and upload the dist/ folder manually (no Node needed).
+#
+# $HOME is the cPanel account home (e.g. /home/username). If your host does not
+# expose $HOME in deployment tasks, replace $HOME below with the absolute path
+# shown above public_html in cPanel's File Manager.
+#
+# Safety: `set -e` stops on the first error, so a failed install/build will NOT
+# wipe the live site — the find/cp only run after a successful build.
+deployment:
+  tasks:
+    - /bin/bash -c 'set -e; export DEPLOYPATH="$HOME/public_html"; npm install; npm run build; find "$DEPLOYPATH" -mindepth 1 -delete; cp -a dist/. "$DEPLOYPATH/"'

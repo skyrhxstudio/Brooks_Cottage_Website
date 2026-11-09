@@ -2,15 +2,15 @@
   "specVersion": "1.0",
   "host": {
     "displayName": "Brooks Cottage",
-    "documentationUrl": "https://www.brookscottage.com/",
-    "logoUrl": "https://www.brookscottage.com/favicon.svg"
+    "documentationUrl": "https://www.brookscottage.co.za/",
+    "logoUrl": "https://www.brookscottage.co.za/favicon.svg"
   },
   "entries": [
     {
-      "identifier": "urn:air:brookscottage.com:website:home",
+      "identifier": "urn:air:brookscottage.co.za:website:home",
       "displayName": "Brooks Cottage Home",
       "type": "text/html",
-      "url": "https://www.brookscottage.com/",
+      "url": "https://www.brookscottage.co.za/",
       "description": "Luxury guest house accommodation in Brooklyn, Pretoria, South Africa.",
       "tags": ["guest-house", "accommodation", "pretoria"],
       "representativeQueries": [
@@ -20,10 +20,10 @@
       "version": "1.0"
     },
     {
-      "identifier": "urn:air:brookscottage.com:website:rooms-rates",
+      "identifier": "urn:air:brookscottage.co.za:website:rooms-rates",
       "displayName": "Brooks Cottage Rooms and Rates",
       "type": "text/html",
-      "url": "https://www.brookscottage.com/rooms-rates",
+      "url": "https://www.brookscottage.co.za/rooms-rates",
       "description": "View the room types, amenities, and rates at Brooks Cottage.",
       "tags": ["rooms", "rates", "accommodation"],
       "representativeQueries": [
@@ -33,10 +33,10 @@
       "version": "1.0"
     },
     {
-      "identifier": "urn:air:brookscottage.com:website:contact",
+      "identifier": "urn:air:brookscottage.co.za:website:contact",
       "displayName": "Contact Brooks Cottage",
       "type": "text/html",
-      "url": "https://www.brookscottage.com/contact",
+      "url": "https://www.brookscottage.co.za/contact",
       "description": "Brooks Cottage address, telephone numbers, email, and booking information.",
       "tags": ["contact", "address", "booking"],
       "representativeQueries": [

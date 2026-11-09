@@ -39,9 +39,9 @@ function PageMetadata({
     updateMetaTag('meta[name="twitter:title"]', { name: 'twitter:title' }, fullTitle)
     updateMetaTag('meta[name="twitter:description"]', { name: 'twitter:description' }, description)
     updateMetaTag('meta[name="twitter:image"]', { name: 'twitter:image' }, imageUrl)
-    updateMetaTag('meta[name="author"]', { name: 'author' }, 'SKYRHX | A Creative Studio')
-    updateMetaTag('meta[name="designer"]', { name: 'designer' }, 'SKYRHX | A Creative Studio')
-    updateMetaTag('meta[name="generator"]', { name: 'generator' }, 'SKYRHX | A Creative Studio')
+    updateMetaTag('meta[name="author"]', { name: 'author' }, 'SKYRHX (Pty) Ltd | A Creative Studio')
+    updateMetaTag('meta[name="designer"]', { name: 'designer' }, 'SKYRHX (Pty) Ltd | A Creative Studio')
+    updateMetaTag('meta[name="generator"]', { name: 'generator' }, 'SKYRHX (Pty) Ltd | A Creative Studio')
 
     let authorLink = document.head.querySelector<HTMLLinkElement>('link[rel="author"]')
     if (!authorLink) {
