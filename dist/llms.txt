@@ -1,0 +1,23 @@
+# Brooks Cottage
+
+> Boutique guest house accommodation at 283 Brooks Street, Brooklyn, Pretoria, South Africa.
+
+## Main Pages
+
+- [Brooks Cottage home](https://www.brookscottage.co.za/)
+- [Rooms and rates](https://www.brookscottage.co.za/rooms-rates)
+- [Gallery](https://www.brookscottage.co.za/gallery)
+- [Location and attractions](https://www.brookscottage.co.za/location-attractions)
+- [Contact Brooks Cottage](https://www.brookscottage.co.za/contact)
+
+## Rooms
+
+- [The Contemporary Room](https://www.brookscottage.co.za/rooms/the-contemporary-room)
+- [The Indonesian Room](https://www.brookscottage.co.za/rooms/the-indonesian-room)
+- [The Modern Victorian Room](https://www.brookscottage.co.za/rooms/the-modern-victorian-room)
+- [The Mahogany Room](https://www.brookscottage.co.za/rooms/the-mahogany-room)
+- [The Eclectic Room](https://www.brookscottage.co.za/rooms/the-eclectic-room)
+
+## Booking
+
+Reservations can be made through [Nightsbridge](https://book.nightsbridge.com/31512).

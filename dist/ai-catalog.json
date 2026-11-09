@@ -1,0 +1,49 @@
+{
+  "specVersion": "1.0",
+  "host": {
+    "displayName": "Brooks Cottage",
+    "documentationUrl": "https://www.brookscottage.co.za/",
+    "logoUrl": "https://www.brookscottage.co.za/favicon.svg"
+  },
+  "entries": [
+    {
+      "identifier": "urn:air:brookscottage.co.za:website:home",
+      "displayName": "Brooks Cottage Home",
+      "type": "text/html",
+      "url": "https://www.brookscottage.co.za/",
+      "description": "Luxury guest house accommodation in Brooklyn, Pretoria, South Africa.",
+      "tags": ["guest-house", "accommodation", "pretoria"],
+      "representativeQueries": [
+        "Book accommodation at Brooks Cottage",
+        "Luxury guest houses in Pretoria"
+      ],
+      "version": "1.0"
+    },
+    {
+      "identifier": "urn:air:brookscottage.co.za:website:rooms-rates",
+      "displayName": "Brooks Cottage Rooms and Rates",
+      "type": "text/html",
+      "url": "https://www.brookscottage.co.za/rooms-rates",
+      "description": "View the room types, amenities, and rates at Brooks Cottage.",
+      "tags": ["rooms", "rates", "accommodation"],
+      "representativeQueries": [
+        "What rooms are available at Brooks Cottage",
+        "View Brooks Cottage room rates"
+      ],
+      "version": "1.0"
+    },
+    {
+      "identifier": "urn:air:brookscottage.co.za:website:contact",
+      "displayName": "Contact Brooks Cottage",
+      "type": "text/html",
+      "url": "https://www.brookscottage.co.za/contact",
+      "description": "Brooks Cottage address, telephone numbers, email, and booking information.",
+      "tags": ["contact", "address", "booking"],
+      "representativeQueries": [
+        "How do I contact Brooks Cottage",
+        "Where is Brooks Cottage located"
+      ],
+      "version": "1.0"
+    }
+  ]
+}

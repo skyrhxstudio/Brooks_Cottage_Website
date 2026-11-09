@@ -1,0 +1,31 @@
+# Brooks Cottage — Vite SPA routing & caching for Apache (cPanel shared hosting)
+
+# --- Single-page app fallback ---
+# Send anything that isn't a real file/directory to index.html so client-side
+# routes like /rooms-rates or /rooms/the-mahogany-room work on direct visit/refresh.
+<IfModule mod_rewrite.c>
+  RewriteEngine On
+  RewriteBase /
+
+  # Real files (JS, CSS, images, favicon, sitemap.xml, robots.txt, llms.txt,
+  # ai-catalog.json, .well-known/*, hero_bg.webp) -> serve as-is.
+  RewriteCond %{REQUEST_FILENAME} -f [OR]
+  RewriteCond %{REQUEST_FILENAME} -d
+  RewriteRule ^ - [L]
+
+  # Everything else -> the SPA entry point.
+  RewriteRule ^ index.html [L]
+</IfModule>
+
+# --- Long-cache fingerprinted assets (Vite emits content-hashed filenames) ---
+<IfModule mod_expires.c>
+  ExpiresActive On
+  ExpiresByType text/css "access plus 1 year"
+  ExpiresByType text/javascript "access plus 1 year"
+  ExpiresByType application/javascript "access plus 1 year"
+  ExpiresByType image/webp "access plus 1 year"
+  ExpiresByType image/jpeg "access plus 1 year"
+  ExpiresByType image/png "access plus 1 year"
+  ExpiresByType image/svg+xml "access plus 1 year"
+  ExpiresByType font/ttf "access plus 1 year"
+</IfModule>
